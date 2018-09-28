@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Pink</title>
+  <link rel="stylesheet" href="sourse/css/normalize.min.css">
+  <link rel="stylesheet" href="sourse/css/style.css">
+</head>
+<body class="body">
+<header class="main-header">
+  <nav class="main-nav__mobile">
+    <ul class="main-nav__list">
+      <li class="main-nav__list-item"><a href="#" class="main-nav__list-link">Главная</a></li>
+      <li class="main-nav__list-item"><a href="#" class="main-nav__list-link">Фотографии</a></li>
+      <li class="main-nav__list-item"><a href="#" class="main-nav__list-link">Конкурс</a></li>
+      <li class="main-nav__list-item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__list-link">HTML
+        Academy</a></li>
+    </ul>
+  </nav>
+  <h1 class="logo main-nav--logo">PINK</h1>
+  <!-- TODO Убрать название кнопки при стилизации -->
+  <button class="main-nav__menu-button" aria-label="Главное меню">Главное меню</button>
+</header>
+<main>
+  <section class="page-header">
+    <h2 class="page-header__caption">Форма отправки фото на конкурс</h2>
+    <p class="general__text-style">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+      бонусную карту! Пожалуйста, заполните форму ниже:</p>
+  </section>
+  <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset class="competition-form__user">
+      <label class="competition-form__label" for="user-surname">Фамилия:</label>
+      <input class="competition-form__user-surname" id="user-surname" name="user-surname" type="text"
+             placeholder="Укажите фамилию*" required>
+      <label class="competition-form__label" for="user-name">Имя:</label>
+      <input class="competition-form__user-name" id="user-name" name="user-name" type="text"
+             placeholder="Введите ваше имя*" required>
+      <label class="competition-form__label" for="user-surname">Отчество:</label>
+      <input class="competition-form__user-patronymic" id="user-patronymic" name="user-patronymic" type="text"
+             placeholder="Ну и отчество тоже*" required>
+    </fieldset>
+    <fieldset class="competition-form__feat">
+      <legend class="competition-form__label competition-form__label--center">Ваши безбашенные достижения в путешествии</legend>
+      <ul class="competition-form__feat-list">
+        <li class="competition-form__feat-list-item">
+          <input type="checkbox" class="competition-form__feat-list-checkbox" name="selfi"
+                 id="selfi" checked>
+          <label for="selfi">Сделал селфи с акулой</label>
+        </li>
+        <li class="competition-form__feat-list-item">
+          <input type="checkbox" class="competition-form__feat-list-checkbox" name="beach"
+                 id="beach" checked>
+          <label for="beach">Обгорел на пляже</label>
+        </li>
+        <li class="competition-form__feat-list-item">
+          <input type="checkbox" class="competition-form__feat-list-checkbox" name="norris"
+                 id="norris">
+          <label for="norris">Видел Чака Норриса</label>
+        </li>
+        <li class="competition-form__feat-list-item">
+          <input type="checkbox" class="competition-form__feat-list-checkbox" name="souvenir"
+                 id="souvenir">
+          <label for="souvenir">Накупил сувениров</label>
+        </li>
+        <li class="competition-form__feat-list-item">
+          <input type="checkbox" class="competition-form__feat-list-checkbox" name="tower"
+                 id="tower" checked>
+          <label for="tower">Удержал башню</label>
+        </li>
+        <li class="competition-form__feat-list-item">
+          <input type="checkbox" class="competition-form__feat-list-checkbox" name="hotel"
+                 id="hotel">
+          <label for="hotel">Разгромил отель</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="competition-form__contacts">
+      <label class="competition-form__label" for="user-tel">Номер телефона</label>
+      <input class="competition-form__user-tel" id="user-tel" name="user-tel" type="text"
+             placeholder="Номер, пожалуйста">
+      <label class="competition-form__label" for="user-email">Адрес почты</label>
+      <input class="competition-form__user-email" id="user-email" name="user-email" type="email"
+             placeholder="Введите почту*" required>
+    </fieldset>
+    <fieldset class="competition-form__soft">
+      <legend class="competition-form__label competition-form__label--center">С каким приложением путешествовали?</legend>
+      <ul class="competition-form__soft-list">
+        <li class="competition-form__soft-item">
+          <input class="competition-form__soft-radio" type="radio" name="mobile-os" value="ios" id="ios" checked>
+          <label class="competition-form__soft-label" for="ios">Pink для iOS</label>
+        </li>
+        <li class="competition-form__soft-item">
+          <input class="competition-form__soft-radio" type="radio" name="mobile-os" value="android" id="android">
+          <label class="competition-form__soft-label" for="android">Pink на Android</label>
+        </li>
+        <li class="competition-form__soft-item">
+          <input class="competition-form__soft-radio" type="radio" name="mobile-os" value="winmobile" id="winmobile">
+          <label class="competition-form__soft-label" for="winmobile">Widows Phone</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="competition-form__emotions">
+      <label class="competition-form__emotions-textarea" for="user-emotions">Опишите свои эмоции </label>
+      <textarea class="modal-form__text-area" name="user-emotions" id="user-emotions"
+                placeholder="Можно прям в красках, не стесняясь в выражениях"
+                rows="3" cols="40" aria-label="Опишите ваши эмоции"></textarea>
+    </fieldset>
+    <button class="button green--button competition-form--submit-button" type="submit">Отправить форму</button>
+    <p class="general__text-style general__text-style--capital"><span class="general__text-style--red">*</span>&nbsp;—&nbsp;обязательные поля</p>
+  </form>
+</main>
+<footer class="footer">
+  <h1 class="logo footer--logo">PINK</h1>
+  <!-- TODO Убрать название кнопок при стилизации -->
+  <ul class="footer__social-list">
+    <li class="footer__social-list-item">
+      <a class="footer__social-button social-button--twitter" href="#"><span
+        class="">Twitter</span></a>
+    </li>
+    <li class="footer__social-list-item">
+      <a class="footer__social-button social-button--insta" href="#"><span
+        class="">Instagram</span></a>
+    </li>
+    <li class="footer__social-list-item">
+      <a class="footer__social-button social-button--fb" href="#"><span
+        class="">Facebook</span></a>
+    </li>
+    <li class="footer__social-list-item">
+      <a class="footer__social-button social-button--vk" href="#"><span
+        class="">ВКонтакте</span></a>
+    </li>
+  </ul>
+  <p class="general__text-style">Разработано</p>
+  <a class="footer__html-academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+    <img class="footer__html-academy-logo" src="#" width="27" height="34" alt="HTML Academy">
+  </a>
+</footer>
+<div class="modal-window modal-window--sent">
+  <h3 class="modal-window__caption">Ваша заявка отправлена</h3>
+  <p class="modal-window__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+  <button class="button green--button modal-window--sent-button" type="submit">Отправить форму</button>
+</div>
+<div class="modal-window modal-window--error">
+  <h3 class="modal-window__caption">Что-то пошло не так!</h3>
+  <p class="modal-window__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <button class="button green--button modal-window--sent-button" type="submit">ОК</button>
+</div>
+</body>
+</html>
