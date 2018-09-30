@@ -6,31 +6,30 @@
   <link rel="stylesheet" href="sourse/css/normalize.min.css">
   <link rel="stylesheet" href="sourse/css/style.css">
 </head>
-<body class="body">
+<body>
 <header class="main-header">
-  <nav class="main-nav__mobile">
-    <ul class="main-nav__list">
-      <li class="main-nav__list-item"><a href="#" class="main-nav__list-link">Главная</a></li>
-      <li class="main-nav__list-item"><a href="#" class="main-nav__list-link">Фотографии</a></li>
-      <li class="main-nav__list-item"><a href="#" class="main-nav__list-link">Конкурс</a></li>
-      <li class="main-nav__list-item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__list-link">HTML
+  <h1 class="main-header__logo">PINK</h1>
+  <nav class="main-header__nav">
+    <ul class="main-header__list">
+      <li class="main-header__item"><a href="#" class="main-header__link">Главная</a></li>
+      <li class="main-header__item"><a href="#" class="main-header__link">Фотографии</a></li>
+      <li class="main-header__item"><a href="#" class="main-header__link">Конкурс</a></li>
+      <li class="main-header__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-header__link">HTML
         Academy</a></li>
     </ul>
   </nav>
-  <h1 class="logo main-nav--logo">PINK</h1>
-  <!-- TODO Убрать название кнопки при стилизации -->
-  <button class="main-nav__menu-button" aria-label="Главное меню">Главное меню</button>
+  <button class="main-header__menu-button" type="button" aria-label="Главное меню"></button>
 </header>
-<main class="main">
+<main>
   <section class="page-header">
     <h2 class="page-header__caption">Фотографии пользователей</h2>
-    <p class="general__text-style">Взгляните на фотографии, которые выкладывают пользователи!
+    <p class="general-text-style">Взгляните на фотографии, которые выкладывают пользователи!
       Видите, как не хватает ваших?</p>
   </section>
   <section class="photo">
     <h2 class="visually-hidden">Раздел с фотографиями</h2>
     <ul class="photo__list">
-      <li class="photo__list-item">
+      <li class="photo__item">
         <article class="photo-card">
           <h3 class="visually-hidden">Фотография от Анны</h3>
           <img class="photo-card__photo photo-card__photo--panorama" src="#" width="320" height="137" alt="Панорма дня">
@@ -40,7 +39,7 @@
           <p class="photo-card__like-count">Нравится:&nbsp;215</p>
         </article>
       </li>
-      <li class="photo__list-item">
+      <li class="photo__item">
         <article class="photo-card">
           <h3 class="visually-hidden">Фотография от Левона</h3>
           <img class="photo-card__photo" src="#" width="280" height="180" alt="Фото от Левона">
@@ -50,7 +49,7 @@
           <p class="photo-card__like-count">Нравится:&nbsp;356</p>
         </article>
       </li>
-      <li class="photo__list-item">
+      <li class="photo__item">
         <article class="photo-card">
           <h3 class="visually-hidden">Фотография от Антона</h3>
           <img class="photo-card__photo" src="#" width="280" height="180" alt="Фото от Антона">
@@ -59,7 +58,7 @@
           <p class="photo-card__like-count">Нравится:&nbsp;665</p>
         </article>
       </li>
-      <li class="photo__list-item">
+      <li class="photo__item">
         <article class="photo-card">
           <h3 class="visually-hidden">Фотография от Бориса</h3>
           <img class="photo-card__photo" src="#" width="280" height="180" alt="Фото от Бориса">
@@ -69,7 +68,7 @@
           <p class="photo-card__like-count">Нравится:&nbsp;215</p>
         </article>
       </li>
-      <li class="photo__list-item">
+      <li class="photo__item">
         <article class="photo-card">
           <h3 class="visually-hidden">Фотография от Сергея</h3>
           <img class="photo-card__photo" src="#" width="280" height="180" alt="Фото от Сергея">
@@ -78,7 +77,7 @@
           <p class="photo-card__like-count">Нравится:&nbsp;4</p>
         </article>
       </li>
-      <li class="photo__list-item">
+      <li class="photo__item">
         <article class="photo-card">
           <h3 class="visually-hidden">Фотография от Максима</h3>
           <img class="photo-card__photo" src="#" width="280" height="180" alt="Фото от Максима">
@@ -87,7 +86,7 @@
           <p class="photo-card__like-count">Нравится:&nbsp;150</p>
         </article>
       </li>
-      <li class="photo__list-item">
+      <li class="photo__item">
         <article class="photo-card">
           <h3 class="visually-hidden">Фотография от Надежды</h3>
           <img class="photo-card__photo" src="#" width="280" height="180" alt="Фото от Надежды">
@@ -102,18 +101,18 @@
   <section class="photo-editor">
     <h2 class="visually-hidden">Фоторедактор</h2>
     <form class="photo-editor__form" action="https://echo.htmlacademy.ru" method="post">
-      <!-- TODO Тут какой-то другой тэе должен быть -->
+      <!-- TODO Тут какой-то другой тэг видимо должен быть -->
       <img class="photo-editor__image" src="#" width="280" height="374" alt="Окно фоторедактора">
       <!-- TODO Убрать название кнопок при стилизации -->
       <ul class="photo-editor__list">
-        <li class="photo-editor__list-item">
-          <button class="photo-editor__list-button" aria-label="Кадрирование">Кадрирование</button>
+        <li class="photo-editor__item">
+          <button class="photo-editor__button" type="button" aria-label="Кадрирование">Кадрирование</button>
         </li>
-        <li class="photo-editor__list-item">
-          <button class="photo-editor__list-button" aria-label="Цветовая гамма">Цветовая гамма</button>
+        <li class="photo-editor__item">
+          <button class="photo-editor__button" type="button" aria-label="Цветовая гамма">Цветовая гамма</button>
         </li>
-        <li class="photo-editor__list-item">
-          <button class="photo-editor__list-button" aria-label="Контраст">Контраст</button>
+        <li class="photo-editor__item">
+          <button class="photo-editor__button" type="button" aria-label="Контраст">Контраст</button>
         </li>
       </ul>
       <!-- TODO Подогнать значения во время стилизации -->
@@ -128,36 +127,36 @@
             <div class="photo-editor__toggle toggle--min"></div>
           </div>
         </div>
-        <button class="button photo-editor--button" type="submit">Запостить</button>
-        <button class="button photo-editor--button button--disable" type="reset" disabled>Отмена</button>
+        <button class="oval-button oval-button--sent" type="submit">Запостить</button>
+        <button class="oval-button oval-button--cancel" type="reset" disabled>Отмена</button>
       </fieldset>
     </form>
   </section>
 </main>
 <footer class="footer">
-  <h1 class="logo footer--logo">PINK</h1>
+  <h1 class="logo logo--footer">PINK</h1>
   <!-- TODO Спрятать название соцкнопок при стилизации -->
-  <ul class="footer__social-list">
-    <li class="footer__social-list-item">
+  <ul class="footer__list">
+    <li class="footer__item">
       <a class="footer__social-button social-button--twitter" href="#"><span
         class="">Twitter</span></a>
     </li>
-    <li class="footer__social-list-item">
+    <li class="footer__item">
       <a class="footer__social-button social-button--insta" href="#"><span
         class="">Instagram</span></a>
     </li>
-    <li class="footer__social-list-item">
+    <li class="footer__item">
       <a class="footer__social-button social-button--fb" href="#"><span
         class="">Facebook</span></a>
     </li>
-    <li class="footer__social-list-item">
+    <li class="footer__item">
       <a class="footer__social-button social-button--vk" href="#"><span
         class="">ВКонтакте</span></a>
     </li>
   </ul>
-  <p class="general__text-style">Разработано</p>
-  <a class="footer__html-academy-link" href="https://htmlacademy.ru/intensive/adaptive"><img
-    class="footer__html-academy-logo" src="#" width="27" height="34" alt="HTML Academy"></a>
+  <p class="general-text-style">Разработано</p>
+  <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive"><img
+    class="footer__academy-logo" src="#" width="27" height="34" alt="HTML Academy"></a>
 </footer>
 </body>
 </html>

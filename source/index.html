@@ -6,137 +6,141 @@
   <link rel="stylesheet" href="sourse/css/normalize.min.css">
   <link rel="stylesheet" href="sourse/css/style.css">
 </head>
-<body class="body">
+<body>
 <header class="main-header">
-  <nav class="main-nav__mobile">
-    <ul class="main-nav__list">
-      <li class="main-nav__list-item"><a href="#" class="main-nav__list-link">Главная</a></li>
-      <li class="main-nav__list-item"><a href="#" class="main-nav__list-link">Фотографии</a></li>
-      <li class="main-nav__list-item"><a href="#" class="main-nav__list-link">Конкурс</a></li>
-      <li class="main-nav__list-item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__list-link">HTML
+  <h1 class="main-header__logo">PINK</h1>
+  <nav class="main-header__nav">
+    <ul class="main-header__list">
+      <li class="main-header__item"><a href="#" class="main-header__link">Главная</a></li>
+      <li class="main-header__item"><a href="#" class="main-header__link">Фотографии</a></li>
+      <li class="main-header__item"><a href="#" class="main-header__link">Конкурс</a></li>
+      <li class="main-header__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-header__link">HTML
         Academy</a></li>
     </ul>
   </nav>
-  <h1 class="main-nav__logo">PINK</h1>
-  <button class="main-nav__menu-button" aria-label="Главное меню"></button>
-
+  <button class="main-header__menu-button" type="button" aria-label="Главное меню"></button>
 </header>
-<main class="main">
+<main>
   <section class="download">
     <h2 class="visually-hidden">Скачать PINK</h2>
     <img class="download__intro" src="#" width="320" height="462" alt="Скачать приложение">
-    <a class="button download--button" href="https://appstore.com">Скачать приложение</a>
-    <ul class="download__os-list">
-      <li class="download__os-list-item"><img class="download__os-list-img" src="#" width="47" height="56" alt="iOS">
+    <a class="oval-button oval-button--download" href="https://appstore.com">Скачать приложение</a>
+    <ul class="download__list">
+      <li class="download__item">
+        <a class="download__store-link" href="https://appstore.com">
+          <img class="download__img" src="#" width="47" height="56" alt="iOS">
+        </a>
       </li>
-      <li class="download__os-list-item"><img class="download__os-list-img" src="#" width="43" height="47"
-                                              alt="Android"></li>
-      <li class="download__os-list-item"><img class="download__os-list-img" src="#" width="44" height="41"
-                                              alt="Windows mobile"></li>
+      <li class="download__item">
+        <a class="download__store-link" href="https://play.google.com/store">
+          <img class="download__img" src="#" width="43" height="47" alt="Android">
+        </a>
+      </li>
+      <li class="download__item">
+        <a class="download__store-link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?rtc=1">
+          <img class="download__img" src="#" width="44" height="41" alt="Windows mobile">
+        </a>
+      </li>
     </ul>
   </section>
   <section class="pink-info">
     <h2 class="visually-hidden">Возможности PINK</h2>
     <div class="pink-info__slogan-wrapper">
       <p class="pink-info__slogan">Устали от серости мегаполиса?</p>
-      <p class="pink-info__slogan">Нам есть, что вам
-        предложить!</p>
+      <p class="pink-info__slogan">Нам есть, что вам предложить!</p>
     </div>
     <ul class="pink-info__list">
-      <li class="pink-info__list-item">
-        <h3 class="pink-info__list-item-header">Поднимает настроение</h3>
-        <p class="pink-info__list-item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+      <li class="pink-info__item">
+        <h3 class="pink-info__item-header">Поднимает настроение</h3>
+        <p class="pink-info__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
           несколько кликов!</p>
       </li>
-      <li class="pink-info__list-item">
-        <h3 class="pink-info__list-item-header">Меняет мир вокруг</h3>
-        <p class="pink-info__list-item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+      <li class="pink-info__item">
+        <h3 class="pink-info__item-header">Меняет мир вокруг</h3>
+        <p class="pink-info__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
           усилить эффект</p>
       </li>
-      <li class="pink-info__list-item">
-        <h3 class="pink-info__list-item-header">Заводит новых друзей</h3>
-        <p class="pink-info__list-item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+      <li class="pink-info__item">
+        <h3 class="pink-info__item-header">Заводит новых друзей</h3>
+        <p class="pink-info__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
           новых</p>
       </li>
     </ul>
   </section>
   <section class="comments">
     <h2 class="visually-hidden">Отзывы пользователей</h2>
-    <ul class="switches">
-      <li class="switches__item">
-        <button class="switches__button switches__button--active"><span class="">Первый отзыв</span></button>
-      </li>
-      <li class="switches__item">
-        <button class="switches__button"><span class="">Второй отзыв</span></button>
-      </li>
-      <li class="switches__item">
-        <button class="switches__button"><span class="">Третий отзыв</span></button>
-      </li>
-    </ul>
     <ul class="comments__list">
-      <li class="comments__list-item">
-        <h3 class="comments__list-caption">Николай Петров</h3>
-        <p class="comments__list-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+      <li class="comments__item">
+        <h3 class="comments__caption">Николай Петров</h3>
+        <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
           серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </li>
-      <li class="comments__list-item visually-hidden">
-        <h3 class="comments__list-caption">Василий Иванов</h3>
-        <p class="comments__list-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности
+      <li class="comments__item visually-hidden">
+        <h3 class="comments__caption">Василий Иванов</h3>
+        <p class="comments__text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности
           способствует подготовки и реализации форм развития. Товарищи! </p>
       </li>
-      <li class="comments__list-item visually-hidden">
-        <h3 class="comments__list-caption">Сергей Сидоров</h3>
-        <p class="comments__list-text">Равным образом постоянный количественный рост и сфера нашей активности играет
+      <li class="comments__item visually-hidden">
+        <h3 class="comments__caption">Сергей Сидоров</h3>
+        <p class="comments__text">Равным образом постоянный количественный рост и сфера нашей активности играет
           важную роль в формировании системы обучения кадров, соответствует насущным потребностям.</p>
+      </li>
+    </ul>
+    <ul class="switches">
+      <li class="switches__item">
+        <button class="switches__button switches__button--active" type="button"><span class="">Первый отзыв</span>
+        </button>
+      </li>
+      <li class="switches__item">
+        <button class="switches__button" type="button"><span class="">Второй отзыв</span></button>
+      </li>
+      <li class="switches__item">
+        <button class="switches__button" type="button"><span class="">Третий отзыв</span></button>
       </li>
     </ul>
   </section>
   <section class="tariff">
     <h2 class="visually-hidden">Тарифы</h2>
     <ul class="tariff__list">
+      <li class="tariff__list-item visually-hidden">
+        <!--TODO Место под еще один тариф -->
+      </li>
       <li class="tariff__list-item">
-        <table class="tariff__table">
+        <table class="tariff__table" border="1">
           <tr class="tariff__table-row">
-            <td class="tariff__table-column tariff__table-column--piece tariff__table-column--caption "></td>
-            <td class="tariff__table-column tariff__table-column--caption" colspan="2">
+            <td class="tariff__table-column tariff__table-column--caption tariff--hit" colspan="2">
               <p class="tariff__table-text-caption">Стандарт</p>
               <p class="tariff__table-text">3,99 USD</p>
             </td>
-            <td class="tariff__table-column tariff__table-column--piece tariff__table-column--caption"></td>
           </tr>
           <tr class="tariff__table-row">
-            <td class="tariff__table-column tariff__table-column--piece Y--piece">
             <td class="tariff__table-column">Розовый фильтр</td>
             <td class="tariff__table-column"><span class="tariff__table-yes-symbol visually-hidden">Да</span></td>
-            <td class="tariff__table-column tariff__table-column--piece">
           </tr>
           <tr class="tariff__table-row">
-            <td class="tariff__table-column tariff__table-column--piece Y--piece">
             <td class="tariff__table-column">Смайлики</td>
             <td class="tariff__table-column"><span class="tariff__table-yes-symbol visually-hidden">Да</span></td>
-            <td class="tariff__table-column tariff__table-column--piece">
           </tr>
           <tr class="tariff__table-row">
-            <td class="tariff__table-column tariff__table-column--piece X--piece">
             <td class="tariff__table-column">Комментарии</td>
             <td class="tariff__table-column"><span class="tariff__table-no-symbol visually-hidden">Нет</span></td>
-            <td class="tariff__table-column tariff__table-column--piece">
           </tr>
         </table>
       </li>
-      <!--TODO Сюда надо будет добавить разметку других тарифов -->
-      <li class="tariff__list-item visually-hidden"></li>
-      <li class="tariff__list-item visually-hidden"></li>
+      <li class="tariff__list-item visually-hidden">
+        <!--TODO Место под еще один тариф -->
+      </li>
     </ul>
     <ul class="switches">
       <li class="switches__item">
-        <button class="switches__button switches__button--active"><span class="">Первый тариф</span></button>
+        <button class="switches__button switches__button--active" type="button"><span class="">Первый тариф</span>
+        </button>
       </li>
       <li class="switches__item">
-        <button class="switches__button"><span class="">Второй тариф</span></button>
+        <button class="switches__button" type="button"><span class="">Второй тариф</span></button>
       </li>
       <li class="switches__item">
-        <button class="switches__button"><span class="">Третий тариф</span></button>
+        <button class="switches__button" type="button"><span class="">Третий тариф</span></button>
       </li>
     </ul>
   </section>
@@ -152,6 +156,7 @@
   </section>
   <section class="map">
     <h2 class="visually-hidden">Карта проезда</h2>
+    <!--TODO Место под карту-->
   </section>
 </main>
 </body>
