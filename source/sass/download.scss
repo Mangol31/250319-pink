@@ -1,0 +1,20 @@
+.download {
+  min-height: 667px;
+  padding-top: 110px;
+  background-color: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.download__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.download__text {
+  color: #ffffff;
+  text-align: center;
+}

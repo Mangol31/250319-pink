@@ -1,0 +1,11 @@
+$general-font-size: 14px;
+$general-font: "Open Sans", arial, sans-serif;
+$general-line-height: 24px;
+$general-font-weight: 400;
+
+.page {
+  width: 320px;
+  font-family: $general-font;
+  font-size: $general-font-size;
+  line-height: $general-line-height;
+}

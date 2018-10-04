@@ -1,0 +1,44 @@
+.pink-info {
+  padding-top: 40px;
+}
+
+.pink-info__slogan {
+  font-size: $general-font-size+10;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+
+.pink-info__list-wrapper {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #f2f2f2;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 322px;
+  &::after {
+    position: absolute;
+    width: 157px;
+    height: 320px;
+    content: url("../img/iphone-screen-mobile@1x.png");
+    top: 425px;
+    left: 80px;
+  }
+}
+
+.pink-info__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-position: outside;
+  text-align: center;
+}
+
+.pink-info__item-header {
+  font-size: $general-font-size+4;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #283645;
+}

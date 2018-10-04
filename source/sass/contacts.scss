@@ -1,0 +1,28 @@
+.contacts {
+  padding-top: 50px;
+}
+
+.contacts__text {
+  font-size: $general-font-size + 10;
+  font-weight: $general-font-weight - 100;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.contacts__caption {
+  font-size: $general-font-size + 4;
+  font-weight: $general-font-weight + 300;
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+.contacts__info {
+  display: block;
+  font-size: $general-font-size + 10;
+  font-weight: $general-font-weight - 100;
+  color: #d22856;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 28px;
+}

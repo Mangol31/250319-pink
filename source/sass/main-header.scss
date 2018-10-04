@@ -1,0 +1,27 @@
+.main-header {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1d2631;
+}
+
+.main-header__logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.main-header__logo {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.main-header__menu-button {
+  width: 50px;
+  height: 24px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+в 
+  background-image: url("../img/icon-menu-burger.svg");
+

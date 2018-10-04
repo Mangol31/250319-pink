@@ -1,0 +1,29 @@
+.switches {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  list-style-type: none;
+}
+
+.switches__item {
+  margin-right: 19px;
+}
+
+.switches__item:last-child {
+  margin-right: 0;
+}
+
+.switches__button {
+  width: 9px;
+  height: 9px;
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  background-color: #bec2c7;
+}
+
+.switches__button--active {
+  border: 2px solid #283645;
+  background-color: #ffffff;
+}
