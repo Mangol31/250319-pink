@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <link rel="stylesheet" type="text/css" href="source/sass/pink-info.scss"/>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pink</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-<header class="main-header  general-indent">
-  <div class="main-header__logo-wrapper">
+<header class="main-header">
+  <div class="main-header__logo-wrapper general-indent">
     <h1 class="main-header__logo">PINK</h1>
     <button class="main-header__menu-button" type="button" aria-label="Главное меню"></button>
   </div>
-  <nav class="main-header__nav visually-hidden">
+  <nav class="main-header__nav">
     <ul class="main-header__list">
       <li class="main-header__item">
-        <a href="#" class="main-header__link">Главная</a>
+        <a href="index.html" class="main-header__link">Главная</a>
       </li>
       <li class="main-header__item">
-        <a href="#" class="main-header__link">Фотографии</a>
+        <a href="photo.html" class="main-header__link">Фотографии</a>
       </li>
       <li class="main-header__item">
-        <a href="#" class="main-header__link">Конкурс</a>
+        <a href="form.html" class="main-header__link">Конкурс</a>
       </li>
       <li class="main-header__item">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="main-header__link">HTML
-          Academy</a>
+        <a class="main-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </li>
     </ul>
   </nav>
@@ -33,10 +32,10 @@
 <main>
   <section class="download general-indent">
     <h2 class="visually-hidden">Скачать PINK</h2>
-    <img class="download__intro" src="../img/iphone-hand-mobile@1x.png" width="258" height="286"
+    <img class="download__intro" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
          alt="Скачать приложение">
     <a class="button button--oval button--transparent" href="https://appstore.com">Скачать приложение</a>
-    <ul class="download__list ">
+    <ul class="download__list">
       <li class="download__item">
         <a class="download__store-link" href="https://appstore.com">
           <img class="download__img" src="img/logo-apple.svg" width="47" height="56" alt="iOS">
@@ -146,7 +145,7 @@
       <li class="tariff__list-item">
         <table class="tariff__table">
           <tr class="tariff__table-row tariff__table-row--caption">
-            <td class="tariff__table-column tariff__table-column--caption tariff--hit">
+            <td class="tariff__table-column tariff__table-column--caption tariff__table--hit">
               <p class="tariff__table-caption">Стандарт</p>
               <p class="tariff__table-caption-text">3,99 USD</p>
             </td>

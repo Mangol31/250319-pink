@@ -3,7 +3,7 @@
 }
 
 .pink-info__slogan {
-  font-size: $general-font-size+10;
+  font-size: 24px;
   text-align: center;
   font-weight: 300;
   margin-bottom: 35px;
@@ -13,7 +13,7 @@
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
-  background-color: #f2f2f2;
+  background-color: $background-dark;
   position: relative;
   overflow: hidden;
   padding-bottom: 322px;
@@ -36,9 +36,9 @@
 }
 
 .pink-info__item-header {
-  font-size: $general-font-size+4;
+  font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 20px;
-  color: #283645;
+  color: $dark-on-white;
 }

@@ -1,12 +1,15 @@
 .download {
   min-height: 667px;
   padding-top: 110px;
-  background-color: #1d2631;
+  background-color: $menu-and-download-back;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
 }
+
 .download__list {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -15,6 +18,6 @@
 }
 
 .download__text {
-  color: #ffffff;
+  color: $grey-in-various-elements;
   text-align: center;
 }

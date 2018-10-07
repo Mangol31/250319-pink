@@ -1,11 +1,8 @@
 //TODO Шрифты подключить локально!
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic");
-*
-{
-  margin: 0;
-  padding: 0;
-}
+//@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic");
+@import "fonts";
+@import "constants";
 @import "visually-hidden";
 @import "page";
 @import "main-header";
@@ -16,3 +13,8 @@
 @import "switches";
 @import "tariff";
 @import "contacts";
+@import "page-header";
+@import "photo";
+@import "photo-card";
+@import "photo-editor";
+@import "footer";

@@ -1,0 +1,34 @@
+.page-header {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.page-header__upper-part {
+  padding-top: 36px;
+  padding-bottom: 85px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.page-header__caption {
+  color: $grey-in-various-elements;
+  font-size: 24px;
+  font-weight: 300;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.page-header__lower-part {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: white;
+}
+
+.page-header__text {
+  line-height: 30px;
+  color: $dark-on-white;
+}
