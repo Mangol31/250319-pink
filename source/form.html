@@ -2,49 +2,51 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pink</title>
-  <link rel="stylesheet" href="sourse/css/normalize.min.css">
-  <link rel="stylesheet" href="sourse/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page">
 <header class="main-header">
-  <h1 class="main-header__logo">PINK</h1>
+  <div class="main-header__logo-wrapper general-indent">
+    <h1 class="main-header__logo">PINK</h1>
+    <button class="main-header__menu-button" type="button" aria-label="Главное меню"></button>
+  </div>
   <nav class="main-header__nav">
     <ul class="main-header__list">
       <li class="main-header__item">
-        <a href="#" class="main-header__link">Главная</a>
+        <a href="index.html" class="main-header__link">Главная</a>
       </li>
       <li class="main-header__item">
-        <a href="#" class="main-header__link">Фотографии</a>
+        <a href="photo.html" class="main-header__link">Фотографии</a>
       </li>
       <li class="main-header__item">
-        <a href="#" class="main-header__link">Конкурс</a>
+        <a href="form.html" class="main-header__link">Конкурс</a>
       </li>
       <li class="main-header__item">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="main-header__link">HTML
-          Academy</a>
+        <a class="main-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </li>
     </ul>
   </nav>
-  <button class="main-header__menu-button" type="button" aria-label="Главное меню"></button>
 </header>
 <main>
-  <section class="page-header">
+  <section class="page-header ">
+    <div class="page-header__upper-part">
     <h2 class="page-header__caption">Форма отправки фото на конкурс</h2>
+    </div>
+    <div class="page-header__lower-part">
     <p class="page-header__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
       бонусную карту! Пожалуйста, заполните форму ниже:</p>
+    </div>
   </section>
   <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
     <fieldset class="competition-form-user">
       <label class="competition-form-user__label" for="user-surname">Фамилия:</label>
-      <input class="competition-form-user__surname" id="user-surname" name="user-surname" type="text"
-             placeholder="Укажите фамилию*" required>
+      <input class="competition-form-user__surname" id="user-surname" name="user-surname" type="text" placeholder="Укажите фамилию*" required>
       <label class="competition-form-user__label" for="user-name">Имя:</label>
-      <input class="competition-form-user__name" id="user-name" name="user-name" type="text"
-             placeholder="Введите ваше имя*" required>
+      <input class="competition-form-user__name" id="user-name" name="user-name" type="text" placeholder="Введите ваше имя*" required>
       <label class="competition-form-user__label" for="user-surname">Отчество:</label>
-      <input class="competition-form-user__patronymic" id="user-patronymic" name="user-patronymic" type="text"
-             placeholder="Ну и отчество тоже*" required>
+      <input class="competition-form-user__patronymic" id="user-patronymic" name="user-patronymic" type="text" placeholder="Ну и отчество тоже*" required>
     </fieldset>
     <fieldset class="checkboxes">
       <legend class="checkboxes__label">Ваши безбашенные достижения в путешествии</legend>
@@ -77,11 +79,9 @@
     </fieldset>
     <fieldset class="competition-form-contacts">
       <label class="competition-form-contacts__label" for="user-tel">Номер телефона</label>
-      <input class="competition-form-contacts__user-tel" id="user-tel" name="user-tel" type="text"
-             placeholder="Номер, пожалуйста">
+      <input class="competition-form-contacts__user-tel" id="user-tel" name="user-tel" type="text" placeholder="Номер, пожалуйста">
       <label class="competition-form-contacts__label" for="user-email">Адрес почты</label>
-      <input class="competition-form-contacts__user-email" id="user-email" name="user-email" type="email"
-             placeholder="Введите почту*" required>
+      <input class="competition-form-contacts__user-email" id="user-email" name="user-email" type="email" placeholder="Введите почту*" required>
     </fieldset>
     <fieldset class="radiobuttons">
       <legend class="radiobuttons__label">С каким приложением путешествовали?</legend>
@@ -112,35 +112,26 @@
     </p>
   </form>
 </main>
-<footer class="footer">
-  <h1 class="logo logo--footer">PINK</h1>
+<footer class="footer general-indent">
+  <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
   <!-- TODO Спрятать название соцкнопок при стилизации -->
-  <ul class="footer__list">
+  <ul class="social-buttons">
     <li class="footer__item">
-      <a class="footer__social-button footer__social-button--twitter" href="#">
-        <span class="">Twitter</span>
-      </a>
+      <a class="social-buttons__link social-buttons--twitter" href="#" aria-label="Twitter"></a>
     </li>
     <li class="footer__item">
-      <a class="footer__social-button footer__social-button--insta" href="#">
-        <span class="">Instagram</span>
-      </a>
+      <a class="social-buttons__link social-buttons--fb" href="#" aria-label="FaceBook"></a>
     </li>
     <li class="footer__item">
-      <a class="footer__social-button footer__social-button--fb" href="#">
-        <span class="">Facebook</span>
-      </a>
-    </li>
-    <li class="footer__item">
-      <a class="footer__social-button footer__social-button--vk" href="#">
-        <span class="">ВКонтакте</span>
-      </a>
+      <a class="social-buttons__link social-buttons--youtube" href="#" aria-label="YouTube"></a>
     </li>
   </ul>
-  <p class="footer__text">Разработано</p>
-  <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
-    <img class="footer__academy-logo" src="#" width="27" height="34" alt="HTML Academy">
-  </a>
+  <div class="footer__dev-wrapper">
+    <p class="footer__text">Разработано</p>
+    <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+      <img class="footer__academy-logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+    </a>
+  </div>
 </footer>
 <div class="modal-window modal-window--sent">
   <h3 class="modal-window__caption">Ваша заявка отправлена</h3>

@@ -1,0 +1,24 @@
+.comments {
+  padding-top: 49px;
+  margin-bottom: 43px;
+}
+
+.comments__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 43px;
+  list-style: none;
+}
+
+.comments__caption {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.comments__text {
+  text-align: center;
+  color: $dark-on-white;
+  line-height: 30px;
+}

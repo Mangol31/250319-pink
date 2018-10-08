@@ -1,0 +1,29 @@
+.switches {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.switches__item {
+  margin-right: 19px;
+}
+
+.switches__item:last-child {
+  margin-right: 0;
+}
+
+.switches__button {
+  width: 9px;
+  height: 9px;
+  border: 2px solid $grey-in-various-elements;
+  //border-radius: 100%;
+  background-color: $slider-swithes-light;
+}
+
+.switches__button--active {
+  border: 2px solid $dark-in-various-elements;
+  background-color: $grey-in-various-elements;
+}
