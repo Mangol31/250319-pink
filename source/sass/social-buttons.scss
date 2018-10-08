@@ -1,0 +1,51 @@
+.social-buttons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.social-buttons__link {
+  display: block;
+  width: 46px;
+  height: 46px;
+  border: 2px solid $stroke-panel-social-buttons;
+  border-radius: 100%;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.social-buttons--twitter {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    content: url("../img/icon-twitter.svg");
+  }
+}
+
+.social-buttons--fb {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    content: url("../img/icon-facebook.svg");
+  }
+}
+
+.social-buttons--youtube {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    content: url("../img/icon-youtube.svg");
+  }
+}
