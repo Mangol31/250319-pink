@@ -2,170 +2,255 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pink</title>
-  <link rel="stylesheet" href="sourse/css/normalize.min.css">
-  <link rel="stylesheet" href="sourse/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header class="main-header">
-  <h1 class="main-header__logo">PINK</h1>
-  <nav class="main-header__nav">
-    <ul class="main-header__list">
-      <li class="main-header__item">
-        <a href="#" class="main-header__link">Главная</a>
-      </li>
-      <li class="main-header__item">
-        <a href="#" class="main-header__link">Фотографии</a>
-      </li>
-      <li class="main-header__item">
-        <a href="#" class="main-header__link">Конкурс</a>
-      </li>
-      <li class="main-header__item">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="main-header__link">HTML
-        Academy</a>
-      </li>
-    </ul>
-  </nav>
-  <button class="main-header__menu-button" type="button" aria-label="Главное меню"></button>
-</header>
-<main>
-  <section class="download">
-    <h2 class="visually-hidden">Скачать PINK</h2>
-    <img class="download__intro" src="#" width="320" height="462" alt="Скачать приложение">
-    <a class="button button--oval button--transparent" href="https://appstore.com">Скачать приложение</a>
-    <ul class="download__list">
-      <li class="download__item">
-        <a class="download__store-link" href="https://appstore.com">
-          <img class="download__img" src="#" width="47" height="56" alt="iOS">
-        </a>
-      </li>
-      <li class="download__item">
-        <a class="download__store-link" href="https://play.google.com/store">
-          <img class="download__img" src="#" width="43" height="47" alt="Android">
-        </a>
-      </li>
-      <li class="download__item">
-        <a class="download__store-link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?rtc=1">
-          <img class="download__img" src="#" width="44" height="41" alt="Windows mobile">
-        </a>
-      </li>
-    </ul>
-  </section>
-  <section class="pink-info">
-    <h2 class="visually-hidden">Возможности PINK</h2>
-    <div class="pink-info__slogan-wrapper">
-      <p class="pink-info__slogan">Устали от серости мегаполиса?</p>
-      <p class="pink-info__slogan">Нам есть, что вам предложить!</p>
+<body class="page">
+<div class="general-container">
+  <header class="main-header">
+    <div class="main-header__logo-wrapper general-indent">
+      <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+           alt="PINK">
+      <button class="main-header__menu-button" type="button" aria-label="Главное меню"></button>
     </div>
-    <ul class="pink-info__list">
-      <li class="pink-info__item">
-        <h3 class="pink-info__item-header">Поднимает настроение</h3>
-        <p class="pink-info__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-          несколько кликов!</p>
-      </li>
-      <li class="pink-info__item">
-        <h3 class="pink-info__item-header">Меняет мир вокруг</h3>
-        <p class="pink-info__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-          усилить эффект</p>
-      </li>
-      <li class="pink-info__item">
-        <h3 class="pink-info__item-header">Заводит новых друзей</h3>
-        <p class="pink-info__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-          новых</p>
-      </li>
-    </ul>
-  </section>
-  <section class="comments">
-    <h2 class="visually-hidden">Отзывы пользователей</h2>
-    <ul class="comments__list">
-      <li class="comments__item">
-        <h3 class="comments__caption">Николай Петров</h3>
-        <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-      </li>
-      <li class="comments__item visually-hidden">
-        <h3 class="comments__caption">Василий Иванов</h3>
-        <p class="comments__text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности
-          способствует подготовки и реализации форм развития. Товарищи! </p>
-      </li>
-      <li class="comments__item visually-hidden">
-        <h3 class="comments__caption">Сергей Сидоров</h3>
-        <p class="comments__text">Равным образом постоянный количественный рост и сфера нашей активности играет
-          важную роль в формировании системы обучения кадров, соответствует насущным потребностям.</p>
-      </li>
-    </ul>
-    <ul class="switches">
-      <li class="switches__item">
-        <button class="switches__button switches__button--active" type="button"><span class="">Первый отзыв</span>
-        </button>
-      </li>
-      <li class="switches__item">
-        <button class="switches__button" type="button"><span class="">Второй отзыв</span></button>
-      </li>
-      <li class="switches__item">
-        <button class="switches__button" type="button"><span class="">Третий отзыв</span></button>
-      </li>
-    </ul>
-  </section>
-  <section class="tariff">
-    <h2 class="visually-hidden">Тарифы</h2>
-    <ul class="tariff__list">
-      <li class="tariff__list-item visually-hidden">
-        <!--TODO Место под еще один тариф -->
-      </li>
-      <li class="tariff__list-item">
-        <table class="tariff__table">
-          <tr class="tariff__table-row">
-            <td class="tariff__table-column tariff__table-column--caption tariff--hit" colspan="2">
-              <p class="tariff__table-text-caption">Стандарт</p>
-              <p class="tariff__table-text">3,99 USD</p>
-            </td>
-          </tr>
-          <tr class="tariff__table-row">
-            <td class="tariff__table-column">Розовый фильтр</td>
-            <td class="tariff__table-column"><span class="tariff__table-yes-symbol visually-hidden">Да</span></td>
-          </tr>
-          <tr class="tariff__table-row">
-            <td class="tariff__table-column">Смайлики</td>
-            <td class="tariff__table-column"><span class="tariff__table-yes-symbol visually-hidden">Да</span></td>
-          </tr>
-          <tr class="tariff__table-row">
-            <td class="tariff__table-column">Комментарии</td>
-            <td class="tariff__table-column"><span class="tariff__table-no-symbol visually-hidden">Нет</span></td>
-          </tr>
-        </table>
-      </li>
-      <li class="tariff__list-item visually-hidden">
-        <!--TODO Место под еще один тариф -->
-      </li>
-    </ul>
-    <ul class="switches">
-      <li class="switches__item">
-        <button class="switches__button switches__button--active" type="button"><span class="">Первый тариф</span>
-        </button>
-      </li>
-      <li class="switches__item">
-        <button class="switches__button" type="button"><span class="">Второй тариф</span></button>
-      </li>
-      <li class="switches__item">
-        <button class="switches__button" type="button"><span class="">Третий тариф</span></button>
-      </li>
-    </ul>
-  </section>
-  <section class="contacts">
-    <h2 class="visually-hidden">Контактная информация</h2>
-    <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
-    <p class="contacts__caption">Звоните:</p>
-    <a class="contacts__info" href="tel:+78125556666">+7&nbsp;812&nbsp;555-66-66</a>
-    <p class="contacts__caption">Пишите:</p>
-    <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    <p class="contacts__caption">Приезжайте в гости:</p>
-    <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
-  </section>
-  <section class="map">
-    <h2 class="visually-hidden">Карта проезда</h2>
-    <!--TODO Место под карту-->
-  </section>
-</main>
+    <nav class="main-header__nav">
+      <ul class="main-header__list">
+        <li class="main-header__item">
+          <a href="index.html" class="main-header__link">Главная</a>
+        </li>
+        <li class="main-header__item">
+          <a href="photo.html" class="main-header__link">Фотографии</a>
+        </li>
+        <li class="main-header__item">
+          <a href="form.html" class="main-header__link">Конкурс</a>
+        </li>
+        <li class="main-header__item">
+          <a class="main-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="download">
+      <h2 class="visually-hidden">Скачать PINK</h2>
+      <div class="download__top-wrapper">
+        <img class="download__intro download__intro--mobile" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
+             alt="Скачать приложение">
+        <!--TODO Разобраться позже. Возможно тут 2хслойный бэкграунд нужен -->
+ <!--        <img class="download__intro download__intro--tablet" src="img/iphone-hand-tablet@1x.png" width="700" height="545"
+             alt="Скачать приложение">
+        <img class="download__intro download__intro--desktop" src="img/iphone-hand-desktop@1x.png" width="1050" height="645"
+             alt="Скачать приложение"> -->
+      </div>
+      <div class="download__lower-wrapper general-indent">
+        <p class="download__text download__text--tablet">Взгляните на жизнь иначе!</p>
+        <a class="button-oval button-oval--download" href="https://appstore.com">Скачать приложение</a>
+        <ul class="download__list">
+          <li class="download__item">
+            <a class="download__store-link" href="https://appstore.com">
+              <img class="download__img" src="img/logo-apple.svg" width="47" height="56" alt="iOS">
+            </a>
+          </li>
+          <li class="download__item">
+            <a class="download__store-link" href="https://play.google.com/store">
+              <img class="download__img" src="img/logo-android.svg" width="43" height="47" alt="Android">
+            </a>
+          </li>
+          <li class="download__item">
+            <a class="download__store-link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?rtc=1">
+              <img class="download__img" src="img/logo-microsoft.svg" width="44" height="41" alt="Windows mobile">
+            </a>
+          </li>
+        </ul>
+        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+    <section class="pink-info">
+      <h2 class="visually-hidden">Возможности PINK</h2>
+      <div class="pink-info__slogan-wrapper  general-indent">
+        <p class="pink-info__slogan">Устали от серости мегаполиса?</p>
+        <p class="pink-info__slogan">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="pink-info__list-wrapper">
+        <img class="pink-info__mobile" src="img/iphone-screen-3-tablet@1x.png" width="268" height="481" alt="PINK">
+        <ul class="pink-info__list">
+          <li class="pink-info__item">
+            <img class="pink-info__screen" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="PINK поднимает настроение">
+            <h3 class="pink-info__item-header">Поднимает настроение</h3>
+            <p class="pink-info__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
+          </li>
+          <li class="pink-info__item">
+            <img class="pink-info__screen" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="PINK поднимает настроение">
+            <h3 class="pink-info__item-header">Меняет мир вокруг</h3>
+            <p class="pink-info__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
+          </li>
+          <li class="pink-info__item">
+            <img class="pink-info__screen" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302" alt="PINK поднимает настроение">
+            <h3 class="pink-info__item-header">Заводит новых друзей</h3>
+            <p class="pink-info__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+              новых</p>
+          </li>
+        </ul>
+        <div class="pink-info__effect">
+          <img class="pink-info__clock" src="img/icon-timer.svg" width="298" height="345" alt="Эффект">
+          <div class="pink-info__text-wrapper">
+            <p class="pink-info__effect-caption">Эффект на 24 часа!</p>
+            <p class="pink-info__effect-text">Британские ученые провели исследования и доказали,
+              что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="pink-info__effect-link">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comments general-indent">
+      <h2 class="visually-hidden">Отзывы пользователей</h2>
+      <ul class="comments__list">
+        <li class="comments__item">
+          <h3 class="comments__caption">Николай Петров</h3>
+          <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+        <li class="comments__item visually-hidden">
+          <h3 class="comments__caption">Василий Иванов</h3>
+          <p class="comments__text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности
+            способствует подготовки и реализации форм развития. Товарищи! </p>
+        </li>
+        <li class="comments__item visually-hidden">
+          <h3 class="comments__caption">Сергей Сидоров</h3>
+          <p class="comments__text">Равным образом постоянный количественный рост и сфера нашей активности играет
+            важную роль в формировании системы обучения кадров, соответствует насущным потребностям.</p>
+        </li>
+      </ul>
+      <ul class="switches">
+        <li class="switches__item">
+          <button class="switches__button switches__button--active" type="button"><span class="visually-hidden">Первый отзыв</span>
+          </button>
+        </li>
+        <li class="switches__item">
+          <button class="switches__button" type="button"><span class="visually-hidden">Второй отзыв</span></button>
+        </li>
+        <li class="switches__item">
+          <button class="switches__button" type="button"><span class="visually-hidden">Третий отзыв</span></button>
+        </li>
+      </ul>
+    </section>
+    <section class="tariff">
+      <h2 class="visually-hidden">Тарифы</h2>
+      <ul class="tariff__list">
+        <li class="tariff__list-item">
+          <table class="tariff__table">
+            <tr class="tariff__table-row tariff__table-row--caption">
+              <td class="tariff__table-column tariff__table-column--caption">
+                <p class="tariff__table-caption">AAAAAAA</p>
+                <p class="tariff__table-caption-text">3,99 USD</p>
+              </td>
+            </tr>
+            <tr class="tariff__table-row">
+              <td class="tariff__table-column">
+                <p class="tariff__table-text">БББББББ</p>
+                <span class="tariff__table-yes-symbol" aria-label="Да"></span>
+              </td>
+            </tr>
+            <tr class="tariff__table-row">
+              <td class="tariff__table-column">
+                <p class="tariff__table-text">ВВВВВВВ</p>
+                <span class="tariff__table-yes-symbol" aria-label="Да"></span></td>
+            </tr>
+            <tr class="tariff__table-row">
+              <td class="tariff__table-column">
+                <p class="tariff__table-text">ГГГГГГГГГ</p>
+                <span class="tariff__table-no-symbol" aria-label="Да"></span>
+              </td>
+            </tr>
+          </table>
+        </li>
+        <li class="tariff__list-item">
+          <table class="tariff__table">
+            <tr class="tariff__table-row tariff__table-row--caption">
+              <td class="tariff__table-column tariff__table-column--caption tariff__table-column--hit">
+                <p class="tariff__table-caption">Стандарт</p>
+                <p class="tariff__table-caption-text">3,99 USD</p>
+              </td>
+            </tr>
+            <tr class="tariff__table-row">
+              <td class="tariff__table-column">
+                <p class="tariff__table-text">Розовый фильтр</p>
+                <span class="tariff__table-yes-symbol" aria-label="Да"></span>
+              </td>
+            </tr>
+            <tr class="tariff__table-row">
+              <td class="tariff__table-column">
+                <p class="tariff__table-text">Смайлики</p>
+                <span class="tariff__table-yes-symbol" aria-label="Да"></span></td>
+            </tr>
+            <tr class="tariff__table-row">
+              <td class="tariff__table-column">
+                <p class="tariff__table-text">Комментарии</p>
+                <span class="tariff__table-no-symbol" aria-label="Да"></span>
+              </td>
+            </tr>
+          </table>
+        </li>
+        <li class="tariff__list-item">
+          <table class="tariff__table">
+            <tr class="tariff__table-row tariff__table-row--caption">
+              <td class="tariff__table-column tariff__table-column--caption">
+                <p class="tariff__table-caption">AAAAAAA</p>
+                <p class="tariff__table-caption-text">3,99 USD</p>
+              </td>
+            </tr>
+            <tr class="tariff__table-row">
+              <td class="tariff__table-column">
+                <p class="tariff__table-text">БББББББ</p>
+                <span class="tariff__table-yes-symbol" aria-label="Да"></span>
+              </td>
+            </tr>
+            <tr class="tariff__table-row">
+              <td class="tariff__table-column">
+                <p class="tariff__table-text">ВВВВВВВ</p>
+                <span class="tariff__table-yes-symbol" aria-label="Да"></span></td>
+            </tr>
+            <tr class="tariff__table-row">
+              <td class="tariff__table-column">
+                <p class="tariff__table-text">ГГГГГГГГГ</p>
+                <span class="tariff__table-no-symbol" aria-label="Да"></span>
+              </td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+      <ul class="switches">
+        <li class="switches__item">
+          <button class="switches__button" type="button"><span class="visually-hidden">Первый тариф</span>
+          </button>
+        </li>
+        <li class="switches__item">
+          <button class="switches__button  switches__button--active" type="button"><span class="visually-hidden">Второй тариф</span>
+          </button>
+        </li>
+        <li class="switches__item">
+          <button class="switches__button" type="button"><span class="visually-hidden">Третий тариф</span></button>
+        </li>
+      </ul>
+    </section>
+    <section class="contacts general-indent">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+      <p class="contacts__caption">Звоните:</p>
+      <a class="contacts__info" href="tel:+78125556666">+7&nbsp;812&nbsp;555-66-66</a>
+      <p class="contacts__caption">Пишите:</p>
+      <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <p class="contacts__caption">Приезжайте в гости:</p>
+      <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <!--TODO Место под карту-->
+    </section>
+  </main>
+</div>
 </body>
 </html>

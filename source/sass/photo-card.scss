@@ -1,0 +1,74 @@
+.photo-card {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+  background-color: $background-dark;
+  box-sizing: border-box;
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: center;
+  //flex-wrap: wrap;
+}
+
+.photo-card__photo {
+  margin-bottom: 25px;
+  align-self: center;
+  flex-grow: 1;
+}
+
+.photo-card__photo--panorama {
+  margin-top: -24px;
+  margin-left: -20px;
+}
+
+.photo-card__user-comment {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-grow: 1;
+}
+
+.photo-card__user-name {
+  font-weight: 700;
+}
+
+.photo-card__comment-time {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.photo-card__like-count {
+  margin-left: 50px;
+  color: $color-for-attention;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: relative;
+  flex-grow: 1;
+
+  &::before {
+    position: absolute;
+    width: 13px;
+    height: 12px;
+    content: url("../img/icon-heart.svg");
+    top: 2px;
+    left: -32px;
+  }
+}
+
+.photo__text {
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+//.photo-card__photo-wrapper {
+//  width: 100%;
+//  display: flex;
+//  flex-direction: row;
+//  justify-content: center;
+//}
+
+.photo-card__comment-wrapper {
+
+}

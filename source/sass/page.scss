@@ -1,0 +1,15 @@
+.page {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: "Open Sans", "arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  @media(min-width: $tablet-width) {
+    width: 660px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 940px;
+  }
+}
