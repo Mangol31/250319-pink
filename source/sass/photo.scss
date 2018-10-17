@@ -12,12 +12,19 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
   }
 }
 
 .photo__item {
   @media(min-width: $tablet-width) {
     width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
   }
 
   @media(min-width: $desktop-width) {
