@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-<header class="main-header">
-  <div class="main-header__logo-wrapper general-indent">
-    <h1 class="main-header__logo">PINK</h1>
+<header class="main-header general-indent">
+  <div class="main-header__logo-wrapper">
+    <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
     <button class="main-header__menu-button" type="button" aria-label="Главное меню"></button>
   </div>
   <nav class="main-header__nav">
@@ -32,21 +32,30 @@
 <main>
   <section class="page-header ">
     <div class="page-header__upper-part">
-    <h2 class="page-header__caption">Форма отправки фото на конкурс</h2>
+      <h2 class="page-header__caption">Форма отправки фото на конкурс</h2>
     </div>
     <div class="page-header__lower-part">
-    <p class="page-header__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-      бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <p class="page-header__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+        бонусную карту! <span class="page-header__text-disappearing">Пожалуйста, заполните форму ниже:</span></p>
     </div>
   </section>
   <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
-    <fieldset class="competition-form-user">
-      <label class="competition-form-user__label" for="user-surname">Фамилия:</label>
-      <input class="competition-form-user__surname" id="user-surname" name="user-surname" type="text" placeholder="Укажите фамилию*" required>
-      <label class="competition-form-user__label" for="user-name">Имя:</label>
-      <input class="competition-form-user__name" id="user-name" name="user-name" type="text" placeholder="Введите ваше имя*" required>
-      <label class="competition-form-user__label" for="user-surname">Отчество:</label>
-      <input class="competition-form-user__patronymic" id="user-patronymic" name="user-patronymic" type="text" placeholder="Ну и отчество тоже*" required>
+    <fieldset class="competition-form__user">
+      <div class="competition-form__user-wrapper">
+        <label class="competition-form__user-label" for="user-surname">Фамилия:</label>
+        <input class="competition-form__user-surname" id="user-surname" name="user-surname" type="text"
+               placeholder="Укажите фамилию*" required>
+      </div>
+      <div class="competition-form__user-wrapper">
+        <label class="competition-form__user-label" for="user-name">Имя:</label>
+        <input class="competition-form__user-name" id="user-name" name="user-name" type="text"
+               placeholder="Введите ваше имя*" required>
+      </div>
+      <div class="competition-form__user-wrapper">
+        <label class="competition-form__user-label" for="user-surname">Отчество:</label>
+        <input class="competition-form__user-patronymic" id="user-patronymic" name="user-patronymic" type="text"
+               placeholder="Ну и отчество тоже*" required>
+      </div>
     </fieldset>
     <fieldset class="checkboxes">
       <legend class="checkboxes__label">Ваши безбашенные достижения в путешествии</legend>
@@ -77,11 +86,17 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="competition-form-contacts">
-      <label class="competition-form-contacts__label" for="user-tel">Номер телефона</label>
-      <input class="competition-form-contacts__user-tel" id="user-tel" name="user-tel" type="text" placeholder="Номер, пожалуйста">
-      <label class="competition-form-contacts__label" for="user-email">Адрес почты</label>
-      <input class="competition-form-contacts__user-email" id="user-email" name="user-email" type="email" placeholder="Введите почту*" required>
+    <fieldset class="competition-form__contacts">
+      <div class="competition-form__contacts-wrapper">
+        <label class="competition-form__contacts-label" for="user-tel">Номер телефона</label>
+        <input class="competition-form__contacts-user-tel" id="user-tel" name="user-tel" type="text"
+               placeholder="Номер, пожалуйста">
+      </div>
+      <div class="competition-form__contacts-wrapper">
+        <label class="competition-form__contacts-label" for="user-email">Адрес почты</label>
+        <input class="competition-form__contacts-user-email" id="user-email" name="user-email" type="email"
+               placeholder="Введите почту*" required>
+      </div>
     </fieldset>
     <fieldset class="radiobuttons">
       <legend class="radiobuttons__label">С каким приложением путешествовали?</legend>
@@ -100,16 +115,18 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="competition-form-emotions">
-      <label class="competition-form-emotions__label" for="user-emotions">Опишите свои эмоции </label>
-      <textarea class="competition-form-emotions__text-area" name="user-emotions" id="user-emotions"
+    <fieldset class="competition-form__emotions">
+      <legend class="competition-form__emotions-legend">Опишите свои эмоции </legend>
+      <textarea class="competition-form__emotions-text-area" name="user__emotions" id="user__emotions"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"
                 rows="3" cols="40" aria-label="Опишите ваши эмоции"></textarea>
     </fieldset>
-    <button class="button button--rectangle button--green" type="submit">Отправить форму</button>
-    <p class="competition-form__footnote">
-      <span class="competition-form__footnote--red">*</span>&nbsp;—&nbsp;обязательные поля
-    </p>
+    <div class="competition-form__button-wrapper">
+      <button class="button button--rectangle button--green" type="submit">Отправить форму</button>
+      <p class="competition-form__footnote">
+        <span class="competition-form__footnote--red">*</span>&nbsp;—&nbsp;обязательные поля
+      </p>
+    </div>
   </form>
 </main>
 <footer class="footer general-indent">
@@ -126,6 +143,7 @@
       <a class="social-buttons__link social-buttons--youtube" href="#" aria-label="YouTube"></a>
     </li>
   </ul>
+  св зштл
   <div class="footer__dev-wrapper">
     <p class="footer__text">Разработано</p>
     <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">

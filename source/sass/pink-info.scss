@@ -1,7 +1,7 @@
 .pink-info {
   width: 100%;
-  outline: 1px solid red;
 }
+
 .pink-info__slogan-wrapper {
   padding-top: 46px;
   padding-bottom: 30px;
@@ -111,14 +111,4 @@
   line-height: 24px;
   margin-bottom: 20px;
   color: $dark-on-white;
-}
-
-.pink-info__effect {
-  display: none;
-  order: 3;
-  @media(min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }

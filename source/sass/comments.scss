@@ -9,16 +9,27 @@
   margin-bottom: 43px;
   list-style: none;
 }
-
+.comments__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .comments__caption {
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+
+  @media(min-width: $tablet-width) {
+  order: 2;
+  }
 }
 
 .comments__text {
   text-align: center;
   color: $dark-on-white;
   line-height: 30px;
+  @media(min-width: $tablet-width) {
+    order: 1;
+  }
 }

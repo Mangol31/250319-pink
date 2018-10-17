@@ -5,27 +5,34 @@
   padding-bottom: 25px;
   background-color: $background-dark;
   box-sizing: border-box;
-  //display: flex;
-  //flex-direction: row;
-  //justify-content: center;
-  //flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  @media(min-width: $tablet-width) {
+    align-items: flex-start;
+  }
 }
 
+.photo-card__link {
+  margin: 0;
+  padding: 0;
+}
 .photo-card__photo {
   margin-bottom: 25px;
-  align-self: center;
-  flex-grow: 1;
+  width: 100%;
 }
 
 .photo-card__photo--panorama {
-  margin-top: -24px;
+  width: 100%;
   margin-left: -20px;
+  margin-right: -20px;
 }
 
 .photo-card__user-comment {
   padding-left: 15px;
   padding-right: 15px;
-  flex-grow: 1;
 }
 
 .photo-card__user-name {
@@ -43,7 +50,6 @@
   font-size: 12px;
   text-transform: uppercase;
   position: relative;
-  flex-grow: 1;
 
   &::before {
     position: absolute;
@@ -60,15 +66,4 @@
   padding: 0;
   line-height: 30px;
   text-align: center;
-}
-
-//.photo-card__photo-wrapper {
-//  width: 100%;
-//  display: flex;
-//  flex-direction: row;
-//  justify-content: center;
-//}
-
-.photo-card__comment-wrapper {
-
 }

@@ -5,10 +5,13 @@
 }
 
 .page-header__upper-part {
+  padding: 0;
+  margin: 0;
   padding-top: 36px;
   padding-bottom: 85px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: top;
 }
 
@@ -22,7 +25,7 @@
 
 .page-header__lower-part {
   padding-top: 55px;
-  padding-bottom: 55px;
+
   padding-left: 35px;
   padding-right: 35px;
   background-color: white;
@@ -31,4 +34,11 @@
 .page-header__text {
   line-height: 30px;
   color: $dark-on-white;
+}
+
+.page-header__text-disappearing {
+  display: none;
+  @media(min-width: $tablet-width) {
+    display: block;
+  }
 }

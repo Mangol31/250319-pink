@@ -1,6 +1,5 @@
 .download {
   min-height: 667px;
-  //padding-top: 110px;
   background-color: $menu-and-download-back;
   box-sizing: border-box;
 
@@ -33,29 +32,6 @@
     min-height: inherit;
   }
 }
-
-//.download__intro--mobile {
-//  @media(min-width: $tablet-width) {
-//    display: none;
-//  }
-//}
-//
-//.download__intro--tablet {
-//  display: none;
-//
-//  @media(min-width: $tablet-width) and (max-width: $desktop-width) {
-//    display: inline;
-//    z-index: 1;
-//  }
-//}
-//
-//.download__intro--desktop {
-//  display: none;
-//  @media(min-width: $desktop-width) {
-//    display: block;
-//  }
-//}
-
 
 .download__lower-wrapper {
   padding-top: 28px;
@@ -97,5 +73,3 @@
   display: block;
   }
 }
-
-

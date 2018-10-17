@@ -1,8 +1,21 @@
 .contacts {
   padding-top: 50px;
+  @media(min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.contacts__wrapper--grow-changer {
+  @media(min-width: $tablet-width) and (max-width: $desktop-width) {
+    flex-grow: 2;
+  }
 }
 
 .contacts__text {
+  margin: 0 auto;
   font-size: 24px;
   font-weight: 300;
   text-transform: uppercase;

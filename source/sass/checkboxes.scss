@@ -1,0 +1,6 @@
+.checkboxes {
+  order: 2;
+  @media(min-width: $tablet-width) {
+    order: 4;
+  }
+}

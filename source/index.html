@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-<div class="general-container">
+<!--<div class="general-container">-->
   <header class="main-header">
     <div class="main-header__logo-wrapper general-indent">
       <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22"
@@ -35,13 +35,14 @@
     <section class="download">
       <h2 class="visually-hidden">Скачать PINK</h2>
       <div class="download__top-wrapper">
-        <img class="download__intro download__intro--mobile" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
+        <img class="download__intro download__intro--mobile" src="img/iphone-hand-mobile@1x.png" width="258"
+             height="286"
              alt="Скачать приложение">
         <!--TODO Разобраться позже. Возможно тут 2хслойный бэкграунд нужен -->
- <!--        <img class="download__intro download__intro--tablet" src="img/iphone-hand-tablet@1x.png" width="700" height="545"
-             alt="Скачать приложение">
-        <img class="download__intro download__intro--desktop" src="img/iphone-hand-desktop@1x.png" width="1050" height="645"
-             alt="Скачать приложение"> -->
+        <!--        <img class="download__intro download__intro--tablet" src="img/iphone-hand-tablet@1x.png" width="700" height="545"
+                    alt="Скачать приложение">
+               <img class="download__intro download__intro--desktop" src="img/iphone-hand-desktop@1x.png" width="1050" height="645"
+                    alt="Скачать приложение"> -->
       </div>
       <div class="download__lower-wrapper general-indent">
         <p class="download__text download__text--tablet">Взгляните на жизнь иначе!</p>
@@ -76,33 +77,36 @@
         <img class="pink-info__mobile" src="img/iphone-screen-3-tablet@1x.png" width="268" height="481" alt="PINK">
         <ul class="pink-info__list">
           <li class="pink-info__item">
-            <img class="pink-info__screen" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="PINK поднимает настроение">
+            <img class="pink-info__screen" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302"
+                 alt="PINK поднимает настроение">
             <h3 class="pink-info__item-header">Поднимает настроение</h3>
             <p class="pink-info__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
               несколько кликов!</p>
           </li>
           <li class="pink-info__item">
-            <img class="pink-info__screen" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="PINK поднимает настроение">
+            <img class="pink-info__screen" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302"
+                 alt="PINK поднимает настроение">
             <h3 class="pink-info__item-header">Меняет мир вокруг</h3>
             <p class="pink-info__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
               усилить эффект</p>
           </li>
           <li class="pink-info__item">
-            <img class="pink-info__screen" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302" alt="PINK поднимает настроение">
+            <img class="pink-info__screen" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302"
+                 alt="PINK поднимает настроение">
             <h3 class="pink-info__item-header">Заводит новых друзей</h3>
             <p class="pink-info__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
               новых</p>
           </li>
         </ul>
-        <div class="pink-info__effect">
-          <img class="pink-info__clock" src="img/icon-timer.svg" width="298" height="345" alt="Эффект">
-          <div class="pink-info__text-wrapper">
-            <p class="pink-info__effect-caption">Эффект на 24 часа!</p>
-            <p class="pink-info__effect-text">Британские ученые провели исследования и доказали,
-              что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="pink-info__effect-link">Узнать больше об исследовании</a>
-          </div>
-        </div>
+      </div>
+    </section>
+    <section class="effect">
+      <img class="effect__clock" src="img/icon-timer.svg" width="298" height="345" alt="Эффект">
+      <div class="effect__text-wrapper">
+        <p class="effect__caption">Эффект на 24 часа!</p>
+        <p class="effect__text">Британские ученые провели исследования и доказали,
+          что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="effect__link" href="#">Узнать больше об исследовании</a>
       </div>
     </section>
     <section class="comments general-indent">
@@ -222,7 +226,7 @@
           </table>
         </li>
       </ul>
-      <ul class="switches">
+      <ul class="switches switches--hide">
         <li class="switches__item">
           <button class="switches__button" type="button"><span class="visually-hidden">Первый тариф</span>
           </button>
@@ -237,20 +241,28 @@
       </ul>
     </section>
     <section class="contacts general-indent">
+      
       <h2 class="visually-hidden">Контактная информация</h2>
       <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
-      <p class="contacts__caption">Звоните:</p>
-      <a class="contacts__info" href="tel:+78125556666">+7&nbsp;812&nbsp;555-66-66</a>
-      <p class="contacts__caption">Пишите:</p>
-      <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      <p class="contacts__caption">Приезжайте в гости:</p>
-      <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+      
+      <div class="contacts__wrapper">
+        <p class="contacts__caption">Звоните:</p>
+        <a class="contacts__info" href="tel:+78125556666">+7&nbsp;812&nbsp;555-66-66</a>
+      </div>
+      <div class="contacts__wrapper">
+        <p class="contacts__caption">Пишите:</p>
+        <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div class="contacts__wrapper contacts__wrapper--grow-changer">
+        <p class="contacts__caption">Приезжайте в гости:</p>
+        <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+      </div>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта проезда</h2>
       <!--TODO Место под карту-->
     </section>
   </main>
-</div>
+<!--</div>-->
 </body>
 </html>
