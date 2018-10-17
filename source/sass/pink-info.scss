@@ -37,7 +37,6 @@
   background-color: $background-dark;
   position: relative;
   overflow: hidden;
-
   @media(min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -47,9 +46,7 @@
 
   @media(min-width: $desktop-width) {
     flex-wrap: wrap;
-
   }
-
   &::after {
     position: absolute;
     width: 157px;
