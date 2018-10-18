@@ -114,6 +114,7 @@
       <ul class="comments__list">
         <li class="comments__item">
           <h3 class="comments__caption">Николай Петров</h3>
+          <p class="comments__job">25 лет, водитель трамвая</p>
           <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </li>
@@ -144,6 +145,29 @@
     <section class="tariff">
       <h2 class="visually-hidden">Тарифы</h2>
       <ul class="tariff__list">
+        <!--Скрываемая колонка -->
+        <li class="tariff__list-item tariff__list-item--hidden">
+          <table class="tariff__table">
+            <tr class="tariff__table-row tariff__table-row--caption">
+              <td class="tariff__table-column tariff__table--hidden-caption"></td>
+            </tr>
+            <tr class="tariff__table-row">
+              <td class="tariff__table-column">
+                <p class="tariff__table-text-hidden-column">Розовый фильтр</p>
+              </td>
+            </tr>
+            <tr class="tariff__table-row">
+              <td class="tariff__table-column">
+                <p class="tariff__table-text-hidden-column">Смайлики</p>
+            </tr>
+            <tr class="tariff__table-row">
+              <td class="tariff__table-column">
+                <p class="tariff__table-text-hidden-column">Комментарии</p>
+              </td>
+            </tr>
+          </table>
+        </li>
+        <!--Нормальные колонки -->
         <li class="tariff__list-item">
           <table class="tariff__table">
             <tr class="tariff__table-row tariff__table-row--caption">
@@ -263,6 +287,26 @@
       <!--TODO Место под карту-->
     </section>
   </main>
-<!--</div>-->
+<footer class="footer general-indent footer--mobile">
+  <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+  <!-- TODO Спрятать название соцкнопок при стилизации -->
+  <ul class="social-buttons">
+    <li class="footer__item">
+      <a class="social-buttons__link social-buttons--twitter" href="#" aria-label="Twitter"></a>
+    </li>
+    <li class="footer__item">
+      <a class="social-buttons__link social-buttons--fb" href="#" aria-label="FaceBook"></a>
+    </li>
+    <li class="footer__item">
+      <a class="social-buttons__link social-buttons--youtube" href="#" aria-label="YouTube"></a>
+    </li>
+  </ul>
+  <div class="footer__dev-wrapper">
+    <p class="footer__text">Разработано</p>
+    <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+      <img class="footer__academy-logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+    </a>
+  </div>
+</footer>
 </body>
 </html>

@@ -3,4 +3,7 @@
   @media(min-width: $tablet-width) {
     order: 2;
   }
+  @media(min-width: $desktop-width) {
+    width: 45%;
+  }
 }

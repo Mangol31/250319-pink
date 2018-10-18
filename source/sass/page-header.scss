@@ -35,10 +35,16 @@
   line-height: 30px;
   color: $dark-on-white;
 }
-
 .page-header__text-disappearing {
   display: none;
   @media(min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.page-header__text br {
+  display: none;
+  @media(min-width: $tablet-width) and (max-width: $tablet-width) {
     display: block;
   }
 }

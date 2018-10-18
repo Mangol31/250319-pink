@@ -21,3 +21,8 @@
   justify-content: space-around;
   align-items: center;
 }
+@media(max-width: $tablet-width) {
+  .footer--mobile {
+  display: none;
+  }
+}
