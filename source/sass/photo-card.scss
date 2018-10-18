@@ -5,15 +5,28 @@
   padding-bottom: 25px;
   background-color: $background-dark;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media(min-width: $tablet-width) {
+    align-items: flex-start;
+  }
 }
 
+.photo-card__link {
+  margin: 0;
+  padding: 0;
+}
 .photo-card__photo {
   margin-bottom: 25px;
+  width: 100%;
 }
 
 .photo-card__photo--panorama {
-  margin-top: -24px;
+  width: 100%;
   margin-left: -20px;
+  margin-right: -20px;
 }
 
 .photo-card__user-comment {
@@ -36,7 +49,6 @@
   font-size: 12px;
   text-transform: uppercase;
   position: relative;
-
   &::before {
     position: absolute;
     width: 13px;

@@ -7,6 +7,12 @@
   list-style: none;
 }
 
+@media(min-width: $tablet-width) {
+  .switches--hide {
+    display: none;
+  }
+}
+
 .switches__item {
   margin-right: 19px;
 }
@@ -16,10 +22,11 @@
 }
 
 .switches__button {
-  width: 9px;
-  height: 9px;
-  border: 2px solid $grey-in-various-elements;
-  //border-radius: 100%;
+  padding:0;
+  width: 6px;
+  height: 6px;
+  border: 3px solid $grey-in-various-elements;
+  border-radius: 50px;
   background-color: $slider-swithes-light;
 }
 

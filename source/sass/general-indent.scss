@@ -1,5 +1,6 @@
 .general-indent {
-  width: 280px;
-  //padding-left: 20px;
-  //padding-right: 20px;
+  padding: 0 20px;
+  @media(min-width: $desktop-width) {
+    padding: 0 10px;
+  }
 }

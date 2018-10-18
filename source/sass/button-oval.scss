@@ -1,0 +1,45 @@
+.button-oval {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 17px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  border-radius: 100px;
+}
+
+.button-oval--download {
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  margin-bottom: 32px;
+}
+
+.button-oval--photo-editor {
+  color: #d22856;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border: 3px solid #d22856;
+  background-color: $background-dark;
+}
+
+.button-oval--disabled {
+  color: $dark-in-various-elements;
+  border: 3px solid $dark-in-various-elements;
+  opacity: 0.1;
+  margin-top: 12px;
+  @media(min-width: $tablet-width) {
+    margin-top: 24px;
+  }
+  @media(min-width: $desktop-width) {
+    margin-top: 0;
+  }
+
+}

@@ -3,7 +3,37 @@
 }
 
 .photo__list {
-  margin:0;
+  margin: 0;
   padding: 0;
   list-style: none;
+
+  @media(min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+  }
+}
+
+.photo__item {
+  @media(min-width: $tablet-width) {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 30%;
+  }
+}
+
+.photo__item--panorama {
+  @media(min-width: $tablet-width) {
+    width: 100%;
+  }
 }

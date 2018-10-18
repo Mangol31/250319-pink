@@ -1,0 +1,20 @@
+.checkboxes {
+  order: 2;
+  @media(min-width: $tablet-width) {
+    order: 4;
+  }
+  @media(min-width: $desktop-width) {
+    width: 100%;
+    order: 4;
+  }
+}
+
+.checkboxes__list {
+  list-style: none;
+  @media(min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

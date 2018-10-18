@@ -1,0 +1,111 @@
+.competition-form {
+  display: flex;
+  flex-direction: column;
+  @media(min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.competition-form__user {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: none;
+  @media(min-width: $tablet-width) {
+    flex-wrap: wrap;
+  }
+  @media(min-width: $desktop-width) {
+    width: 45%;
+  }
+}
+
+.competition-form__user-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  @media(min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.competition-form__user-surname,
+.competition-form__user-name,
+.competition-form__user-patronymic {
+  width: 100%;
+  @media(min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
+.competition-form__contacts {
+  order: 3;
+  width: 100%;
+  @media(min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.competition-form__contacts-wrapper {
+  display: flex;
+  @media(min-width: $tablet-width) {
+    flex-direction: column;
+  }
+  @media(min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.competition-form__contacts-phone-wrapper {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.competition-form__contacts-adress-wrapper {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.competition-form__contacts-label {
+  @media(min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.competition-form__emotions {
+  order: 5;
+  display: flex;
+  flex-direction: column;
+  @media(max-width: $tablet-width) {
+    border: none;
+  }
+  @media(min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.competition-form__emotions-text-area {
+  width: 100%;
+}
+.competition-form__button-wrapper {
+  order: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media(min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
