@@ -8,13 +8,15 @@
 </head>
 <body class="page">
 <!--<div class="general-container">-->
-  <header class="main-header">
-    <div class="main-header__logo-wrapper general-indent">
+  <header class="main-header general-indent">
+    <div class="main-header__logo-wrapper">
       <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22"
            alt="PINK">
-      <button class="main-header__menu-button" type="button" aria-label="Главное меню"></button>
+      <button class="main-header__menu-button visually-hidden" type="button" aria-label="Главное меню"></button>
+      <button class="main-header__close-menu-button visually-hidden" type="button" aria-label="Закрыть меню"></button>
+      
     </div>
-    <nav class="main-header__nav">
+    <!--<nav class="main-header__nav">-->
       <ul class="main-header__list">
         <li class="main-header__item">
           <a href="index.html" class="main-header__link">Главная</a>
@@ -29,20 +31,14 @@
           <a class="main-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
       </ul>
-    </nav>
+    <!--</nav>-->
   </header>
   <main>
     <section class="download">
       <h2 class="visually-hidden">Скачать PINK</h2>
       <div class="download__top-wrapper">
-        <img class="download__intro download__intro--mobile" src="img/iphone-hand-mobile@1x.png" width="258"
-             height="286"
+        <img class="download__intro download__intro--mobile" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
              alt="Скачать приложение">
-        <!--TODO Разобраться позже. Возможно тут 2хслойный бэкграунд нужен -->
-        <!--        <img class="download__intro download__intro--tablet" src="img/iphone-hand-tablet@1x.png" width="700" height="545"
-                    alt="Скачать приложение">
-               <img class="download__intro download__intro--desktop" src="img/iphone-hand-desktop@1x.png" width="1050" height="645"
-                    alt="Скачать приложение"> -->
       </div>
       <div class="download__lower-wrapper general-indent">
         <p class="download__text download__text--tablet">Взгляните на жизнь иначе!</p>
@@ -252,7 +248,7 @@
       </ul>
       <ul class="switches switches--hide">
         <li class="switches__item">
-          <button class="switches__button" type="button"><span class="visually-hidden">Первый тариф</span>
+          <button class="switches__button switches__button--grey-background" type="button"><span class="visually-hidden">Первый тариф</span>
           </button>
         </li>
         <li class="switches__item">
@@ -260,7 +256,7 @@
           </button>
         </li>
         <li class="switches__item">
-          <button class="switches__button" type="button"><span class="visually-hidden">Третий тариф</span></button>
+          <button class="switches__button switches__button--grey-background" type="button"><span class="visually-hidden">Третий тариф</span></button>
         </li>
       </ul>
     </section>
@@ -271,7 +267,7 @@
       
       <div class="contacts__wrapper">
         <p class="contacts__caption">Звоните:</p>
-        <a class="contacts__info" href="tel:+78125556666">+7&nbsp;812&nbsp;555-66-66</a>
+        <a class="contacts__info" href="tel:+78125556666">+7&nbsp;(812)&nbsp;555-66-66</a>
       </div>
       <div class="contacts__wrapper">
         <p class="contacts__caption">Пишите:</p>
@@ -284,7 +280,7 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта проезда</h2>
-      <!--TODO Место под карту-->
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adee2af3dec44802dd867f8616ef543101f4205f1ca413c591e0546fe6b30eec2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
     </section>
   </main>
 <footer class="footer general-indent footer--mobile">

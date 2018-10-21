@@ -1,5 +1,9 @@
 .checkboxes {
+  border: none;
   order: 2;
+  padding-top: 20px;
+  margin-bottom: 20px;
+
   @media(min-width: $tablet-width) {
     order: 4;
   }
@@ -10,11 +14,88 @@
 }
 
 .checkboxes__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  padding-top: 17px;
   @media(min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
+}
+
+.checkboxes__item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 52px;
+  padding-left: 55px;
+}
+
+.checkboxes__label {
+  color: $color-for-attention;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+/*---------------------------------*/
+.checkboxes__checkbox {
+  padding: 0;
+  margin: 0;
+  //position: relative;
+}
+
+.checkbox__label {
+  color: $dark-in-various-elements;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  //text-indent: 30px;
+}
+//.checkboxes__checkbox:not(:disabled) + .checkbox__label:hover::before {
+//  opacity: 1;
+//}
+//
+//.checkboxes__checkbox:disabled + .checkbox__label {
+//  opacity: 0.1;
+//}
+
+.checkboxes__checkbox + .checkbox__label::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  //background-image: url("../img/icon-no.svg");
+  //background-repeat: no-repeat;
+  //background-position: left center;
+  //opacity: 0.4;
+  top: -7px;
+  left: -67px;
+}
+
+.checkboxes__checkbox:checked + .checkbox__label::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: -7px;
+  left: -67px;
+  opacity: 0.4;
+}
+
+.checkboxes__checkbox:checked:hover + .checkbox__label:hover::after {
+  opacity: 1;
 }

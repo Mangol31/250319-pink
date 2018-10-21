@@ -1,5 +1,6 @@
 .photo-editor {
   padding-top: 20px;
+  padding-bottom: 40px;
   background-color: $background-dark;
 }
 
@@ -13,16 +14,18 @@
 }
 
 .photo-editor__image {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .photo-editor__list {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 49px;
-  list-style: none;
   display: flex;
   flex-direction: row;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  list-style: none;
   justify-content: space-around;
   align-items: center;
   @media(min-width: $tablet-width) {
@@ -38,6 +41,7 @@
     justify-content: space-between;
   }
 }
+
 .photo-editor__button-wrapper {
   display: flex;
   flex-direction: column;
@@ -55,50 +59,50 @@
 .photo-editor__button-wrapper:first-child {
   margin-bottom: 12px;
 }
+
 .photo-editor__button {
   width: 44px;
   height: 44px;
-  border: none;
   cursor: pointer;
+  border: none;
 }
 
 .photo-editor__button--crop {
   position: relative;
   background-color: inherit;
-
   &::after {
     position: absolute;
     top: -2px;
     left: -2px;
-    content: url("../img/icon-editor-crop.svg");
+
+    content: url('../img/icon-editor-crop.svg');
   }
 }
 
 .photo-editor__button--gamma {
   position: relative;
   background-color: inherit;
-
   &::after {
     position: absolute;
     top: -1px;
     left: -2px;
-    content: url("../img/icon-editor-fill.svg");
+    content: url('../img/icon-editor-fill.svg');
   }
 }
 
 .photo-editor__button--contrast {
   position: relative;
   background-color: inherit;
-
   &::after {
     position: absolute;
     top: 5px;
     left: 6px;
-    content: url("../img/icon-editor-contrast.svg");
+    content: url('../img/icon-editor-contrast.svg');
   }
 }
 
 .photo-editor__range {
+  margin-bottom: 32px;
   border: none;
 }
 
@@ -123,17 +127,17 @@
 .photo-editor__scale {
   width: 240px;
   height: 2px;
-  background: $dark-on-white;
-  margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  margin-left: auto;
+  background: $dark-on-white;
 }
 
 .photo-editor__toggle {
   position: absolute;
-  top: -8px;
-  width: 14px;
-  height: 14px;
+  top: -6px;
+  width: 10px;
+  height: 10px;
   cursor: pointer;
   border: 2px solid $color-for-attention;
   border-radius: 50%;
@@ -147,5 +151,5 @@
 }
 
 .photo-editor__toggle--position {
-  left: 210px;
+  left: 200px;
 }

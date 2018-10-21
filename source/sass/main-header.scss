@@ -9,15 +9,13 @@
 }
 
 .main-header__logo-wrapper {
-  padding-top: 32px;
+  //display: block;
+  padding-top: 22px;
   padding-bottom: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-}
-
-.main-header__logo {
 }
 
 .main-header__menu-button {
@@ -34,19 +32,36 @@
 
 }
 
+.main-header__close-menu-button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  background-image: url("../img/icon-menu-cross.svg");
+  background-color: inherit;
+  @media(min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .main-header__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .main-header__item {
   width: auto;
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
+  //padding-left: 20px;
+  //padding-right: 20px;
   box-sizing: border-box;
 }
 

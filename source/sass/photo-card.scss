@@ -2,7 +2,7 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   background-color: $background-dark;
   box-sizing: border-box;
   display: flex;
@@ -14,28 +14,66 @@
   }
 }
 
-.photo-card__link {
-  margin: 0;
-  padding: 0;
+.photo-card--panorama {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "ПАНОРАМА ДНЯ";
+    width: 140px;
+    height: 36px;
+    background-color: $attention-panorama-background;
+    top: 0;
+    right: 0;
+    color: $white-in-various-elements;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
+.photo-card__link--panorama {
+}
+
 .photo-card__photo {
-  margin-bottom: 25px;
+  margin-bottom: 12px;
   width: 100%;
 }
 
 .photo-card__photo--panorama {
-  width: 100%;
-  margin-left: -20px;
-  margin-right: -20px;
+  @media(max-width: $tablet-width) {
+    min-width: 320px;
+    height: auto;
+    position: absolute;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }
 
-.photo-card__user-comment {
-  padding-left: 15px;
-  padding-right: 15px;
+.photo-card__inscription-wrapper {
+  //margin-left: 20px;
+  //margin-right: 20px;
+  margin-top: 155px;
+  @media(min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .photo-card__user-name {
+  margin: 0;
+  padding: 0;
+  padding-left: 18px;
+  padding-right: 18px;
   font-weight: 700;
+}
+
+.photo-card__user--panorana {
+  @media(min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .photo-card__comment-time {
@@ -43,7 +81,24 @@
   font-weight: 300;
 }
 
+.photo-card__user-comment {
+  margin: 0;
+  padding: 0;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-bottom: 10px;
+}
+
+.photo-card__comment--panorama {
+  @media(min-width: $tablet-width) {
+    order: 3;
+    flex-grow: 2;
+  }
+}
+
 .photo-card__like-count {
+  margin: 0;
+  padding: 0;
   margin-left: 50px;
   color: $color-for-attention;
   font-size: 12px;
@@ -56,6 +111,13 @@
     content: url("../img/icon-heart.svg");
     top: 2px;
     left: -32px;
+  }
+}
+
+.photo-card__like-count--panorama {
+  @media(min-width: $tablet-width) {
+    order: 2;
+    outline: 1px solid blue;
   }
 }
 

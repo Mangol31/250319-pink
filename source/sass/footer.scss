@@ -1,9 +1,11 @@
 .footer {
-  padding-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  box-sizing: border-box;
   @media(min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -16,13 +18,22 @@
 }
 
 .footer__dev-wrapper {
+  margin: 0;
+  padding: 0;
+  min-width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  outline: 1px solid red;
 }
 @media(max-width: $tablet-width) {
   .footer--mobile {
   display: none;
   }
+}
+
+.footer__academy-logo {
+  width: 27px;
+  height: 34px;
 }

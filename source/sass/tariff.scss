@@ -1,6 +1,6 @@
 .tariff {
   overflow: hidden;
-  padding-top: 67px;
+  padding-top: 87px;
   padding-bottom: 40px;
   background-color: $background-dark;
 }
@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   list-style: none;
 }
 
@@ -31,7 +31,7 @@
   margin: 0;
   padding: 0;
   width: 276px;
-  height: 59px;
+  min-height: 61px;
   border: 1px solid $grey-in-various-elements;
   padding-left: 22px;
   padding-right: 22px;
@@ -40,18 +40,20 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+
   @media(min-width: $tablet-width) {
     width: auto;
   }
 }
 
 .tariff__table-column--caption {
-  min-height: 94px;
+  min-height: 98px;
+  padding-top: 16px;
   background-color: $dark-in-various-elements;
   border: 2px solid $dark-in-various-elements;
   color: $grey-in-various-elements;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   text-transform: uppercase;
 }
 
@@ -86,9 +88,15 @@
 }
 
 .tariff__table-caption {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  //text-align: center;
   font-size: 18px;
   font-weight: 700;
+  line-height: 30px;
+  //margin-bottom: 0;
+
+
   @media(min-width: $tablet-width) {
     padding-left: 35px;
     padding-right: 35px;
@@ -100,17 +108,20 @@
 }
 
 .tariff__table-caption-text {
+  margin: 0;
+  padding: 0;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
   text-transform: none;
+  line-height: 30px;
 }
 
 .tariff__table-text {
   color: #283645;
   font-size: 14px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 24px;
   text-transform: uppercase;
   @media(min-width: $tablet-width) {
     display: none;
@@ -131,8 +142,8 @@
     width: 31px;
     height: 21px;
     content: url("../img/icon-yes.svg");
-    left: -30px;
-    top: -11px;
+    left: -21px;
+    top: -6px;
     @media(min-width: $tablet-width) {
       left: 41px;
     }
@@ -146,8 +157,8 @@
     width: 27px;
     height: 26px;
     content: url("../img/icon-no.svg");
-    left: -34px;
-    top: -13px;
+    left: -24px;
+    top: -16px;
     @media(min-width: $tablet-width) {
       left: 41px;
     }

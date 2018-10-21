@@ -1,10 +1,15 @@
 .photo {
+  padding: 0 auto;
+  margin: 0 auto;
+  padding-bottom: 43px;
   box-sizing: border-box;
 }
 
 .photo__list {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
+  padding-top: 16px;
   list-style: none;
 
   @media(min-width: $tablet-width) {
@@ -18,6 +23,8 @@
 }
 
 .photo__item {
+  margin: 0;
+  padding: 0;
   @media(min-width: $tablet-width) {
     width: 45%;
     display: flex;

@@ -9,25 +9,26 @@
 <body class="page">
 <header class="main-header general-indent">
   <div class="main-header__logo-wrapper">
-    <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-    <button class="main-header__menu-button" type="button" aria-label="Главное меню"></button>
+    <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+         alt="PINK">
+    <button class="main-header__menu-button visually-hidden" type="button" aria-label="Главное меню"></button>
+    <button class="main-header__close-menu-button visually-hidden" type="button" aria-label="Закрыть меню"></button>
+  
   </div>
-  <nav class="main-header__nav">
-    <ul class="main-header__list">
-      <li class="main-header__item">
-        <a href="index.html" class="main-header__link">Главная</a>
-      </li>
-      <li class="main-header__item">
-        <a href="photo.html" class="main-header__link">Фотографии</a>
-      </li>
-      <li class="main-header__item">
-        <a href="form.html" class="main-header__link">Конкурс</a>
-      </li>
-      <li class="main-header__item">
-        <a class="main-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </li>
-    </ul>
-  </nav>
+  <ul class="main-header__list">
+    <li class="main-header__item">
+      <a href="index.html" class="main-header__link">Главная</a>
+    </li>
+    <li class="main-header__item">
+      <a href="photo.html" class="main-header__link">Фотографии</a>
+    </li>
+    <li class="main-header__item">
+      <a href="form.html" class="main-header__link">Конкурс</a>
+    </li>
+    <li class="main-header__item">
+      <a class="main-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </li>
+  </ul>
 </header>
 <main>
   <section class="page-header ">
@@ -35,16 +36,14 @@
       <h2 class="page-header__caption">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </div>
     <div class="page-header__lower-part">
-      <p class="page-header__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-        бонусную карту! <br> <span class="page-header__text-disappearing">Пожалуйста, заполните форму ниже:</span></p>
+      <p class="page-header__text">Поделитесь своей историей и получите <br>шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <br> <span class="page-header__text-disappearing">Пожалуйста, заполните форму ниже:</span></p>
     </div>
   </section>
   <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
     <fieldset class="competition-form__user">
       <div class="competition-form__user-wrapper">
         <label class="competition-form__user-label" for="user-surname">Фамилия:</label>
-        <input class="competition-form__user-surname" id="user-surname" name="user-surname" type="text"
-               placeholder="Укажите фамилию*" required>
+        <input class="competition-form__user-surname" id="user-surname" name="user-surname" type="text" placeholder="Укажите фамилию*" required>
       </div>
       <div class="competition-form__user-wrapper">
         <label class="competition-form__user-label" for="user-name">Имя:</label>
@@ -61,28 +60,28 @@
       <legend class="checkboxes__label">Ваши безбашенные достижения в путешествии</legend>
       <ul class="checkboxes__list">
         <li class="checkboxes__item">
-          <input type="checkbox" class="checkboxes__checkbox" name="selfi" id="selfi" checked>
-          <label for="selfi">Сделал селфи с акулой</label>
+          <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="selfi" id="selfi" checked>
+          <label class="checkbox__label" for="selfi">Сделал селфи с акулой</label>
         </li>
         <li class="checkboxes__item">
-          <input type="checkbox" class="checkboxes__checkbox" name="beach" id="beach" checked>
-          <label for="beach">Обгорел на пляже</label>
+          <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="beach" id="beach" checked>
+          <label class="checkbox__label" for="beach">Обгорел на пляже</label>
         </li>
         <li class="checkboxes__item">
-          <input type="checkbox" class="checkboxes__checkbox" name="norris" id="norris">
-          <label for="norris">Видел Чака Норриса</label>
+          <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="norris" id="norris">
+          <label class="checkbox__label" for="norris">Видел Чака Норриса</label>
         </li>
         <li class="checkboxes__item">
-          <input type="checkbox" class="checkboxes__checkbox" name="souvenir" id="souvenir">
-          <label for="souvenir">Накупил сувениров</label>
+          <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="souvenir" id="souvenir">
+          <label class="checkbox__label" for="souvenir">Накупил сувениров</label>
         </li>
         <li class="checkboxes__item">
-          <input type="checkbox" class="checkboxes__checkbox" name="tower" id="tower" checked>
-          <label for="tower">Удержал башню</label>
+          <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="tower" id="tower" checked>
+          <label class="checkbox__label" for="tower">Удержал башню</label>
         </li>
         <li class="checkboxes__item">
-          <input type="checkbox" class="checkboxes__checkbox" name="hotel" id="hotel">
-          <label for="hotel">Разгромил отель</label>
+          <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
+          <label class="checkbox__label" for="hotel">Разгромил отель</label>
         </li>
       </ul>
     </fieldset>

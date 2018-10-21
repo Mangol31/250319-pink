@@ -8,27 +8,28 @@
 </head>
 <body class="page">
 <!--<div class="general-container">-->
-<header class="main-header">
-  <div class="main-header__logo-wrapper general-indent">
-    <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-    <button class="main-header__menu-button" type="button" aria-label="Главное меню"></button>
+<header class="main-header general-indent">
+  <div class="main-header__logo-wrapper">
+    <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+         alt="PINK">
+    <button class="main-header__menu-button visually-hidden" type="button" aria-label="Главное меню"></button>
+    <button class="main-header__close-menu-button visually-hidden" type="button" aria-label="Закрыть меню"></button>
+  
   </div>
-  <nav class="main-header__nav">
-    <ul class="main-header__list">
-      <li class="main-header__item">
-        <a href="index.html" class="main-header__link">Главная</a>
-      </li>
-      <li class="main-header__item">
-        <a href="photo.html" class="main-header__link">Фотографии</a>
-      </li>
-      <li class="main-header__item">
-        <a href="form.html" class="main-header__link">Конкурс</a>
-      </li>
-      <li class="main-header__item">
-        <a class="main-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </li>
-    </ul>
-  </nav>
+  <ul class="main-header__list">
+    <li class="main-header__item">
+      <a href="index.html" class="main-header__link">Главная</a>
+    </li>
+    <li class="main-header__item">
+      <a href="photo.html" class="main-header__link">Фотографии</a>
+    </li>
+    <li class="main-header__item">
+      <a href="form.html" class="main-header__link">Конкурс</a>
+    </li>
+    <li class="main-header__item">
+      <a class="main-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </li>
+  </ul>
 </header>
 <main>
   <section class="page-header">
@@ -41,20 +42,22 @@
     </div>
   </section>
   <section class="photo">
-    <h2 class="visually-hidden">Раздел с фотографиями</h2>
+    <!--<h2 class="visually-hidden">Раздел с фотографиями</h2>-->
     <ul class="photo__list">
       <li class="photo__item photo__item--panorama">
-        <article class="photo-card">
-          <h3 class="visually-hidden">Фотография от Анны</h3>
-          <a class="photo-card__link" href="">
+        <article class="photo-card photo-card--panorama">
+          <a class="photo-card__link photo-card__link--panorama" href="#">
             <img class="photo-card__photo photo-card__photo--panorama" src="img/panorama-mobile@1x.jpg" width="320"
                  height="137" alt="Панорма дня">
           </a>
-          <p class="photo-card__user-comment"><b class="photo-card__user-name">Анна</b>&nbsp;<span
+          <h3 class="visually-hidden">Фотография от Анны</h3>
+          <div class="photo-card__inscription-wrapper">
+          <p class="photo-card__user-name photo-card__user--panorana">Анна&nbsp;<span
             class="photo-card__comment-time">(5 минут назад) </span></p>
-          <p class="photo-card__user-comment">Прыгать или нет? Напишите в коментарии свой совет и
+          <p class="photo-card__user-comment photo-card__comment--panorama">Прыгать или нет? Напишите в коментарии свой совет и
             смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <p class="photo-card__like-count">Нравится:&nbsp;215</p>
+          <p class="photo-card__like-count photo-card__like-count--panorama">Нравится:&nbsp;215</p>
+          </div>
         </article>
       </li>
       <li class="photo__item">
@@ -64,7 +67,7 @@
             <img class="photo-card__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180"
                  alt="Фото от Левона">
           </a>
-          <p class="photo-card__user-comment"><b class="photo-card__user-name">Левон</b>&nbsp;<span
+          <p class="photo-card__user-name">Левон&nbsp;<span
             class="photo-card__comment-time">(5 часов назад) </span></p>
           <p class="photo-card__user-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <p class="photo-card__like-count">Нравится:&nbsp;356</p>
@@ -77,7 +80,7 @@
             <img class="photo-card__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
                  alt="Фото от Антона">
           </a>
-          <p class="photo-card__user-comment"><b class="photo-card__user-name">Антон</b>&nbsp;<span
+          <p class="photo-card__user-name">Антон&nbsp;<span
             class="photo-card__comment-time">(12 часов назад) </span></p>
           <p class="photo-card__user-comment">Соседи будут рады!</p>
           <p class="photo-card__like-count">Нравится:&nbsp;665</p>
@@ -90,7 +93,7 @@
             <img class="photo-card__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
                  alt="Фото от Бориса">
           </a>
-          <p class="photo-card__user-comment"><b class="photo-card__user-name">Борис</b>&nbsp;<span
+          <p class="photo-card__user-name">Борис&nbsp;<span
             class="photo-card__comment-time">(20 часов назад) </span></p>
           <p class="photo-card__user-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <p class="photo-card__like-count">Нравится:&nbsp;215</p>
@@ -103,7 +106,7 @@
             <img class="photo-card__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
                  alt="Фото от Сергея">
           </a>
-          <p class="photo-card__user-comment"><b class="photo-card__user-name">Сергей</b>&nbsp;<span
+          <p class="photo-card__user-name">Сергей&nbsp;<span
             class="photo-card__comment-time">(25 часов назад) </span></p>
           <p class="photo-card__user-comment">Самая кубанская в мире!</p>
           <p class="photo-card__like-count">Нравится:&nbsp;4</p>
@@ -116,7 +119,7 @@
             <img class="photo-card__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
                  alt="Фото от Максима">
           </a>
-          <p class="photo-card__user-comment"><b class="photo-card__user-name">Максим</b>&nbsp;<span
+          <p class="photo-card__user-name">Максим&nbsp;<span
             class="photo-card__comment-time">(50 часов назад) </span></p>
           <p class="photo-card__user-comment">Где снег-то?</p>
           <p class="photo-card__like-count">Нравится:&nbsp;150</p>
@@ -129,7 +132,7 @@
             <img class="photo-card__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
                  alt="Фото от Надежды">
           </a>
-          <p class="photo-card__user-comment"><b class="photo-card__user-name">Надежда</b>&nbsp;<span
+          <p class="photo-card__user-name">Надежда&nbsp;<span
             class="photo-card__comment-time">(46 часов назад) </span></p>
           <p class="photo-card__user-comment">Всем GM и взаимные лайки!</p>
           <p class="photo-card__like-count">Нравится:&nbsp;2560</p>
@@ -139,7 +142,7 @@
     <p class="photo__text">Затмите их всех!</p>
     <p class="photo__text">Выкладывайте все, что накопилось в телефоне!</p>
   </section>
-  <section class="photo-editor">
+  <section class="photo-editor general-indent">
     <h2 class="visually-hidden">Фоторедактор</h2>
     <form class="photo-editor__form" action="https://echo.htmlacademy.ru" method="post">
       <!-- TODO Тут какой-то другой тэг видимо должен быть -->
@@ -210,13 +213,13 @@
   <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
   <!-- TODO Спрятать название соцкнопок при стилизации -->
   <ul class="social-buttons">
-    <li class="footer__item">
+    <li class="social-buttons__item">
       <a class="social-buttons__link social-buttons--twitter" href="#" aria-label="Twitter"></a>
     </li>
-    <li class="footer__item">
+    <li class="social-buttons__item">
       <a class="social-buttons__link social-buttons--fb" href="#" aria-label="FaceBook"></a>
     </li>
-    <li class="footer__item">
+    <li class="social-buttons__item">
       <a class="social-buttons__link social-buttons--youtube" href="#" aria-label="YouTube"></a>
     </li>
   </ul>
