@@ -3,46 +3,74 @@
   @media(min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    margin-bottom: -18px;
+    padding-top: 43px;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
 
 .contacts__wrapper--grow-changer {
   @media(min-width: $tablet-width) and (max-width: $desktop-width) {
-    flex-grow: 2;
+    flex-grow: 3;
   }
 }
 
 .contacts__text {
-  margin: 0 auto;
   font-size: 24px;
-  line-height: 28px;
   font-weight: 300;
-  //text-transform: uppercase;
-  text-align: center;
+  line-height: 28px;
+  margin: 0 auto;
   margin-bottom: 36px;
+  text-align: center;
+  @media(min-width: $tablet-width) {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 47px;
+    width: 100%;
+    margin-bottom: 45px;
+  }
+}
+
+.contacts__wrapper {
+  @media(min-width: $tablet-width) {
+  }
+}
+
+.contacts__wrapper--indent {
+  @media(min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-right: 102px;
+    padding-left: 17px;
+  }
 }
 
 .contacts__caption {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 700;
+
   text-align: center;
-  //margin-bottom: 3px;
+  @media(min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .contacts__info {
-  margin: 0;
-  padding: 0;
-  display: block;
   font-size: 24px;
-  line-height: 32px;
   font-weight: 300;
-  color: $color-for-attention;
+  line-height: 32px;
+  display: block;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
   text-align: center;
   text-decoration: none;
-  margin-bottom: 24px;
+
+  color: $color-for-attention;
+  @media(min-width: $tablet-width) {
+    line-height: 31px;
+    margin-bottom: 46px;
+  }
 }

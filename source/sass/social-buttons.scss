@@ -1,62 +1,69 @@
 .social-buttons {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
   margin: 0;
   margin-bottom: 28px;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  box-sizing: border-box;
+  @media(min-width: $tablet-width) {
+    margin-right: 92px;
+  }
 }
+
 .social-buttons__item {
   margin-right: 17px;
 }
+
 .social-buttons__item:last-child {
   margin-right: 0;
 }
 
 .social-buttons__link {
-  margin: 0;
-  padding: 0;
   display: block;
+  box-sizing: border-box;
   width: 48px;
   height: 48px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
   border: 2px solid $stroke-panel-social-buttons;
   border-radius: 100%;
-  text-decoration: none;
-  box-sizing: border-box;
-
+  &:hover {
+    border: 2px solid $dark-in-various-elements;
+  }
+  &:active {
+    border: 2px solid rgba($dark-in-various-elements, .1);
+  }
 }
 
 .social-buttons--twitter {
   position: relative;
-
   &::after {
     position: absolute;
-    top: 10px;
-    left: 13px;
-    content: url("../img/icon-twitter.svg");
+    top: 12px;
+    left: 15px;
+    content: url('../img/icon-twitter.svg');
   }
 }
 
 .social-buttons--fb {
   position: relative;
-
   &::after {
     position: absolute;
     top: 10px;
     left: 16px;
-    content: url("../img/icon-facebook.svg");
+    content: url('../img/icon-facebook.svg');
   }
 }
 
 .social-buttons--youtube {
   position: relative;
-
   &::after {
     position: absolute;
     top: 10px;
     left: 15px;
-    content: url("../img/icon-youtube.svg");
+    content: url('../img/icon-youtube.svg');
   }
 }

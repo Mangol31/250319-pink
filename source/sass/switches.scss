@@ -24,13 +24,20 @@
 }
 
 .switches__button {
-  padding:0;
+  padding: 0;
   width: 6px;
   height: 6px;
   border-radius: 50px;
   background-color: $slider-swithes-light;
   box-sizing: content-box;
   border: 3px solid $white-in-various-elements;
+  outline: none;
+  &:hover, &:focus {
+    background-color: $switches-hover;
+  }
+  &:active {
+    background-color: $switches-active;
+  }
 }
 .switches__button--grey-background {
   border: 3px solid $background-dark;

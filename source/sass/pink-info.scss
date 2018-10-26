@@ -1,12 +1,17 @@
 .pink-info {
   width: 100%;
   padding-top: 26px;
+  @media(min-width: $tablet-width) {
+    padding-top: 48px;
+  }
 }
 
 .pink-info__slogan-wrapper {
-
+  padding-left: 20px;
+  padding-right: 20px;
   @media(min-width: $tablet-width) {
     order: 2;
+    padding-bottom: 50px;
   }
 }
 
@@ -21,13 +26,22 @@
 
   @media(min-width: $tablet-width) {
     font-size: 40px;
-    line-height: 60px;
+    line-height: 49px;
+    margin-bottom: 0;
   }
 }
   @media(min-width: $desktop-width) {
     font-size: 50px;
     line-height: 60px;
 }
+
+.pink-info__slogan br {
+  display: none;
+  @media(min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: block;
+  }
+}
+
 
 .pink-info__list-wrapper {
   padding-top: 67px;
@@ -41,7 +55,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 0;
+    padding: 0 20px;
   }
 
   @media(min-width: $desktop-width) {
@@ -80,6 +94,7 @@
 
   @media(min-width: $tablet-width) {
     order: 2;
+    padding-top: 55px;
   }
 
   @media(min-width: $desktop-width) {
@@ -91,8 +106,13 @@
 
 .pink-info__item {
   margin-bottom: 32px;
+  @media(min-width: $tablet-width) {
+    padding-left: 42px;
+    margin-bottom: 35px;
+  }
   @media(min-width: $desktop-width) {
     flex-grow: 1;
+
   }
 }
 
@@ -106,7 +126,17 @@
 .pink-info__item-header {
   font-size: 18px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 20px;
   margin-bottom: 10px;
   color: $dark-on-white;
+  @media(min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.pink-info__item-text {
+  @media(min-width: $tablet-width) {
+    text-align: left;
+    line-height: 24px;
+  }
 }

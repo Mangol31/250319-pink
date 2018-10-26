@@ -1,9 +1,100 @@
 .radiobuttons {
-  order: 4;
-  @media(min-width: $tablet-width) {
-    order: 2;
-  }
-  @media(min-width: $desktop-width) {
-    width: 45%;
-  }
+  padding-top: 20px;
+  margin-bottom: 37px;
+  border: none;
+  box-sizing: border-box;
 }
+
+.radiobuttons__label {
+  color: $color-for-attention;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.radiobuttons__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.radiobuttons__item {
+  margin: 0;
+  padding: 0;
+  padding-left: 57px;
+  margin-bottom: 45px;
+}
+
+.radiobuttons__item:last-child {
+  margin-bottom: 0;
+}
+
+.radiobuttons__single-label {
+  color: $dark-in-various-elements;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+}
+
+/*---------------------*/
+.radiobuttons__radio {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.radiobuttons__radio + .radiobuttons__single-label::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  //background-image: url("../img/radio-off.svg");
+  //background-repeat: no-repeat;
+  //background-position: left center;
+  border: 2px solid $grey-in-various-elements;
+  border-radius: 50%;
+  background-color: $white-in-various-elements;
+  top: -8px;
+  left: -70px;
+}
+
+.radiobuttons__radio:hover + .radiobuttons__single-label::before {
+  border: 2px solid $dark-in-various-elements;
+}
+
+.radiobuttons__radio:active + .radiobuttons__single-label::before {
+  border: 2px solid $color-for-attention;
+}
+
+
+//.radiobuttons__radio:not(:disabled) + .radiobuttons__single-label:hover::before {
+//  opacity: 1;
+//}
+
+//.radiobuttons__radio:disabled + .radiobuttons__single-label {
+//  opacity: 0.1;
+//}
+
+.radiobuttons__radio:checked + .radiobuttons__single-label::after {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  top: -2px;
+  left: -68px;
+  //opacity: 0.4;
+}
+
+//.radiobuttons__radio:checked:hover + .radiobuttons__single-label:hover::after {
+//  border: 2px solid $dark-in-various-elements;
+//}

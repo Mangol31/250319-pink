@@ -8,10 +8,10 @@
 </head>
 <body class="page">
 <!--<div class="general-container">-->
-  <header class="main-header general-indent">
+  <header class="main-header">
     <div class="main-header__logo-wrapper">
-      <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-           alt="PINK">
+      <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+      <img class="main-header__logo main-header__logo--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="PINK">
       <button class="main-header__menu-button visually-hidden" type="button" aria-label="Главное меню"></button>
       <button class="main-header__close-menu-button visually-hidden" type="button" aria-label="Закрыть меню"></button>
       
@@ -19,7 +19,7 @@
     <!--<nav class="main-header__nav">-->
       <ul class="main-header__list">
         <li class="main-header__item">
-          <a href="index.html" class="main-header__link">Главная</a>
+          <a href="index.html" class="main-header__link main-header__link--active">Главная</a>
         </li>
         <li class="main-header__item">
           <a href="photo.html" class="main-header__link">Фотографии</a>
@@ -37,11 +37,11 @@
     <section class="download">
       <h2 class="visually-hidden">Скачать PINK</h2>
       <div class="download__top-wrapper">
-        <img class="download__intro download__intro--mobile" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
-             alt="Скачать приложение">
+        <img class="download__intro download__intro--mobile" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Скачать приложение">
+        <img class="download__intro download__intro--tablet" src="img/iphone-hand-tablet@1x.png" width="700" height="545" alt="Скачать приложение">
       </div>
       <div class="download__lower-wrapper general-indent">
-        <p class="download__text download__text--tablet">Взгляните на жизнь иначе!</p>
+        <p class="download__text download__text--tablet">Взгляните<br> на жизнь<br> иначе!</p>
         <a class="button-oval button-oval--download" href="https://appstore.com">Скачать приложение</a>
         <ul class="download__list">
           <li class="download__item">
@@ -60,14 +60,14 @@
             </a>
           </li>
         </ul>
-        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="download__text">Доступно для iPhone,&nbsp;iPad,&nbsp;Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
     <section class="pink-info">
       <h2 class="visually-hidden">Возможности PINK</h2>
-      <div class="pink-info__slogan-wrapper  general-indent">
+      <div class="pink-info__slogan-wrapper">
         <p class="pink-info__slogan">Устали от серости мегаполиса?</p>
-        <p class="pink-info__slogan">Нам есть, что вам предложить!</p>
+        <p class="pink-info__slogan">Нам есть, что вам<br> предложить!</p>
       </div>
       <div class="pink-info__list-wrapper">
         <img class="pink-info__mobile" src="img/iphone-screen-3-tablet@1x.png" width="268" height="481" alt="PINK">
@@ -96,12 +96,12 @@
         </ul>
       </div>
     </section>
-    <section class="effect">
-      <img class="effect__clock" src="img/icon-timer.svg" width="298" height="345" alt="Эффект">
+    <section class="effect general-indent">
+      <img class="effect__clock" src="img/icon-timer.svg" width="238" height="276" alt="Эффект">
       <div class="effect__text-wrapper">
-        <p class="effect__caption">Эффект на 24 часа!</p>
+        <p class="effect__caption">Эффект<br> на 24 часа!</p>
         <p class="effect__text">Британские ученые провели исследования и доказали,
-          что положительный эффект от использования приложения длится целые сутки!</p>
+          что положительный эффект от использования приложения длится <br>целые сутки!</p>
         <a class="effect__link" href="#">Узнать больше об исследовании</a>
       </div>
     </section>
@@ -148,17 +148,17 @@
               <td class="tariff__table-column tariff__table--hidden-caption"></td>
             </tr>
             <tr class="tariff__table-row">
-              <td class="tariff__table-column">
-                <p class="tariff__table-text-hidden-column">Розовый фильтр</p>
+              <td class="tariff__table-column tariff__table-column--hidden">
+                <p class="tariff__table-hidden-column-text">Розовый фильтр</p>
               </td>
             </tr>
             <tr class="tariff__table-row">
-              <td class="tariff__table-column">
-                <p class="tariff__table-text-hidden-column">Смайлики</p>
+              <td class="tariff__table-column tariff__table-column--hidden">
+                <p class="tariff__table-hidden-column-text">Смайлики</p>
             </tr>
             <tr class="tariff__table-row">
-              <td class="tariff__table-column">
-                <p class="tariff__table-text-hidden-column">Комментарии</p>
+              <td class="tariff__table-column tariff__table-column--hidden">
+                <p class="tariff__table-hidden-column-text">Комментарии</p>
               </td>
             </tr>
           </table>
@@ -181,7 +181,7 @@
             <tr class="tariff__table-row">
               <td class="tariff__table-column">
                 <p class="tariff__table-text">Смайлики</p>
-                <span class="tariff__table-yes-symbol" aria-label="Да"></span></td>
+                <span class="tariff__table-no-symbol" aria-label="Да"></span></td>
             </tr>
             <tr class="tariff__table-row">
               <td class="tariff__table-column">
@@ -240,7 +240,7 @@
             <tr class="tariff__table-row">
               <td class="tariff__table-column">
                 <p class="tariff__table-text">Комментарии</p>
-                <span class="tariff__table-no-symbol" aria-label="Да"></span>
+                <span class="tariff__table-yes-symbol" aria-label="Да"></span>
               </td>
             </tr>
           </table>
@@ -263,9 +263,9 @@
     <section class="contacts general-indent">
       
       <h2 class="visually-hidden">Контактная информация</h2>
-      <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+      <p class="contacts__text">Остались вопросы?<br> Свяжитесь с нами!</p>
       
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper contacts__wrapper--indent">
         <p class="contacts__caption">Звоните:</p>
         <a class="contacts__info" href="tel:+78125556666">+7&nbsp;(812)&nbsp;555-66-66</a>
       </div>
@@ -275,25 +275,25 @@
       </div>
       <div class="contacts__wrapper contacts__wrapper--grow-changer">
         <p class="contacts__caption">Приезжайте в гости:</p>
-        <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+        <p class="contacts__info">ул. Большая<br> Конюшенная, 19/8</p>
       </div>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта проезда</h2>
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adee2af3dec44802dd867f8616ef543101f4205f1ca413c591e0546fe6b30eec2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adee2af3dec44802dd867f8616ef543101f4205f1ca413c591e0546fe6b30eec2&amp;width=100%25&amp;height=375&amp;lang=ru_RU&amp;scroll=true"></script>
     </section>
   </main>
 <footer class="footer general-indent footer--mobile">
   <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
   <!-- TODO Спрятать название соцкнопок при стилизации -->
   <ul class="social-buttons">
-    <li class="footer__item">
+    <li class="social-buttons__item">
       <a class="social-buttons__link social-buttons--twitter" href="#" aria-label="Twitter"></a>
     </li>
-    <li class="footer__item">
+    <li class="social-buttons__item">
       <a class="social-buttons__link social-buttons--fb" href="#" aria-label="FaceBook"></a>
     </li>
-    <li class="footer__item">
+    <li class="social-buttons__item">
       <a class="social-buttons__link social-buttons--youtube" href="#" aria-label="YouTube"></a>
     </li>
   </ul>

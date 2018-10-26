@@ -2,6 +2,7 @@
   display: none;
   order: 3;
   @media(min-width: $tablet-width) {
+    margin-bottom: 52px;
     padding-top: 60px;
     display: flex;
     flex-direction: row;
@@ -11,4 +12,34 @@
   @media(min-width: $desktop-width) {
     background-color: $background-dark;
   }
+}
+
+.effect__clock {
+  margin-right: 55px;
+}
+.effect__text-wrapper {
+  padding: 0;
+  margin: 0;
+  padding-left: 16px;
+  padding-right: 10px;
+  padding-top: 35px;
+}
+
+.effect__caption {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.effect__text {
+  margin-top: 11px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.effect__link {
+  color: $color-for-attention;
+  line-height: 24px;
 }

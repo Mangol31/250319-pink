@@ -1,11 +1,15 @@
 .tariff {
-  overflow: hidden;
-  padding-top: 87px;
+  padding-top: 63px;
   padding-bottom: 40px;
   background-color: $background-dark;
+  position: relative;
+  @media(max-width: $tablet-width) {
+    padding-top: 62px;
+  }
 }
 
 .tariff__list {
+  overflow: hidden;
   margin: 0;
   padding: 0;
   display: flex;
@@ -15,14 +19,15 @@
   list-style: none;
 }
 
-@media(max-width: $tablet-width) {
+
   .tariff__list-item--hidden {
     display: none;
+    @media(min-width: $tablet-width) {
+      display: table;
   }
 }
 
 .tariff__table {
-  display: table;
   table-layout: auto;
   border-collapse: collapse;
 }
@@ -42,12 +47,19 @@
   box-sizing: border-box;
 
   @media(min-width: $tablet-width) {
-    width: auto;
+    width: 154px;
+    min-height: 47px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
+.tariff__table-column--hidden {
+  padding-left: 14px;
+}
+
 .tariff__table-column--caption {
-  min-height: 98px;
+  min-height: 79px;
   padding-top: 16px;
   background-color: $dark-in-various-elements;
   border: 2px solid $dark-in-various-elements;
@@ -55,6 +67,9 @@
   flex-direction: column;
   justify-content: flex-start;
   text-transform: uppercase;
+  @media(min-width: $tablet-width) {
+    padding-top: 10px;
+  }
 }
 
 
@@ -62,7 +77,14 @@
   background-color: $background-dark;
   border: none;
   outline: none;
-  min-height: 94px;
+  min-height: 79px;
+}
+
+.tariff__table-hidden-column-text {
+  margin:0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .tariff__table-column--hit {
@@ -98,8 +120,9 @@
 
 
   @media(min-width: $tablet-width) {
-    padding-left: 35px;
-    padding-right: 35px;
+    //padding-left: 35px;
+    //padding-right: 35px;
+    font-size: 16px;
   }
   @media(min-width: $desktop-width) {
     padding-left: 70px;
@@ -115,10 +138,13 @@
   font-weight: 300;
   text-transform: none;
   line-height: 30px;
+  @media(min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .tariff__table-text {
-  color: #283645;
+  color: $dark-in-various-elements;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -129,7 +155,7 @@
  }
 
 .tariff__table-text-hidden-column {
-  color: #283645;
+  color: $dark-in-various-elements;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -145,7 +171,7 @@
     left: -21px;
     top: -6px;
     @media(min-width: $tablet-width) {
-      left: 41px;
+      left: 65px;
     }
   }
 }
@@ -160,7 +186,7 @@
     left: -24px;
     top: -16px;
     @media(min-width: $tablet-width) {
-      left: 41px;
+      left: 63px;
     }
   }
 }

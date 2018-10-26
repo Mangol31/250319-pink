@@ -8,20 +8,21 @@
 </head>
 <body class="page">
 <!--<div class="general-container">-->
-<header class="main-header general-indent">
+<header class="main-header">
   <div class="main-header__logo-wrapper">
-    <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-         alt="PINK">
+    <a class="main-header__logo-link" href="index.html">
+      <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+           alt="PINK">
+    </a>
     <button class="main-header__menu-button visually-hidden" type="button" aria-label="Главное меню"></button>
     <button class="main-header__close-menu-button visually-hidden" type="button" aria-label="Закрыть меню"></button>
-  
   </div>
   <ul class="main-header__list">
     <li class="main-header__item">
       <a href="index.html" class="main-header__link">Главная</a>
     </li>
     <li class="main-header__item">
-      <a href="photo.html" class="main-header__link">Фотографии</a>
+      <a href="photo.html" class="main-header__link main-header__link--active">Фотографии</a>
     </li>
     <li class="main-header__item">
       <a href="form.html" class="main-header__link">Конкурс</a>
@@ -52,11 +53,12 @@
           </a>
           <h3 class="visually-hidden">Фотография от Анны</h3>
           <div class="photo-card__inscription-wrapper">
-          <p class="photo-card__user-name photo-card__user--panorana">Анна&nbsp;<span
-            class="photo-card__comment-time">(5 минут назад) </span></p>
-          <p class="photo-card__user-comment photo-card__comment--panorama">Прыгать или нет? Напишите в коментарии свой совет и
-            смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <p class="photo-card__like-count photo-card__like-count--panorama">Нравится:&nbsp;215</p>
+            <p class="photo-card__user-name photo-card__user--panorana">Анна&nbsp;<span
+              class="photo-card__comment-time">(5 минут назад) </span></p>
+            <p class="photo-card__user-comment photo-card__comment--panorama">Прыгать или нет? Напишите в коментарии
+              свой совет и
+              смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="photo-card__like-count photo-card__like-count--panorama">Нравится:&nbsp;215</p>
           </div>
         </article>
       </li>
@@ -203,7 +205,7 @@
         </fieldset>
         <div class="photo-editor__button-wrapper">
           <button class="button-oval button-oval--photo-editor button-oval" type="submit">Запостить</button>
-          <button class="button-oval button-oval--photo-editor button-oval--disabled" type="reset" disabled>Отмена</button>
+          <button class="button-oval button-oval--photo-editor button-oval--disabled" type="reset">Отмена</button>
         </div>
       </div>
     </form>
@@ -211,7 +213,6 @@
 </main>
 <footer class="footer general-indent">
   <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
-  <!-- TODO Спрятать название соцкнопок при стилизации -->
   <ul class="social-buttons">
     <li class="social-buttons__item">
       <a class="social-buttons__link social-buttons--twitter" href="#" aria-label="Twitter"></a>

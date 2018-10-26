@@ -12,34 +12,62 @@
   line-height: 18px;
   text-decoration: none;
   border-radius: 100px;
+  cursor: pointer;
+  &:hover {
+    color: $color-for-attention;
+    background-color: $white-in-various-elements;
+    //box-shadow: 0 5px 7px rgba($button-oval-shadow, 0.75);
+  }
+  &:active {
+    color: rgba($color-for-attention, 0.3);
+  }
 }
 
 .button-oval--download {
-  border: 3px solid #ffffff;
-  color: #ffffff;
+  border: 3px solid $white-in-various-elements;
+  color: $white-in-various-elements;
   background-color: transparent;
   margin-bottom: 32px;
+  @media(min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .button-oval--photo-editor {
-  color: #d22856;
+  color: $color-for-attention;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  border: 3px solid #d22856;
+  border: 3px solid $color-for-attention;
   background-color: $background-dark;
+  &:hover {
+    background-color: $color-for-attention;
+    color: $white-in-various-elements;
+  }
+  &:active {
+    color: rgba($white-in-various-elements, 0.3);
+  }
 }
 
 .button-oval--disabled {
-  color: $dark-in-various-elements;
-  border: 3px solid $dark-in-various-elements;
-  opacity: 0.1;
+  color: rgba($dark-in-various-elements, 0.1);
+  border: 3px solid rgba($dark-in-various-elements, 0.1);
   margin-top: 12px;
+  outline: none;
+  &:hover {
+    border: 3px solid rgba($dark-in-various-elements, 0.3);
+    color: rgba($dark-in-various-elements, 0.3);
+    background-color: transparent;
+  }
+  &:active {
+    border: 3px solid rgba($dark-in-various-elements, 0);
+    color: rgba($white-in-various-elements, 0.3);
+    background-color: rgba($dark-in-various-elements, 0.3);
+  }
   @media(min-width: $tablet-width) {
     margin-top: 24px;
   }
   @media(min-width: $desktop-width) {
     margin-top: 0;
   }
-
 }

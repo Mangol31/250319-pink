@@ -142,6 +142,9 @@
   border: 2px solid $color-for-attention;
   border-radius: 50%;
   background-color: $grey-in-various-elements;
+  &:active {
+    background-color: $color-for-attention;
+  }
 }
 
 .photo-editor__range-item {

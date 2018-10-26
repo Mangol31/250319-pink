@@ -1,8 +1,9 @@
 .competition-form {
   margin: 0;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+  //padding-left: 20px;
+  //padding-right: 20px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -24,7 +25,8 @@
   align-items: flex-start;
   border: none;
   box-sizing: border-box;
-  margin-bottom: 80px;
+  margin-bottom: 43px;
+  width: 100%;
   @media(min-width: $tablet-width) {
     flex-wrap: wrap;
   }
@@ -35,11 +37,13 @@
 }
 
 .competition-form__user-wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
+  box-sizing: border-box;
   @media(min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -87,6 +91,8 @@
 }
 
 .competition-form__contacts {
+  margin: 0;
+  padding: 0;
   border: none;
   order: 3;
   width: 100%;
@@ -97,11 +103,13 @@
 }
 
 .competition-form__contacts-wrapper {
- margin: 0;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  padding-bottom: 20px;
+  margin-bottom: 23px;
   @media(min-width: $tablet-width) {
     flex-direction: column;
   }
@@ -113,13 +121,13 @@
 }
 
 .competition-form__contacts-phone-wrapper {
-  width: 45%;
+  //width: 45%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 17px;
 }
 
 .competition-form__contacts-adress-wrapper {
-  width: 45%;
   display: flex;
   flex-direction: column;
 }
@@ -137,10 +145,34 @@
   }
 }
 
+.competition-form__contacts-user-tel,
+.competition-form__contacts-user-email {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 62px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border: 2px solid $grey-in-various-elements;
+  @media(min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
+.competition-form__contacts-user-tel[placeholder],
+.competition-form__contacts-user-email[placeholder] {
+  color: $dark-in-various-elements;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
 .competition-form__emotions {
   order: 5;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom: 48px;
   @media(max-width: $tablet-width) {
     border: none;
   }
@@ -149,8 +181,33 @@
   }
 }
 
+.competition-form__emotions-legend {
+  color: $color-for-attention;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+  padding-top: 38px;
+}
+
 .competition-form__emotions-text-area {
-  width: 100%;
+  min-width: 277px;
+  min-height: 201px;
+  border: 2px solid $grey-in-various-elements;
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-right: 17px;
+  box-sizing: border-box;
+}
+
+.competition-form__emotions-text-area::placeholder {
+  color: $dark-in-various-elements;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .competition-form__button-wrapper {
@@ -164,3 +221,62 @@
   }
 }
 
+.competition-form__footnote {
+  color: $dark-in-various-elements;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.competition-form__footnote--red {
+  color: $color-for-attention;
+}
+
+/* Обертки для чекбоксов и радиокнопок */
+.competition-form__checkboxes-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 37px;
+  margin-bottom: 33px;
+  order: 2;
+  background-color: $background-dark;
+  box-sizing: border-box;
+  @media(min-width: $tablet-width) {
+    order: 4;
+  }
+  @media(min-width: $desktop-width) {
+    width: 100%;
+    order: 4;
+  }
+}
+
+.competition-form__radiobuttons-wrapper {
+  width: 100%;
+  padding-top: 37px;
+  order: 4;
+  box-sizing: border-box;
+  background-color: $background-dark;
+  @media(min-width: $tablet-width) {
+    order: 2;
+  }
+  @media(min-width: $desktop-width) {
+    width: 45%;
+  }
+}
+
+.competition-form__user-surname,
+.competition-form__user-name,
+.competition-form__user-patronymic,
+.competition-form__contacts-user-tel,.competition-form__contacts-user-email,
+.competition-form__emotions-text-area {
+  outline: none;
+  &:hover {
+    border: 2px solid $dark-in-various-elements;
+  }
+  &:focus {
+    border: 2px solid $color-for-attention;
+  }
+}
