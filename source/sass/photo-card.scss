@@ -10,9 +10,14 @@
   justify-content: space-between;
   flex-wrap: wrap;
   @media(min-width: $tablet-width) {
+margin: 0;
+    padding: 0;
     align-items: flex-start;
+    //margin-bottom: 52px;
+    padding-bottom: 13px;
   }
 }
+
 
 .photo-card--panorama {
   position: relative;
@@ -29,27 +34,67 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    @media (min-width: $tablet-width) {
+      top: 57px;
+    }
   }
-}
-
-.photo-card__link--panorama {
 }
 
 .photo-card__photo {
+  margin: 0;
+  padding: 0;
   margin-bottom: 12px;
   width: 100%;
-}
-
-.photo-card__photo--panorama {
-  @media(max-width: $tablet-width) {
-    min-width: 320px;
-    height: auto;
-    position: absolute;
-    margin-left: -20px;
-    margin-right: -20px;
+  @media(min-width: $tablet-width) {
+    margin-bottom: 23px;
   }
 }
 
+.photo-card__photo--panorama {
+  min-width: 320px;
+  height: auto;
+  position: absolute;
+  margin-left: -20px;
+  margin-right: -20px;
+  @media(min-width: $tablet-width) {
+    min-width: 660px;
+    height: auto;
+  }
+}
+
+.photo-card__photo--panorama-mobile {
+  display: block;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.photo-card__photo--panorama-tablet {
+  display: none;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.photo-card__photo-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.photo-card__photo-tablet {
+  display: none;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width){
+    display: block;
+  }
+}
+
+.photo-card__photo-desktop {
+  display: none;
+  @media (min-width: $desktop-width){
+    display: block;
+  }
+}
 .photo-card__inscription-wrapper {
   //margin-left: 20px;
   //margin-right: 20px;
@@ -57,8 +102,9 @@
   @media(min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-top: 534px;
   }
 }
 
@@ -73,6 +119,8 @@
 .photo-card__user--panorana {
   @media(min-width: $tablet-width) {
     order: 1;
+    text-indent: 10px;
+    margin-right: 241px;
   }
 }
 
@@ -93,6 +141,7 @@
   @media(min-width: $tablet-width) {
     order: 3;
     flex-grow: 2;
+    padding-left: 28px;
   }
 }
 
@@ -117,7 +166,10 @@
 .photo-card__like-count--panorama {
   @media(min-width: $tablet-width) {
     order: 2;
-    outline: 1px solid blue;
+    margin-left: 30px;
+    &::before {
+      left: 106px;
+    }
   }
 }
 
