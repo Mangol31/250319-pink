@@ -1,37 +1,35 @@
 .photo-card {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  background-color: $background-dark;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  background-color: $background-dark;
   justify-content: space-between;
   flex-wrap: wrap;
   @media(min-width: $tablet-width) {
-margin: 0;
-    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
     align-items: flex-start;
-    //margin-bottom: 52px;
-    padding-bottom: 13px;
+    justify-content: flex-start;
   }
 }
-
 
 .photo-card--panorama {
   position: relative;
   &::after {
     position: absolute;
-    content: "ПАНОРАМА ДНЯ";
-    width: 140px;
-    height: 36px;
-    background-color: $color-for-attention;
     top: 0;
     right: 0;
-    color: $white-in-various-elements;
     display: flex;
     flex-direction: row;
+    width: 140px;
+    height: 36px;
+    content: 'ПАНОРАМА ДНЯ';
+    color: $white-in-various-elements;
+    background-color: $color-for-attention;
     justify-content: center;
     align-items: center;
     @media (min-width: $tablet-width) {
@@ -41,24 +39,23 @@ margin: 0;
 }
 
 .photo-card__photo {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 12px;
   width: 100%;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
   @media(min-width: $tablet-width) {
     margin-bottom: 23px;
   }
 }
 
 .photo-card__photo--panorama {
+  position: absolute;
   min-width: 320px;
   height: auto;
-  position: absolute;
-  margin-left: -20px;
   margin-right: -20px;
+  margin-left: -20px;
   @media(min-width: $tablet-width) {
     min-width: 660px;
-    height: auto;
   }
 }
 
@@ -84,89 +81,111 @@ margin: 0;
 
 .photo-card__photo-tablet {
   display: none;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width){
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: block;
   }
 }
 
 .photo-card__photo-desktop {
   display: none;
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     display: block;
   }
 }
-.photo-card__inscription-wrapper {
-  //margin-left: 20px;
-  //margin-right: 20px;
+
+.photo-card__text-wrapper-panorama {
   margin-top: 155px;
   @media(min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    margin-top: 534px;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-top: 534px;
+  }
+}
+
+.photo-card__text-wrapper {
+  @media(min-width: $tablet-width) {
+    width: 100%;
+    padding-left: 11px;
+    padding-right: 11px;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-bottom: -24px;
+    padding-right: 40px;
   }
 }
 
 .photo-card__user-name {
+  font-weight: 700;
   margin: 0;
   padding: 0;
-  padding-left: 18px;
   padding-right: 18px;
-  font-weight: 700;
+  padding-left: 18px;
 }
 
 .photo-card__user--panorana {
   @media(min-width: $tablet-width) {
-    order: 1;
-    text-indent: 10px;
     margin-right: 241px;
+    text-indent: 10px;
+    order: 1;
   }
 }
 
 .photo-card__comment-time {
-  text-transform: uppercase;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .photo-card__user-comment {
   margin: 0;
-  padding: 0;
-  padding-left: 18px;
-  padding-right: 18px;
   margin-bottom: 10px;
+  padding: 0;
+  padding-right: 18px;
+  padding-left: 18px;
 }
 
 .photo-card__comment--panorama {
   @media(min-width: $tablet-width) {
+    padding-left: 28px;
     order: 3;
     flex-grow: 2;
-    padding-left: 28px;
   }
 }
 
 .photo-card__like-count {
-  margin: 0;
-  padding: 0;
-  margin-left: 50px;
-  color: $color-for-attention;
   font-size: 12px;
-  text-transform: uppercase;
   position: relative;
+  margin: 0;
+  margin-left: 50px;
+  padding: 0;
+  text-transform: uppercase;
+  color: $color-for-attention;
+  @media(min-width: $tablet-width) {
+    margin-left: 25px;
+  }
   &::before {
     position: absolute;
-    width: 13px;
-    height: 12px;
-    content: url("../img/icon-heart.svg");
     top: 2px;
     left: -32px;
+    width: 13px;
+    height: 12px;
+    content: url('../img/icon-heart.svg');
+    @media(min-width: $tablet-width) {
+      left: 230px;
+    }
   }
 }
 
 .photo-card__like-count--panorama {
   @media(min-width: $tablet-width) {
-    order: 2;
     margin-left: 30px;
+    order: 2;
     &::before {
       left: 106px;
     }
@@ -174,8 +193,8 @@ margin: 0;
 }
 
 .photo__text {
+  line-height: 30px;
   margin: 0;
   padding: 0;
-  line-height: 30px;
   text-align: center;
 }

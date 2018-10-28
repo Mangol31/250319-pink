@@ -1,40 +1,40 @@
 .photo {
-  padding: 0 auto;
-  margin: 0 auto;
-  padding-bottom: 43px;
   box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 auto;
+  padding-bottom: 43px;
+  @media(min-width: $tablet-width) {
+    padding-bottom: 70px;
+  }
 }
 
 .photo__list {
+  box-sizing: border-box;
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
   padding-top: 16px;
   list-style: none;
-  box-sizing: border-box;
-  outline: 1px solid red;
-
   @media(min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    margin-bottom: 51px;
+    margin-right: 20px;
+    margin-left: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 20px;
-    margin-right: 20px;
-    //align-items: stretch;
-    //align-content: stretch;
   }
 }
 
 .photo__item {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   @media(min-width: $tablet-width) {
-    flex-grow: 1;
-    width: 50%;
     display: flex;
     flex-direction: row;
+    width: 48%;
+    flex-grow: 1;
     justify-content: flex-start;
     //align-items: stretch;
     //align-content: stretch;
@@ -44,14 +44,25 @@
   }
 }
 
-.photo__item:nth-child(even) {
-  @media(min-width: $tablet-width) {
-    outline: 1px solid blue;
-  }
-}
+//.photo__item:nth-child(even) {
+//  @media(min-width: $tablet-width) {
+//    outline: 1px solid blue;
+//  }
+//}
 
 .photo__item--panorama {
   @media(min-width: $tablet-width) {
     width: 100%;
+    margin-bottom: 25px;
   }
+}
+
+.photo__item--margin-bottom {
+  margin-bottom: 20px;
+}
+
+.photo__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
 }
