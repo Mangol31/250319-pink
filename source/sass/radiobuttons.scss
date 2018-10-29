@@ -1,34 +1,46 @@
 .radiobuttons {
-  padding-top: 20px;
-  margin-bottom: 37px;
-  border: none;
   box-sizing: border-box;
+  margin-bottom: 37px;
+  padding-top: 20px;
+  border: none;
+  @media(min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-top: 29px;
+    padding-bottom: 60px;
+    padding-left: 68px;
+    border: 2px solid $grey-in-various-elements;
+  }
 }
 
 .radiobuttons__label {
-  color: $color-for-attention;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
   margin-bottom: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-for-attention;
 }
 
 .radiobuttons__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
 }
 
 .radiobuttons__item {
   margin: 0;
+  margin-bottom: 45px;
   padding: 0;
   padding-left: 57px;
-  margin-bottom: 45px;
+  @media(min-width: $tablet-width) {
+    padding-left: 48px;
+  }
 }
 
 .radiobuttons__item:last-child {
@@ -36,33 +48,33 @@
 }
 
 .radiobuttons__single-label {
-  color: $dark-in-various-elements;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   position: relative;
+  color: $dark-in-various-elements;
 }
 
 /*---------------------*/
 .radiobuttons__radio {
-  padding: 0;
-  margin: 0;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .radiobuttons__radio + .radiobuttons__single-label::before {
   position: absolute;
-  content: "";
+  top: -8px;
+  left: -70px;
   width: 35px;
   height: 35px;
-  //background-image: url("../img/radio-off.svg");
-  //background-repeat: no-repeat;
-  //background-position: left center;
+  content: "";
   border: 2px solid $grey-in-various-elements;
   border-radius: 50%;
   background-color: $white-in-various-elements;
-  top: -8px;
-  left: -70px;
+  @media(min-width: $tablet-width) {
+    left: -61px;
+  }
 }
 
 .radiobuttons__radio:hover + .radiobuttons__single-label::before {
@@ -73,28 +85,17 @@
   border: 2px solid $color-for-attention;
 }
 
-
-//.radiobuttons__radio:not(:disabled) + .radiobuttons__single-label:hover::before {
-//  opacity: 1;
-//}
-
-//.radiobuttons__radio:disabled + .radiobuttons__single-label {
-//  opacity: 0.1;
-//}
-
 .radiobuttons__radio:checked + .radiobuttons__single-label::after {
   position: absolute;
-  content: "";
-  width: 26px;
-  height: 26px;
-  background-image: url("../img/icon-map-marker.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
   top: -2px;
   left: -68px;
-  //opacity: 0.4;
+  width: 26px;
+  height: 26px;
+  content: "";
+  background-image: url('../img/icon-map-marker.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  @media(min-width: $tablet-width) {
+    left: -59px;
+  }
 }
-
-//.radiobuttons__radio:checked:hover + .radiobuttons__single-label:hover::after {
-//  border: 2px solid $dark-in-various-elements;
-//}

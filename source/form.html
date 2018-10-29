@@ -9,14 +9,16 @@
 <body class="page">
 <header class="main-header">
   <div class="main-header__logo-wrapper">
+    <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
     <a class="main-header__logo-link" href="index.html">
-      <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-           alt="PINK">
+      <img class="main-header__logo main-header__logo--tablet" src="img/logo-pink-white-tablet.svg" width="147"
+           height="40" alt="PINK">
     </a>
     <button class="main-header__menu-button visually-hidden" type="button" aria-label="Главное меню"></button>
     <button class="main-header__close-menu-button visually-hidden" type="button" aria-label="Закрыть меню"></button>
   
   </div>
+  <!--<nav class="main-header__nav">-->
   <ul class="main-header__list">
     <li class="main-header__item">
       <a href="index.html" class="main-header__link">Главная</a>
@@ -31,26 +33,27 @@
       <a class="main-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </li>
   </ul>
+  <!--</nav>-->
 </header>
 <main>
-  <section class="page-header ">
-    <div class="page-header__upper-part">
+  <section class="page-header page-header--form">
+    <div class="page-header__upper-part page-header__upper-part--form">
       <h2 class="page-header__caption">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </div>
     <div class="page-header__lower-part">
-      <p class="page-header__text">Поделитесь своей историей и получите <br>шанс выиграть ценный приз — 1000 миль на
-        вашу бонусную карту! <br> <span class="page-header__text-disappearing">Пожалуйста, заполните форму ниже:</span>
+      <p class="page-header__text">Поделитесь своей историей и получите шанс выиграть<br> ценный приз — 1000 миль на
+        вашу бонусную карту! <span class="page-header__text-disappearing">Пожалуйста, заполните форму ниже:</span>
       </p>
     </div>
   </section>
   <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
     <fieldset class="competition-form__user">
-      <div class="competition-form__user-wrapper general-indent">
+      <div class="competition-form__user-wrapper general-indent competition-form__user-wrapper--bottom-tablet">
         <label class="competition-form__user-label" for="user-surname">Фамилия:</label>
         <input class="competition-form__user-surname" id="user-surname" name="user-surname" type="text"
                placeholder="Укажите фамилию*" required>
       </div>
-      <div class="competition-form__user-wrapper general-indent">
+      <div class="competition-form__user-wrapper general-indent competition-form__user-wrapper--bottom-tablet">
         <label class="competition-form__user-label" for="user-name">Имя:</label>
         <input class="competition-form__user-name" id="user-name" name="user-name" type="text"
                placeholder="Введите ваше имя*" required>
@@ -92,21 +95,22 @@
         </ul>
       </fieldset>
     </div>
-    <fieldset class="competition-form__contacts">
-      <div class="competition-form__contacts-wrapper">
-        <div class="competition-form__contacts-phone-wrapper  general-indent">
+    <div class="competition-form__contacts-wrapper">
+      <fieldset class="competition-form__contacts">
+        <legend class="competition-form__contacts-legend">Контактная информация</legend>
+        <div class="competition-form__contacts-phone-wrapper">
           <label class="competition-form__contacts-label" for="user-tel">Номер телефона</label>
           <input class="competition-form__contacts-user-tel" id="user-tel" name="user-tel" type="text"
                  placeholder="Номер, пожалуйста">
         </div>
-        <div class="competition-form__contacts-adress-wrapper  general-indent">
+        <div class="competition-form__contacts-adress-wrapper">
           <label class="competition-form__contacts-label" for="user-email">Адрес почты</label>
           <input class="competition-form__contacts-user-email" id="user-email" name="user-email" type="email"
                  placeholder="Введите почту*" required>
         </div>
-      </div>
-    </fieldset>
-    <div class="competition-form__radiobuttons-wrapper general-indent">
+      </fieldset>
+    </div>
+    <div class="competition-form__radiobuttons-wrapper">
       <fieldset class="radiobuttons">
         <legend class="radiobuttons__label">С каким приложением путешествовали?</legend>
         <ul class="radiobuttons__list">
@@ -128,12 +132,14 @@
         </ul>
       </fieldset>
     </div>
+    <div class="competition-form__emotions-wrapper">
     <fieldset class="competition-form__emotions general-indent">
       <legend class="competition-form__emotions-legend">Опишите свои эмоции</legend>
       <textarea class="competition-form__emotions-text-area" name="user__emotions" id="user__emotions"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"
                 aria-label="Опишите ваши эмоции"></textarea>
     </fieldset>
+    </div>
     <div class="competition-form__button-wrapper general-indent">
       <button class="button-rectangle button-rectangle--green" type="submit">Отправить форму</button>
       <p class="competition-form__footnote">

@@ -19,6 +19,9 @@
 .button-rectangle--green {
   border: 2px solid $color-for-rectangle-button;
   background-color: $color-for-rectangle-button;
+  @media (min-width: $tablet-width) {
+    padding: 15px 55px;
+  }
   &:hover {
     border: 2px solid $color-for-active-rectangle-button;
     background-color: $color-for-active-rectangle-button;

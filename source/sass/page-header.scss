@@ -4,7 +4,11 @@
   text-align: center;
   margin-bottom: 33px;
 }
-
+.page-header--form {
+  @media(min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+}
 .page-header__upper-part {
   padding: 0;
   margin: 0;
@@ -23,9 +27,14 @@
   @media(min-width: $tablet-width) {
     padding-top: 30px;
     padding-bottom: 99px;
+    background-position: top -179px center;
   }
 }
-
+.page-header__upper-part--form {
+  @media(min-width: $tablet-width) {
+    padding-bottom: 42px;
+  }
+}
 .page-header__caption {
   color: $grey-in-various-elements;
   font-size: 24px;
