@@ -4,7 +4,8 @@
   background-color: $menu-and-download-back;
   @media(min-width: $desktop-width) {
     flex-direction: row;
-    opacity: 0.3;
+    //opacity: 0.3;
+    //background-color: transparent;
   }
 }
 
@@ -24,7 +25,7 @@
   }
   @media(min-width: $desktop-width) {
     padding-left: 10px;
-    margin-right: 103px;
+    margin-right: 101px;
   }
 }
 

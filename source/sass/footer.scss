@@ -10,6 +10,9 @@
     flex-direction: row;
     justify-content: flex-start;
   }
+  @media(min-width: $desktop-width) {
+    padding-top: 69px;
+  }
 }
 
 
@@ -26,6 +29,9 @@
   margin-bottom: 43px;
   @media(min-width: $tablet-width) {
     margin-right: 74px;
+  }
+  @media(min-width: $desktop-width) {
+    margin-right: 235px;
   }
 }
 

@@ -10,6 +10,9 @@
   @media(min-width: $tablet-width) {
     margin-right: 92px;
   }
+  @media(min-width: $desktop-width) {
+    margin-right: 227px;
+  }
 }
 
 .social-buttons__item {
