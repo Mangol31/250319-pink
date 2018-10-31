@@ -1,6 +1,6 @@
 .pink-info {
   width: 100%;
-  padding-top: 26px;
+  padding-top: 40px;
   @media(min-width: $tablet-width) {
     padding-top: 48px;
   }
@@ -24,20 +24,21 @@
   line-height: 29px;
   margin-bottom: 29px;
 
-  @media(min-width: $tablet-width) {
+  @media(min-width: $tablet-width)  {
     font-size: 40px;
     line-height: 49px;
     margin-bottom: 0;
   }
 }
   @media(min-width: $desktop-width) {
+    display: none;
     font-size: 50px;
     line-height: 60px;
 }
 
 .pink-info__slogan br {
   display: none;
-  @media(min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media(min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     display: block;
   }
 }
