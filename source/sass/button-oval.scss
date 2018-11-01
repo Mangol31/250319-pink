@@ -44,6 +44,10 @@
   line-height: 18px;
   border: 3px solid $color-for-attention;
   background-color: $background-dark;
+  @media(min-width: $desktop-width) {
+    padding-left: 43px;
+    padding-right: 43px;
+  }
   &:hover {
     background-color: $color-for-attention;
     color: $white-in-various-elements;
@@ -52,7 +56,12 @@
     color: rgba($white-in-various-elements, 0.3);
   }
 }
-
+.button-oval--photo-editor-cancel {
+  @media(min-width: $desktop-width) {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+}
 .button-oval--disabled {
   color: rgba($dark-in-various-elements, 0.1);
   border: 3px solid rgba($dark-in-various-elements, 0.1);

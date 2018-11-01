@@ -6,6 +6,9 @@
   @media(min-width: $tablet-width) {
     padding-bottom: 70px;
   }
+  @media(min-width: $desktop-width) {
+    padding-bottom: 66px;
+  }
 }
 
 .photo__list {
@@ -15,7 +18,7 @@
   padding: 0;
   padding-top: 16px;
   list-style: none;
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     margin-bottom: 51px;
@@ -23,6 +26,11 @@
     margin-left: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 2px;
   }
 }
 
@@ -40,7 +48,7 @@
     //align-content: stretch;
   }
   @media(min-width: $desktop-width) {
-    width: 30%;
+    width: 32%;
   }
 }
 
@@ -54,6 +62,11 @@
   @media(min-width: $tablet-width) {
     width: 100%;
     margin-bottom: 25px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 31px;
+    padding-top: 13px;
   }
 }
 

@@ -4,8 +4,12 @@
   background-color: $menu-and-download-back;
   @media(min-width: $desktop-width) {
     flex-direction: row;
-    //opacity: 0.3;
-    //background-color: transparent;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
   }
 }
 
@@ -105,6 +109,9 @@
 
 .main-header__list:last-child {
   box-shadow: 0 1px 0 $dark-on-white;
+  @media(min-width: $desktop-width) {
+    box-shadow: none;
+  }
 }
 
 .main-header__link {

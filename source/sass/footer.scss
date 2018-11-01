@@ -11,7 +11,7 @@
     justify-content: flex-start;
   }
   @media(min-width: $desktop-width) {
-    padding-top: 69px;
+    padding-top: 102px;
   }
 }
 
@@ -45,6 +45,12 @@
   align-items: center;
 }
 
+.footer__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $dark-in-various-elements;
+}
 
 .footer__academy-logo {
   width: 27px;
