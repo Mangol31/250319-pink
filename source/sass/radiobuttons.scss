@@ -10,6 +10,9 @@
     padding-left: 68px;
     border: 2px solid $grey-in-various-elements;
   }
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+  }
 }
 
 .radiobuttons__label {
@@ -22,6 +25,10 @@
   text-align: center;
   text-transform: uppercase;
   color: $color-for-attention;
+  @media (min-width: $desktop-width) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .radiobuttons__list {
@@ -53,6 +60,9 @@
   line-height: 30px;
   position: relative;
   color: $dark-in-various-elements;
+  @media(min-width: $desktop-width) {
+    margin-left: 17px;
+  }
 }
 
 /*---------------------*/

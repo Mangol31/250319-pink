@@ -81,7 +81,8 @@
   }
   @media(min-width: $desktop-width) {
     margin-left: 0;
-    width: 100%;
+    min-width: 1200px;
+    left: -14%;
   }
 }
 
