@@ -73,11 +73,11 @@
             <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="beach" id="beach" checked>
             <label class="checkbox__label" for="beach">Обгорел на пляже</label>
           </li>
-          <li class="checkboxes__item">
+          <li class="checkboxes__item checkboxes__item--left-padding">
             <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="norris" id="norris">
             <label class="checkbox__label" for="norris">Видел Чака Норриса</label>
           </li>
-          <li class="checkboxes__item">
+          <li class="checkboxes__item checkboxes__item--left-padding">
             <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="souvenir" id="souvenir">
             <label class="checkbox__label" for="souvenir">Накупил сувениров</label>
           </li>
@@ -92,9 +92,10 @@
         </ul>
       </fieldset>
     </div>
-    <div class="competition-form__contacts-wrapper">
+
       <fieldset class="competition-form__contacts">
         <legend class="competition-form__contacts-legend">Контактная информация</legend>
+        <div class="competition-form__contacts-wrapper">
         <div class="competition-form__contacts-phone-wrapper">
           <label class="competition-form__contacts-label" for="user-tel">Номер телефона</label>
           <input class="competition-form__contacts-user-tel" id="user-tel" name="user-tel" type="text"
@@ -105,8 +106,9 @@
           <input class="competition-form__contacts-user-email" id="user-email" name="user-email" type="email"
                  placeholder="Введите почту*" required>
         </div>
+        </div>
       </fieldset>
-    </div>
+
     <div class="competition-form__radiobuttons-wrapper">
       <fieldset class="radiobuttons">
         <legend class="radiobuttons__label">С каким приложением путешествовали?</legend>
@@ -140,12 +142,12 @@
     <div class="competition-form__button-wrapper general-indent">
       <button class="button-rectangle button-rectangle--green" type="submit">Отправить форму</button>
       <p class="competition-form__footnote">
-        <span class="competition-form__footnote--red">*</span>&nbsp;—&nbsp;обязательные поля
+        <span class="competition-form__footnote--red">*</span>&nbsp;—&nbsp;обязательные <span class="competition-form__footnote--disappearing">для заполнения </span>поля
       </p>
     </div>
   </form>
 </main>
-<footer class="footer general-indent">
+<footer class="footer general-indent footer--form-top-padding">
   <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
   <!-- TODO Спрятать название соцкнопок при стилизации -->
   <ul class="social-buttons">

@@ -3,10 +3,10 @@
   padding-top: 86px;
   padding-bottom: 40px;
   background-color: $background-dark;
-  @media(max-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding-top: 60px;
   }
-  @media(max-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     padding-top: 81px;
     padding-bottom: 62px;
   }

@@ -27,8 +27,10 @@
   align-items: flex-start;
   @media(min-width: $tablet-width) {
     padding-top: 30px;
-    padding-bottom: 99px;
-    background-position: top -179px center;
+    padding-bottom: 42px;
+    background-image: url('../img/bg-back-tablet@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
   }
   @media(min-width: $desktop-width) {
     padding-top: 132px;
@@ -63,7 +65,7 @@
   padding-left: 20px;
   background-color: white;
   @media (min-width: $tablet-width) {
-    padding-top: 94px;
+    padding-top: 93px;
     padding-bottom: 25px;
   }
   @media (min-width: $desktop-width) {

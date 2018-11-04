@@ -14,7 +14,19 @@
     padding-top: 102px;
   }
 }
-
+.footer--form-top-padding {
+  @media(min-width: $desktop-width) {
+    padding-top: 17px;
+  }
+}
+.footer--index-top-padding {
+  @media(min-width: $tablet-width) {
+    padding-top: 32px;
+  }
+  @media(min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+}
 
 .footer--mobile {
   display: none;

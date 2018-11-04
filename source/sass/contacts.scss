@@ -36,16 +36,21 @@
 }
 
 .contacts__main-wrapper {
-  @media(min-width: $desktop-width) {
+  @media(min-width: $tablet-width) {
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  @media(min-width: $desktop-width) {
     justify-content: space-between;
     flex-wrap: nowrap;
   }
 }
 
 .contacts__wrapper {
+
   @media(min-width: $desktop-width) {
     width: 32%;
   }
@@ -79,7 +84,7 @@
 
 .contacts__wrapper--indent {
   @media(min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-    margin-right: 102px;
+    margin-right: 40px;
     padding-left: 17px;
   }
 }

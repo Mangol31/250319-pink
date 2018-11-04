@@ -13,7 +13,6 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    //padding-top: 14px;
   }
 }
 
@@ -51,13 +50,12 @@
     justify-content: flex-start;
     align-items: center;
   }
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .competition-form__user-wrapper--bottom-tablet {
-  margin-bottom: 37px;
+  @media(min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    margin-bottom: 37px;
+  }
 }
 
 .competition-form__user-label {
@@ -83,6 +81,7 @@
   margin: 0;
   padding: 0;
   padding-left: 20px;
+
   border: 2px solid $grey-in-various-elements;
   @media(min-width: $tablet-width) {
     width: 100%;
@@ -103,45 +102,51 @@
   margin-bottom: 17px;
 }
 
-.competition-form__contacts-wrapper {
-  display: flex;
-  flex-direction: column;
+.competition-form__contacts {
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  margin-bottom: 23px;
   padding: 0;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  flex-wrap: nowrap;
+  border: none;
   order: 3;
   @media(min-width: $tablet-width) {
-    flex-direction: column;
-    margin-bottom: 0;
+    width: 94%;
+    margin-right: 20px;
+    margin-bottom: 16px;
+    margin-left: 20px;
+    padding-top: 18px;
+    padding-right: 59px;
+    padding-bottom: 0;
+    padding-left: 58px;
+    border: 2px solid $grey-in-various-elements;
     order: 3;
   }
   @media(min-width: $desktop-width) {
-
+    width: 97.8%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding-top: 14px;
   }
 }
 
-.competition-form__contacts {
+.competition-form__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   margin: 0;
+  margin-bottom: 23px;
   padding: 0;
-  border: none;
+  flex-wrap: nowrap;
   @media(min-width: $tablet-width) {
-    box-sizing: border-box;
-    padding-top: 14px;
-    padding-right: 59px;
-    padding-bottom: 20px;
-    padding-left: 58px;
-    border: 2px solid $grey-in-various-elements;
+    flex-direction: column;
   }
   @media(min-width: $desktop-width) {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    margin-bottom: 8px;
     justify-content: space-between;
   }
 }
@@ -167,11 +172,11 @@
   flex-direction: column;
   margin-bottom: 17px;
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
   }
   @media(min-width: $desktop-width) {
-    outline: 1px solid green;
-    width: 30%;
+    width: 45.6%;
+    margin-bottom: 0;
   }
 }
 
@@ -179,8 +184,7 @@
   display: flex;
   flex-direction: column;
   @media(min-width: $desktop-width) {
-    outline: 1px solid green;
-    width: 30%;
+    width: 45.6%;
   }
 }
 
@@ -208,12 +212,12 @@
   padding-left: 20px;
   border: 2px solid $grey-in-various-elements;
   @media(min-width: $tablet-width) {
-    width: auto;
     margin-bottom: 10px;
     padding-right: 63px;
   }
   @media(min-width: $desktop-width) {
     padding-right: 0;
+    //margin-bottom: 7px;
   }
 }
 
@@ -240,12 +244,17 @@
     padding-right: 20px;
     padding-left: 20px;
   }
+  @media(min-width: $desktop-width) {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 18px;
+    margin-bottom: 17px;
+  }
 }
 
 .competition-form__emotions {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 48px;
   border: none;
@@ -254,6 +263,9 @@
     padding-bottom: 48px;
     padding-left: 57px;
     border: 2px solid $grey-in-various-elements;
+  }
+  @media(min-width: $desktop-width) {
+    padding-bottom: 44px;
   }
 }
 
@@ -286,6 +298,10 @@
     width: 100%;
     min-height: 193px;
   }
+  @media(min-width: $desktop-width) {
+    padding-top: 12px;
+    min-height: 124px;
+  }
 }
 
 .competition-form__emotions-text-area::placeholder {
@@ -293,6 +309,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+
   color: $dark-in-various-elements;
 }
 
@@ -307,6 +324,9 @@
     width: 100%;
     justify-content: space-between;
   }
+  //@media(min-width: $desktop-width) {
+  //  justify-content: flex-start;
+  //}
 }
 
 .competition-form__footnote {
@@ -322,6 +342,12 @@
   color: $color-for-attention;
 }
 
+.competition-form__footnote--disappearing {
+  display: none;
+  @media(min-width: $desktop-width) {
+    display: inline;
+  }
+}
 .competition-form__checkboxes-wrapper {
   box-sizing: border-box;
   width: 100%;
@@ -341,7 +367,8 @@
   @media(min-width: $desktop-width) {
     width: 100%;
     order: 4;
-
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -352,6 +379,7 @@
   padding-right: 20px;
   padding-left: 20px;
   background-color: $background-dark;
+
   order: 4;
   @media(min-width: $tablet-width) {
     margin-bottom: 55px;
@@ -361,8 +389,8 @@
   }
   @media(min-width: $desktop-width) {
     width: 45.4%;
-    padding: 0;
     margin-right: 10px;
+    padding: 0;
   }
 }
 

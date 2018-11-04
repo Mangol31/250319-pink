@@ -7,6 +7,9 @@
     padding-bottom: 32px;
     border: 2px solid $grey-in-various-elements;
   }
+  @media(min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .checkboxes__legend {
@@ -32,9 +35,12 @@
   list-style: none;
   @media(min-width: $desktop-width) {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
+    padding-left: 93px;
+    max-height: 200px;
+    margin-bottom: 3px;
   }
 }
 
@@ -46,16 +52,25 @@
   @media(min-width: $tablet-width) {
     padding-left: 95px;
   }
+  @media(min-width: $desktop-width) {
+    display: block;
+    padding-left: 0;
+    width: 30%;
+    box-sizing: border-box;
+    margin-right: 67px;
+  }
 }
 
 .checkboxes__item:last-child {
   margin-bottom: 0;
 }
 
-.checkboxes__checkbox {
-  margin: 0;
-  padding: 0;
+.checkboxes__item--left-padding {
+  @media(min-width: $desktop-width) {
+    padding-left: 10px;
+  }
 }
+
 
 .checkbox__label {
   font-size: 18px;
