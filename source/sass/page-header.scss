@@ -40,8 +40,14 @@
   }
 }
 
+.page-header__upper-part--photo {
+  @media(min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    padding-bottom: 99px;
+  }
+}
+
 .page-header__upper-part--form {
-  @media(min-width: $tablet-width) and (max-width: $tablet-width - 1){
+  @media(min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     padding-bottom: 42px;
   }
 }

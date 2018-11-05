@@ -58,6 +58,11 @@
   }
 }
 
+.competition-form__user-wrapper--bottom-desktop {
+  @media(min-width: $desktop-width) {
+    margin-bottom: 37px;
+  }
+}
 .competition-form__user-label {
   font-size: 14px;
   font-weight: 400;
@@ -239,7 +244,7 @@
   width: 100%;
   order: 5;
   @media(min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     padding-top: 21px;
     padding-right: 20px;
     padding-left: 20px;
@@ -260,7 +265,7 @@
   border: none;
   @media(min-width: $tablet-width) {
     padding-right: 57px;
-    padding-bottom: 48px;
+    padding-bottom: 52px;
     padding-left: 57px;
     border: 2px solid $grey-in-various-elements;
   }
@@ -336,6 +341,9 @@
   text-align: center;
   text-transform: uppercase;
   color: $dark-in-various-elements;
+  @media(min-width: $tablet-width) {
+    line-height: 36px;
+  }
 }
 
 .competition-form__footnote--red {
@@ -358,7 +366,7 @@
   background-color: $background-dark;
   order: 2;
   @media(min-width: $tablet-width) {
-    margin-bottom: 19px;
+    margin-bottom: 16px;
     padding-right: 20px;
     padding-left: 20px;
     background-color: $white-in-various-elements;
@@ -369,6 +377,7 @@
     order: 4;
     padding-right: 10px;
     padding-left: 10px;
+    margin-bottom: 20px;
   }
 }
 
