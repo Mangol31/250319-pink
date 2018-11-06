@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   list-style: none;
 }
 
@@ -14,7 +16,7 @@
 }
 
 .switches__item {
-  margin-right: 19px;
+  margin-right: 13px;
 }
 
 .switches__item:last-child {
@@ -22,15 +24,26 @@
 }
 
 .switches__button {
-  padding:0;
+  padding: 0;
   width: 6px;
   height: 6px;
-  border: 3px solid $grey-in-various-elements;
   border-radius: 50px;
   background-color: $slider-swithes-light;
+  box-sizing: content-box;
+  border: 3px solid $white-in-various-elements;
+  outline: none;
+  &:hover, &:focus {
+    background-color: $switches-hover;
+  }
+  &:active {
+    background-color: $switches-active;
+  }
 }
-
+.switches__button--grey-background {
+  border: 3px solid $background-dark;
+}
 .switches__button--active {
-  border: 2px solid $dark-in-various-elements;
+  border: 3px solid $dark-in-various-elements;
   background-color: $grey-in-various-elements;
+
 }

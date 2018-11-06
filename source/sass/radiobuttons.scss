@@ -1,9 +1,111 @@
 .radiobuttons {
-  order: 4;
+  box-sizing: border-box;
+  margin-bottom: 37px;
+  padding-top: 20px;
+  border: none;
   @media(min-width: $tablet-width) {
-    order: 2;
+    margin-bottom: 0;
+    padding-top: 29px;
+    padding-bottom: 57px;
+    padding-left: 68px;
+    border: 2px solid $grey-in-various-elements;
   }
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+  }
+}
+
+.radiobuttons__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-for-attention;
+  @media (min-width: $desktop-width) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.radiobuttons__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-start;
+}
+
+.radiobuttons__item {
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+  padding-left: 57px;
+  @media(min-width: $tablet-width) {
+    padding-left: 48px;
+  }
+}
+
+.radiobuttons__item:last-child {
+  margin-bottom: 0;
+}
+
+.radiobuttons__single-label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  color: $dark-in-various-elements;
   @media(min-width: $desktop-width) {
-    width: 45%;
+    margin-left: 17px;
+  }
+}
+
+/*---------------------*/
+.radiobuttons__radio {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.radiobuttons__radio + .radiobuttons__single-label::before {
+  position: absolute;
+  top: -8px;
+  left: -70px;
+  width: 35px;
+  height: 35px;
+  content: "";
+  border: 2px solid $grey-in-various-elements;
+  border-radius: 50%;
+  background-color: $white-in-various-elements;
+  @media(min-width: $tablet-width) {
+    left: -61px;
+  }
+}
+
+.radiobuttons__radio:hover + .radiobuttons__single-label::before {
+  border: 2px solid $dark-in-various-elements;
+}
+
+.radiobuttons__radio:active + .radiobuttons__single-label::before {
+  border: 2px solid $color-for-attention;
+}
+
+.radiobuttons__radio:checked + .radiobuttons__single-label::after {
+  position: absolute;
+  top: -2px;
+  left: -68px;
+  width: 26px;
+  height: 26px;
+  content: "";
+  background-image: url('../img/icon-map-marker.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  @media(min-width: $tablet-width) {
+    left: -59px;
   }
 }

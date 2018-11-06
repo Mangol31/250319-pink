@@ -1,70 +1,110 @@
 .pink-info {
   width: 100%;
+  padding-top: 40px;
+  @media(min-width: $tablet-width) {
+    padding-top: 48px;
+  }
+  @media(min-width: $desktop-width) {
+    overflow: visible;
+
+    box-sizing: border-box;
+    padding-top: 66px;
+  }
 }
 
 .pink-info__slogan-wrapper {
-  padding-top: 46px;
-  padding-bottom: 30px;
-
+  padding-right: 20px;
+  padding-left: 20px;
   @media(min-width: $tablet-width) {
+    padding-bottom: 50px;
+
     order: 2;
+  }
+  @media(min-width: $desktop-width) {
+    padding-bottom: 161px;
   }
 }
 
 .pink-info__slogan {
-  margin: 0;
-  padding: 0;
   font-size: 24px;
-  text-align: center;
   font-weight: 300;
-  margin-bottom: 35px;
+  line-height: 29px;
 
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+
+  text-align: center;
   @media(min-width: $tablet-width) {
     font-size: 40px;
-    line-height: 60px;
+    line-height: 49px;
+
+    margin-bottom: 0;
   }
-}
+
   @media(min-width: $desktop-width) {
     font-size: 50px;
     line-height: 60px;
+  }
+}
+
+.pink-info__slogan br {
+  display: none;
+  @media(min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .pink-info__list-wrapper {
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 322px;
-  background-color: $background-dark;
   position: relative;
+
   overflow: hidden;
+
+  padding-top: 67px;
+  padding-right: 20px;
+  padding-bottom: 286px;
+  padding-left: 20px;
+
+  background-color: $background-dark;
   @media(min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 0;
-  }
 
+    padding: 0 20px;
+
+    justify-content: space-between;
+  }
   @media(min-width: $desktop-width) {
+    overflow: visible;
+
+    box-sizing: border-box;
+    padding-right: 10px;
+    padding-left: 10px;
+
     flex-wrap: wrap;
   }
   &::after {
     position: absolute;
+    bottom: -42px;
+    left: 82px;
+
     width: 157px;
     height: 320px;
-    content: url("../img/iphone-screen-mobile@1x.png");
-    bottom: -37px;
-    left: 85px;
+
+    content: url('../img/iphone-screen-mobile@1x.png');
 
     @media(min-width: $tablet-width) {
       display: none;
     }
   }
 }
+
 .pink-info__mobile {
   display: none;
 
   @media(min-width: $tablet-width) {
     display: block;
+
     order: 1;
   }
 
@@ -72,40 +112,97 @@
     display: none;
   }
 }
+
 .pink-info__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
+
   text-align: center;
 
   @media(min-width: $tablet-width) {
+    padding-top: 55px;
+
     order: 2;
   }
 
   @media(min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
     justify-content: space-between;
   }
 }
 
 .pink-info__item {
+  margin-bottom: 32px;
+  @media(min-width: $tablet-width) {
+    margin-bottom: 35px;
+    padding-left: 42px;
+  }
   @media(min-width: $desktop-width) {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 32%;
+    margin-top: -86px;
+    padding-left: 0;
+    align-items: center;
   }
 }
 
 .pink-info__screen {
   display: none;
   @media(min-width: $desktop-width) {
-    display: block;
+    display: flex;
+    margin: 0;
+    margin-bottom: 26px;
+    padding: 0;
   }
 }
 
 .pink-info__item-header {
   font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
   color: $dark-on-white;
+  @media(min-width: $tablet-width) {
+    text-align: left;
+  }
+  @media(min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+}
+
+.pink-info__item-header br {
+  display: none;
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.pink-info__item-text {
+  @media(min-width: $tablet-width) {
+    line-height: 24px;
+    text-align: left;
+  }
+  @media(min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.pink-info__item-text br {
+  display: none;
+  @media(min-width: $desktop-width) {
+    display: inline;
+  }
 }

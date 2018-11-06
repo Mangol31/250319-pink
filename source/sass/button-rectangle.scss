@@ -1,0 +1,43 @@
+.button-rectangle {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 45px;
+  color: $white-in-various-elements;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-rectangle--green {
+  border: 2px solid $color-for-rectangle-button;
+  background-color: $color-for-rectangle-button;
+  @media (min-width: $tablet-width) {
+    padding: 15px 55px;
+  }
+  &:hover {
+    border: 2px solid $color-for-active-rectangle-button;
+    background-color: $color-for-active-rectangle-button;
+  }
+  &:active {
+    color: rgba($white-in-various-elements, 0.3);
+  }
+}
+
+.button-rectangle--green:disabled {
+  border: 2px solid $grey-in-various-elements;
+  background-color: $grey-in-various-elements;
+  color: $white-in-various-elements;
+}
+
+.button-rectangle--modal-window {
+  margin-left: 22px;
+  margin-right: 22px;
+}

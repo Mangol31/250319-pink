@@ -1,28 +1,70 @@
 .footer {
-  padding-top: 50px;
+  padding-top: 33px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
   @media(min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+  @media(min-width: $desktop-width) {
+    padding-top: 102px;
+  }
+}
+.footer--form-top-padding {
+  @media(min-width: $desktop-width) {
+    padding-top: 17px;
+  }
+}
+.footer--index-top-padding {
+  @media(min-width: $tablet-width) {
+    padding-top: 32px;
+  }
+  @media(min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+}
+
+.footer--mobile {
+  display: none;
+  @media(min-width: $tablet-width) {
+    box-sizing: border-box;
+    display: flex;
   }
 }
 
 .footer__logo {
   font-weight: 300;
   margin-bottom: 43px;
+  @media(min-width: $tablet-width) {
+    margin-right: 74px;
+  }
+  @media(min-width: $desktop-width) {
+    margin-right: 235px;
+  }
 }
 
 .footer__dev-wrapper {
+  margin: 0;
+  padding: 0;
+  //min-width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-@media(max-width: $tablet-width) {
-  .footer--mobile {
-  display: none;
-  }
+
+.footer__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $dark-in-various-elements;
+}
+
+.footer__academy-logo {
+  width: 27px;
+  height: 34px;
 }

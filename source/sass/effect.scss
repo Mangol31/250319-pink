@@ -2,13 +2,82 @@
   display: none;
   order: 3;
   @media(min-width: $tablet-width) {
-    padding-top: 60px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    margin-bottom: 52px;
+    padding-top: 60px;
     background-color: $white-in-various-elements;
+    justify-content: space-between;
   }
   @media(min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-top: 13px;
+    padding-bottom: 65px;
     background-color: $background-dark;
+    justify-content: flex-start;
+  }
+}
+
+.effect__clock {
+  margin-right: 55px;
+  @media(min-width: $desktop-width) {
+    width: 298px;
+    height: 345px;
+  }
+}
+
+.effect__text-wrapper {
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  padding-right: 10px;
+  padding-left: 16px;
+  @media(min-width: $desktop-width) {
+    padding-top: 89px;
+    padding-left: 14px;
+  }
+}
+
+.effect__caption {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0;
+  padding: 0;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.effect__caption br {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.effect__text {
+  line-height: 24px;
+  margin-top: 11px;
+  margin-bottom: 10px;
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.effect__text br {
+  display: none;
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.effect__link {
+  line-height: 24px;
+  color: $color-for-attention;
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

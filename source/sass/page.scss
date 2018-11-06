@@ -6,10 +6,12 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  position: relative;
   @media(min-width: $tablet-width) {
     width: 660px;
   }
   @media(min-width: $desktop-width) {
-    width: 940px;
+    width: 960px;
+    position: relative;
   }
 }
