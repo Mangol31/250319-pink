@@ -86,6 +86,7 @@
   margin: 0;
   padding: 0;
   padding-left: 20px;
+  padding-right: 20px;
 
   border: 2px solid $grey-in-various-elements;
   @media(min-width: $tablet-width) {
@@ -93,9 +94,9 @@
   }
 }
 
-.competition-form__user-surname[placeholder],
-.competition-form__user-name[placeholder],
-.competition-form__user-patronymic[placeholder] {
+.competition-form__user-surname::placeholder,
+.competition-form__user-name::placeholder,
+.competition-form__user-patronymic::placeholder {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -215,6 +216,7 @@
   margin: 0;
   padding: 0;
   padding-left: 20px;
+  padding-right: 20px;
   border: 2px solid $grey-in-various-elements;
   @media(min-width: $tablet-width) {
     margin-bottom: 10px;
@@ -291,7 +293,8 @@
   }
 }
 
-.competition-form__emotions-text-area {
+.competition-form__emotions-textarea {
+  display: block;
   box-sizing: border-box;
   min-width: 277px;
   min-height: 201px;
@@ -309,12 +312,11 @@
   }
 }
 
-.competition-form__emotions-text-area::placeholder {
+.competition-form__emotions-textarea::placeholder {
   font-family: 'Open Sans';
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-
   color: $dark-in-various-elements;
 }
 
@@ -346,16 +348,20 @@
   }
 }
 
-.competition-form__footnote--red {
-  color: $color-for-attention;
+.competition-form__footnote-star {
+  display: none;
+  @media(min-width: $desktop-width) {
+    display: inline;
+    color: $color-for-attention;
+  }
 }
-
-.competition-form__footnote--disappearing {
+.competition-form__footnote-disappearing {
   display: none;
   @media(min-width: $desktop-width) {
     display: inline;
   }
 }
+
 .competition-form__checkboxes-wrapper {
   box-sizing: border-box;
   width: 100%;

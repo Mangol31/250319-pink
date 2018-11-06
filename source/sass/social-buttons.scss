@@ -41,7 +41,7 @@
   }
 }
 
-.social-buttons--twitter {
+.social-buttons__link--twitter {
   position: relative;
   &::after {
     position: absolute;
@@ -51,7 +51,7 @@
   }
 }
 
-.social-buttons--fb {
+.social-buttons__link--fb {
   position: relative;
   &::after {
     position: absolute;
@@ -61,7 +61,7 @@
   }
 }
 
-.social-buttons--youtube {
+.social-buttons__link--youtube {
   position: relative;
   &::after {
     position: absolute;

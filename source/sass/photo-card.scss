@@ -167,7 +167,7 @@
   padding-left: 18px;
 }
 
-.photo-card__user--panorana {
+.photo-card__user-name--panorana {
   @media(min-width: $tablet-width) {
     margin-right: 241px;
     text-indent: 10px;
@@ -194,7 +194,7 @@
   padding-left: 18px;
 }
 
-.photo-card__comment--panorama {
+.photo-card__user-comment--panorama {
   @media(min-width: $tablet-width) {
     padding-left: 28px;
     order: 3;

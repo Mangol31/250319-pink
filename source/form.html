@@ -67,27 +67,27 @@
         <ul class="checkboxes__list">
           <li class="checkboxes__item">
             <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="selfi" id="selfi" checked>
-            <label class="checkbox__label" for="selfi">Сделал селфи с акулой</label>
+            <label class="checkboxes__label" for="selfi">Сделал селфи с акулой</label>
           </li>
           <li class="checkboxes__item">
             <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="beach" id="beach" checked>
-            <label class="checkbox__label" for="beach">Обгорел на пляже</label>
+            <label class="checkboxes__label" for="beach">Обгорел на пляже</label>
           </li>
           <li class="checkboxes__item checkboxes__item--left-padding">
             <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="norris" id="norris">
-            <label class="checkbox__label" for="norris">Видел Чака Норриса</label>
+            <label class="checkboxes__label" for="norris">Видел Чака Норриса</label>
           </li>
           <li class="checkboxes__item checkboxes__item--left-padding">
             <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="souvenir" id="souvenir">
-            <label class="checkbox__label" for="souvenir">Накупил сувениров</label>
+            <label class="checkboxes__label" for="souvenir">Накупил сувениров</label>
           </li>
           <li class="checkboxes__item">
             <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="tower" id="tower" checked>
-            <label class="checkbox__label" for="tower">Удержал башню</label>
+            <label class="checkboxes__label" for="tower">Удержал башню</label>
           </li>
           <li class="checkboxes__item">
             <input class="checkboxes__checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
-            <label class="checkbox__label" for="hotel">Разгромил отель</label>
+            <label class="checkboxes__label" for="hotel">Разгромил отель</label>
           </li>
         </ul>
       </fieldset>
@@ -134,7 +134,7 @@
     <div class="competition-form__emotions-wrapper">
     <fieldset class="competition-form__emotions general-indent">
       <legend class="competition-form__emotions-legend">Опишите свои эмоции</legend>
-      <textarea class="competition-form__emotions-text-area" name="user__emotions" id="user__emotions"
+      <textarea class="competition-form__emotions-textarea" name="user__emotions" id="user__emotions"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"
                 aria-label="Опишите ваши эмоции"></textarea>
     </fieldset>
@@ -142,7 +142,7 @@
     <div class="competition-form__button-wrapper general-indent">
       <button class="button-rectangle button-rectangle--green" type="submit">Отправить форму</button>
       <p class="competition-form__footnote">
-        <span class="competition-form__footnote--red">*</span>&nbsp;—&nbsp;обязательные <span class="competition-form__footnote--disappearing">для заполнения </span>поля
+        <span class="competition-form__footnote-star">*</span>&nbsp;—&nbsp;обязательные <span class="competition-form__footnote-disappearing">для заполнения </span>поля
       </p>
     </div>
   </form>
@@ -152,13 +152,13 @@
   <!-- TODO Спрятать название соцкнопок при стилизации -->
   <ul class="social-buttons">
     <li class="social-buttons__item">
-      <a class="social-buttons__link social-buttons--twitter" href="#" aria-label="Twitter"></a>
+      <a class="social-buttons__link social-buttons__link--twitter" href="#" aria-label="Twitter"></a>
     </li>
     <li class="social-buttons__item">
-      <a class="social-buttons__link social-buttons--fb" href="#" aria-label="FaceBook"></a>
+      <a class="social-buttons__link social-buttons__link--fb" href="#" aria-label="FaceBook"></a>
     </li>
     <li class="social-buttons__item">
-      <a class="social-buttons__link social-buttons--youtube" href="#" aria-label="YouTube"></a>
+      <a class="social-buttons__link social-buttons__link--youtube" href="#" aria-label="YouTube"></a>
     </li>
   </ul>
   <div class="footer__dev-wrapper">
