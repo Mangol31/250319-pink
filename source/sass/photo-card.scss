@@ -63,10 +63,14 @@
   margin-bottom: 12px;
   padding: 0;
   @media(min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 17px;
+    width: 300px;
+    height: 300px;
   }
   @media(min-width: $desktop-width) {
-    margin-bottom: 24px;
+    margin-bottom: 17px;
+    width: 300px;
+    height: 400px;
   }
 }
 
@@ -77,55 +81,60 @@
   margin-right: -20px;
   margin-left: -20px;
   @media(min-width: $tablet-width) {
-    min-width: 660px;
+    min-width: 700px;
+    height: auto;
+    margin-left: -40px;
   }
   @media(min-width: $desktop-width) {
     margin-left: 0;
     min-width: 1200px;
-    left: -14%;
+    height: auto;
+    left: -130px;
   }
 }
 
-.photo-card__photo--panorama-mobile {
-  display: block;
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
 
-.photo-card__photo--panorama-tablet {
-  display: none;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-    display: block;
-  }
-}
 
-.photo-card__photo--panorama-desktop {
-  display: none;
-  @media(min-width: $desktop-width) {
-    display: block;
-  }
-}
+//.photo-card__photo--panorama-mobile {
+//  display: block;
+//  @media (min-width: $tablet-width) {
+//    display: none;
+//  }
+//}
+//
+//.photo-card__photo--panorama-tablet {
+//  display: none;
+//  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+//    display: block;
+//  }
+//}
+//
+//.photo-card__photo--panorama-desktop {
+//  display: none;
+//  @media(min-width: $desktop-width) {
+//    display: block;
+//  }
+//}
 
-.photo-card__photo-mobile {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.photo-card__photo-tablet {
-  display: none;
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-    display: block;
-  }
-}
-
-.photo-card__photo-desktop {
-  display: none;
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
+//.photo-card__photo-mobile {
+//  @media (min-width: $tablet-width) {
+//    display: none;
+//  }
+//}
+//
+//.photo-card__photo-tablet {
+//  display: none;
+//  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+//    display: block;
+//  }
+//}
+//
+//.photo-card__photo-desktop {
+//  display: none;
+//  @media (min-width: $desktop-width) {
+//    display: block;
+//  }
+//}
 
 .photo-card__text-wrapper-panorama {
   margin-top: 155px;
@@ -156,6 +165,9 @@
     box-sizing: border-box;
     margin-bottom: -24px;
     padding-right: 40px;
+  }
+  @media(min-width: $desktop-width) {
+    padding-right: 21px;
   }
 }
 

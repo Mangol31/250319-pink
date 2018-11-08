@@ -5,14 +5,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pink</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 <body class="page">
 <!--<div class="general-container">-->
 <header class="main-header">
   <div class="main-header__logo-wrapper">
-    <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-    <img class="main-header__logo main-header__logo--tablet" src="img/logo-pink-white-tablet.svg" width="147"
-         height="40" alt="PINK">
+    <picture>
+      <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+      <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+      <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+    </picture>
     <button class="main-header__menu-button visually-hidden" type="button" aria-label="Главное меню"></button>
     <button class="main-header__close-menu-button visually-hidden" type="button" aria-label="Закрыть меню"></button>
   </div>
@@ -37,12 +44,11 @@
   <section class="download">
     <h2 class="visually-hidden">Скачать PINK</h2>
     <div class="download__top-wrapper">
-      <img class="download__intro download__intro--mobile" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
-           alt="Скачать приложение">
-      <img class="download__intro download__intro--tablet" src="img/iphone-hand-tablet@1x.png" width="700" height="545"
-           alt="Скачать приложение">
-      <img class="download__intro download__intro--desktop" src="img/iphone-hand-desktop@1x.png" width="1050"
-           height="645" alt="Скачать приложение">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+        <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+        <img class="download__intro" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@1x.png 1x, img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="Скачать приложение">
+      </picture>
     </div>
     <div class="download__lower-wrapper">
       <p class="download__text download__text--caption">Взгляните<br> на жизнь<br> иначе!</p>
@@ -74,26 +80,26 @@
       <p class="pink-info__slogan">Нам есть, что вам<br> предложить!</p>
     </div>
     <div class="pink-info__list-wrapper">
-      <img class="pink-info__mobile" src="img/iphone-screen-3-tablet@1x.png" width="268" height="481" alt="PINK">
+      <img class="pink-info__mobile" src="img/iphone-screen-3-tablet@1x.png" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x" width="268" height="481" alt="PINK">
       <ul class="pink-info__list">
         <li class="pink-info__item">
-          <img class="pink-info__screen" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302"
+          <img class="pink-info__screen" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302"
                alt="PINK поднимает настроение">
           <h3 class="pink-info__item-header">Поднимает настроение</h3>
           <p class="pink-info__item-text">Приложение позволит вам<br> победить осеннюю хандру<br> и депрессию буквально
-            в<br>
-            несколько кликов!</p>
+            в<br> несколько кликов!</p>
         </li>
         <li class="pink-info__item">
-          <img class="pink-info__screen" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302"
-               alt="PINK поднимает настроение">
+          <!-- TODO ретинизация -->
+          <img class="pink-info__screen" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" alt="PINK поднимает настроение">
           <h3 class="pink-info__item-header">Меняет мир <br>вокруг</h3>
           <p class="pink-info__item-text">Сделайте снимок и<br> украсьте его смайликом<br> или текстовой подписью,<br>
             чтобы
             усилить эффект</p>
         </li>
         <li class="pink-info__item">
-          <img class="pink-info__screen" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302"
+          <!-- TODO ретинизация -->
+          <img class="pink-info__screen" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302"
                alt="PINK поднимает настроение">
           <h3 class="pink-info__item-header">Заводит<br> новых друзей</h3>
           <p class="pink-info__item-text">Ставьте лайки,<br> комментируйте, делитесь<br> фотографиями с друзьями<br> и
@@ -290,18 +296,25 @@
   <section class="map">
     <h2 class="visually-hidden">Карта проезда</h2>
     <div class="map__mobile">
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adee2af3dec44802dd867f8616ef543101f4205f1ca413c591e0546fe6b30eec2&amp;width=100%25&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
+      <script type="text/javascript" charset="utf-8" async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adee2af3dec44802dd867f8616ef543101f4205f1ca413c591e0546fe6b30eec2&amp;width=100%25&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
     <div class="map__tablet">
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adee2af3dec44802dd867f8616ef543101f4205f1ca413c591e0546fe6b30eec2&amp;width=100%25&amp;height=375&amp;lang=ru_RU&amp;scroll=true"></script>
-  </div>
+      <script type="text/javascript" charset="utf-8" async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adee2af3dec44802dd867f8616ef543101f4205f1ca413c591e0546fe6b30eec2&amp;width=100%25&amp;height=375&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
     <div class="map__desktop">
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adee2af3dec44802dd867f8616ef543101f4205f1ca413c591e0546fe6b30eec2&amp;width=100%25&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
+      <script type="text/javascript" charset="utf-8" async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adee2af3dec44802dd867f8616ef543101f4205f1ca413c591e0546fe6b30eec2&amp;width=100%25&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
   </section>
 </main>
 <footer class="footer general-indent footer--mobile footer--index-top-padding">
-  <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+  <picture>
+    <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+    <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
+    <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+  </picture>
   <!-- TODO Спрятать название соцкнопок при стилизации -->
   <ul class="social-buttons">
     <li class="social-buttons__item">

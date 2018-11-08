@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 33px;
+  padding-top: 39px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -9,9 +9,10 @@
   @media(min-width: $tablet-width) {
     flex-direction: row;
     justify-content: flex-start;
+    padding-top: 36px;
   }
   @media(min-width: $desktop-width) {
-    padding-top: 102px;
+    padding-top: 104px;
   }
 }
 .footer--form-top-padding {
@@ -38,7 +39,9 @@
 
 .footer__logo {
   font-weight: 300;
-  margin-bottom: 43px;
+  margin-bottom: 36px;
+  width: 147px;
+  height: 40px;
   @media(min-width: $tablet-width) {
     margin-right: 74px;
   }

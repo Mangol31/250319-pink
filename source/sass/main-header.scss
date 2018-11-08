@@ -18,14 +18,14 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 22px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   @media(min-width: $tablet-width) {
     padding-top: 27px;
-    padding-bottom: 42px;
+    padding-bottom: 36px;
   }
   @media(min-width: $desktop-width) {
     padding-left: 10px;
@@ -35,16 +35,23 @@
 
 .main-header__logo {
   @media(min-width: $tablet-width) {
-    display: none;
+    width: 147px;
+    height: 40px;
   }
 }
 
-.main-header__logo--tablet {
-  display: none;
-  @media(min-width: $tablet-width) {
-    display: block;
-  }
-}
+//.main-header__logo {
+//  @media(min-width: $tablet-width) {
+//    display: none;
+//  }
+//}
+//
+//.main-header__logo--tablet {
+//  display: none;
+//  @media(min-width: $tablet-width) {
+//    display: block;
+//  }
+//}
 
 .main-header__menu-button {
   width: 50px;

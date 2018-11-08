@@ -45,8 +45,8 @@
   border: 3px solid $color-for-attention;
   background-color: $background-dark;
   @media(min-width: $desktop-width) {
-    padding-left: 43px;
-    padding-right: 43px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   &:hover {
     background-color: $color-for-attention;
