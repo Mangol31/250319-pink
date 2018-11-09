@@ -16,7 +16,6 @@
   &:hover {
     color: $color-for-attention;
     background-color: $white-in-various-elements;
-    //box-shadow: 0 5px 7px rgba($button-oval-shadow, 0.75);
   }
   &:active {
     color: rgba($color-for-attention, 0.3);
@@ -45,8 +44,8 @@
   border: 3px solid $color-for-attention;
   background-color: $background-dark;
   @media(min-width: $desktop-width) {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 42px;
+    padding-right: 42px;
   }
   &:hover {
     background-color: $color-for-attention;
