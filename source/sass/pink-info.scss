@@ -83,14 +83,17 @@
     position: absolute;
     bottom: -42px;
     left: 82px;
-
     width: 157px;
     height: 320px;
-
-    content: url('../img/iphone-screen-mobile@1x.png');
-
+    content: url("../img/iphone-screen-mobile@1x.png");
     @media(min-width: $tablet-width) {
       display: none;
+    }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      content: "";
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
     }
   }
 }
