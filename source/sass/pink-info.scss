@@ -57,14 +57,11 @@
 
 .pink-info__list-wrapper {
   position: relative;
-
   overflow: hidden;
-
   padding-top: 67px;
   padding-right: 20px;
   padding-bottom: 286px;
   padding-left: 20px;
-
   background-color: $background-dark;
   @media(min-width: $tablet-width) {
     display: flex;
