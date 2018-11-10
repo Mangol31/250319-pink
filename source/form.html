@@ -5,13 +5,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pink</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 <body class="page">
 <header class="main-header">
   <div class="main-header__logo-wrapper">
-    <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-    <img class="main-header__logo main-header__logo--tablet" src="img/logo-pink-white-tablet.svg" width="147"
-         height="40" alt="PINK">
+    <picture>
+      <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+      <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+      <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+    </picture>
     <button class="main-header__menu-button visually-hidden" type="button" aria-label="Главное меню"></button>
     <button class="main-header__close-menu-button visually-hidden" type="button" aria-label="Закрыть меню"></button>
   </div>
@@ -148,7 +154,11 @@
   </form>
 </main>
 <footer class="footer general-indent footer--form-top-padding">
-  <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+  <picture>
+    <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+    <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
+    <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+  </picture>
   <!-- TODO Спрятать название соцкнопок при стилизации -->
   <ul class="social-buttons">
     <li class="social-buttons__item">

@@ -350,7 +350,7 @@
 
 .competition-form__footnote-star {
   display: none;
-  @media(min-width: $desktop-width) {
+  @media(min-width: $tablet-width) {
     display: inline;
     color: $color-for-attention;
   }

@@ -69,7 +69,7 @@
 
 .tariff__table-column--caption {
   flex-direction: column;
-  min-height: 79px;
+  min-height: 97px;
   padding-top: 16px;
   text-transform: uppercase;
   color: $grey-in-various-elements;
@@ -78,6 +78,7 @@
   justify-content: flex-start;
   @media(min-width: $tablet-width) {
     padding-top: 10px;
+    min-height: 79px;
   }
   @media(min-width: $desktop-width) {
     font-size: 18px;

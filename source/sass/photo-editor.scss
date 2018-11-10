@@ -4,7 +4,7 @@
   background-color: $background-dark;
   @media(min-width: $tablet-width) {
     padding-top: 56px;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
   }
   @media(min-width: $desktop-width) {
     padding-right: 60px;
@@ -33,28 +33,36 @@
 
 .photo-editor__image {
   margin-bottom: 35px;
-}
-
-.photo-editor__image--mobile {
-  display: block;
   @media(min-width: $tablet-width) {
-    display: none;
+    width: 300px;
+    height: 400px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
   }
 }
 
-.photo-editor__image--tablet {
-  display: none;
-  @media(min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-    display: block;
-  }
-}
-
-.photo-editor__image--desktop {
-  display: none;
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
+//.photo-editor__image--mobile {
+//  display: block;
+//  @media(min-width: $tablet-width) {
+//    display: none;
+//  }
+//}
+//
+//.photo-editor__image--tablet {
+//  display: none;
+//  @media(min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+//    display: block;
+//  }
+//}
+//
+//.photo-editor__image--desktop {
+//  display: none;
+//  @media (min-width: $desktop-width) {
+//    display: block;
+//  }
+//}
 
 .photo-editor__list {
   display: flex;

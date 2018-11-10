@@ -57,43 +57,65 @@
 
 .pink-info__list-wrapper {
   position: relative;
-
   overflow: hidden;
-
   padding-top: 67px;
   padding-right: 20px;
   padding-bottom: 286px;
   padding-left: 20px;
-
   background-color: $background-dark;
   @media(min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-
-    padding: 0 20px;
-
-    justify-content: space-between;
+    padding-left: 287px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 8px;
   }
   @media(min-width: $desktop-width) {
     overflow: visible;
-
     box-sizing: border-box;
     padding-right: 10px;
     padding-left: 10px;
-
     flex-wrap: wrap;
   }
   &::after {
+    display: none;
     position: absolute;
     bottom: -42px;
     left: 82px;
-
     width: 157px;
     height: 320px;
+    content: "";
 
-    content: url('../img/iphone-screen-mobile@1x.png');
+    @media (max-width: $tablet-width - 1) {
+      display: block;
+    }
+    @media (max-resolution: $retina-dpi - 1) and (max-resolution: $retina-dppx - 1) {
+      background-image: url("../img/iphone-screen-mobile@1x.png");
+    }
+    @media (min-resolution: $retina-dpi) and (max-width: $tablet-width - 1), (min-resolution: $retina-dppx) and (max-width: $tablet-width - 1) {
+      content: "";
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
 
-    @media(min-width: $tablet-width) {
+    @media(min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+      display: block;
+      content: "";
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
+      background-size: 268px 481px;
+      background-repeat: no-repeat;
+      bottom: 0;
+      left: 20px;
+      width: 268px;
+      height: 481px;
+    }
+    @media (min-resolution: $retina-dpi) and (min-width: $tablet-width) and (max-width: $desktop-width - 1), (min-resolution: $retina-dppx) and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+    }
+    @media(min-width: $desktop-width) {
+      display: none;
+    }
+    @media (min-resolution: $retina-dpi) and (min-width: $desktop-width), (min-resolution: $retina-dppx) and (min-width: $desktop-width) {
       display: none;
     }
   }
@@ -104,7 +126,6 @@
 
   @media(min-width: $tablet-width) {
     display: block;
-
     order: 1;
   }
 
@@ -116,17 +137,12 @@
 .pink-info__list {
   margin: 0;
   padding: 0;
-
   list-style: none;
-
   text-align: center;
-
   @media(min-width: $tablet-width) {
     padding-top: 55px;
-
     order: 2;
   }
-
   @media(min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
