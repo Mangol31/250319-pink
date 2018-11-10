@@ -84,9 +84,12 @@
     width: 157px;
     height: 320px;
     content: "";
-    background-image: url("../img/iphone-screen-mobile@1x.png");
+
     @media (max-width: $tablet-width - 1) {
       display: block;
+    }
+    @media (max-resolution: $retina-dpi - 1) and (max-resolution: $retina-dppx - 1) {
+      background-image: url("../img/iphone-screen-mobile@1x.png");
     }
     @media (min-resolution: $retina-dpi) and (max-width: $tablet-width - 1), (min-resolution: $retina-dppx) and (max-width: $tablet-width - 1) {
       content: "";
@@ -106,10 +109,10 @@
       width: 268px;
       height: 481px;
     }
-    @media (min-resolution: $retina-dpi) and (min-width: $tablet-width), (min-resolution: $retina-dppx) and (min-width: $tablet-width) {
+    @media (min-resolution: $retina-dpi) and (min-width: $tablet-width) and (max-width: $desktop-width - 1), (min-resolution: $retina-dppx) and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       background-image: url("../img/iphone-screen-3-tablet@2x.png");
     }
-    @media(min-height: $desktop-width) {
+    @media(min-width: $desktop-width) {
       display: none;
     }
     @media (min-resolution: $retina-dpi) and (min-width: $desktop-width), (min-resolution: $retina-dppx) and (min-width: $desktop-width) {
