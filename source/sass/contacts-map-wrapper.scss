@@ -1,0 +1,27 @@
+.contacts-map-wrapper {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  //&:after {
+  //  position: absolute;
+  //  content: "";
+  //  top: 404px;
+  //  left: 0;
+  //  width: 320px;
+  //  height: 34px;
+  //  background-image: url("../img/bg-triangle-white-footer111.svg");
+  //  background-repeat: no-repeat;
+  //  background-position: bottom center;
+  //  fill: $white-in-various-elements;
+  //  @media (min-width: $tablet-width) {
+  //    width: 660px;
+  //    height: 34px;
+  //  }
+  //}
+}
+
+.contacts-map-wrapper__lug {
+  fill: $white-in-various-elements;
+}
+
+

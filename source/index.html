@@ -6,11 +6,16 @@
   <title>Pink</title>
   <link rel="stylesheet" href="css/style.css">
   <script>
-    document.createElement( "picture" );
+    document.createElement("picture");
   </script>
   <script src="js/picturefill.min.js" async></script>
 </head>
 <body class="page">
+<svg style="display: none">
+  <symbol  viewBox="0 0 660 34" id="white-map-triangle">
+    <polygon points="0,0 330,34 660,0"    preserveAspectRatio="xMinYMid"/>
+  </symbol>
+</svg>
 <!--<div class="general-container">-->
 <header class="main-header">
   <div class="main-header__logo-wrapper">
@@ -83,15 +88,16 @@
         <li class="pink-info__item">
           <picture>
             <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
-          <img class="pink-info__screen" src="" width="292" height="302" alt="PINK поднимает настроение">
+            <img class="pink-info__screen" src="" width="292" height="302" alt="PINK поднимает настроение">
           </picture>
           <h3 class="pink-info__item-header">Поднимает настроение</h3>
-          <p class="pink-info__item-text">Приложение позволит вам<br> победить осеннюю хандру<br> и депрессию буквально в<br> несколько кликов!</p>
+          <p class="pink-info__item-text">Приложение позволит вам<br> победить осеннюю хандру<br> и депрессию буквально
+            в<br> несколько кликов!</p>
         </li>
         <li class="pink-info__item">
           <picture>
             <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
-          <img class="pink-info__screen" src="" width="292" height="302" alt="PINK поднимает настроение">
+            <img class="pink-info__screen" src="" width="292" height="302" alt="PINK поднимает настроение">
           </picture>
           <h3 class="pink-info__item-header">Меняет мир <br>вокруг</h3>
           <p class="pink-info__item-text">Сделайте снимок и<br> украсьте его смайликом<br> или текстовой подписью,<br>
@@ -101,7 +107,7 @@
         <li class="pink-info__item">
           <picture>
             <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
-          <img class="pink-info__screen" src="" width="292" height="302" alt="PINK поднимает настроение">
+            <img class="pink-info__screen" src="" width="292" height="302" alt="PINK поднимает настроение">
           </picture>
           <h3 class="pink-info__item-header">Заводит<br> новых друзей</h3>
           <p class="pink-info__item-text">Ставьте лайки,<br> комментируйте, делитесь<br> фотографиями с друзьями<br> и
@@ -277,28 +283,46 @@
       </li>
     </ul>
   </section>
-  <section class="contacts general-indent">
-    <h2 class="visually-hidden">Контактная информация</h2>
-    <p class="contacts__text">Остались вопросы?<br> Свяжитесь с нами!</p>
-    <div class="contacts__main-wrapper">
-      <div class="contacts__wrapper contacts__wrapper--indent contacts__wrapper--order1">
-        <p class="contacts__caption">Звоните:</p>
-        <a class="contacts__info" href="tel:+78125556666">+7&nbsp;(812)&nbsp;555-66-66</a>
+  <div class="contacts-map-wrapper">
+    <section class="contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <p class="contacts__text">Остались вопросы?<br> Свяжитесь с нами!</p>
+      <div class="contacts__main-wrapper">
+        <div class="contacts__wrapper contacts__wrapper--indent contacts__wrapper--order1">
+          <p class="contacts__caption">Звоните:</p>
+          <a class="contacts__info" href="tel:+78125556666">+7&nbsp;(812)&nbsp;555-66-66</a>
+        </div>
+        <div class="contacts__wrapper contacts__wrapper--order3">
+          <p class="contacts__caption">Пишите:</p>
+          <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__wrapper contacts__wrapper--grow-changer contacts__wrapper--order2">
+          <p class="contacts__caption">Приезжайте в гости:</p>
+          <p class="contacts__info">ул. Большая<br> Конюшенная, 19/8</p>
+        </div>
       </div>
-      <div class="contacts__wrapper contacts__wrapper--order3">
-        <p class="contacts__caption">Пишите:</p>
-        <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <div class="contacts__lug">
+        <!--<svg class="svg__map-lug" width="320" height="34">-->
+          <!--<use xlink:href="#white-map-triangle"></use>-->
+        <!--</svg>-->
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/bg-triangle-white-footer-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/bg-triangle-white-footer-tablet.svg">
+        <img class="contacts__lug-img" src="" srcset="img/bg-triangle-white-footer-mobile.svg" width="320" height="34" alt="">
+        </picture>
       </div>
-      <div class="contacts__wrapper contacts__wrapper--grow-changer contacts__wrapper--order2">
-        <p class="contacts__caption">Приезжайте в гости:</p>
-        <p class="contacts__info">ул. Большая<br> Конюшенная, 19/8</p>
-      </div>
-    </div>
-  </section>
-  <section class="map">
-    <h2 class="visually-hidden">Карта проезда</h2>
-    <iframe class="map__wrapper" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aafbe9a7eeae9532a2498c349bb8e0695b62dddb386ee174cde240409f81f612a&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
-  </section>
+    </section>
+    
+    <section class="map">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <!--<iframe class="map__wrapper" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aafbe9a7eeae9532a2498c349bb8e0695b62dddb386ee174cde240409f81f612a&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>-->
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+        <img class="map__img" src="" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.jpg 2x" width="320" height="645" alt="Карта проезда">
+      </picture>
+    </section>
+  </div>
 </main>
 <footer class="footer general-indent footer--mobile footer--index-top-padding">
   <picture>
