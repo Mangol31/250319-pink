@@ -2,26 +2,43 @@
   margin: 0;
   padding: 0;
   position: relative;
-  //&:after {
-  //  position: absolute;
-  //  content: "";
-  //  top: 404px;
-  //  left: 0;
-  //  width: 320px;
-  //  height: 34px;
-  //  background-image: url("../img/bg-triangle-white-footer111.svg");
-  //  background-repeat: no-repeat;
-  //  background-position: bottom center;
-  //  fill: $white-in-various-elements;
-  //  @media (min-width: $tablet-width) {
-  //    width: 660px;
-  //    height: 34px;
-  //  }
-  //}
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 413px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 34px 160px 0 160px;
+    border-color: $white-in-various-elements transparent transparent transparent;
+
+    @media (min-width: $tablet-width) {
+      top: 403px;
+      border-width: 67px 330px 0 330px;
+    }
+    @media (min-width: $desktop-width) {
+      top: 387px;
+      border-width: 82px 480px 0 480px;
+    }
+  }
 }
 
-.contacts-map-wrapper__lug {
-  fill: $white-in-various-elements;
+.contacts-map-wrapper__marker {
+  position: absolute;
+  top: 510px;
+  left: 142px;
+  content: "";
+  width: 36px;
+  height: 36px;
+  @media (min-width: $tablet-width) {
+    top: 595px;
+    left: 312px;
+  }
+  @media (min-width: $desktop-width) {
+    top: 629px;
+    left: 462px;
+  }
 }
-
 

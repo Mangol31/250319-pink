@@ -27,7 +27,6 @@
     <button class="main-header__menu-button visually-hidden" type="button" aria-label="Главное меню"></button>
     <button class="main-header__close-menu-button visually-hidden" type="button" aria-label="Закрыть меню"></button>
   </div>
-  <!--<nav class="main-header__nav">-->
   <ul class="main-header__list">
     <li class="main-header__item">
       <a href="index.html" class="main-header__link main-header__link--active">Главная</a>
@@ -42,7 +41,6 @@
       <a class="main-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </li>
   </ul>
-  <!--</nav>-->
 </header>
 <main>
   <section class="download">
@@ -119,7 +117,7 @@
   </section>
   <section class="effect general-indent">
     <h2 class="visually-hidden">Эффекты от Pink</h2>
-    <img class="effect__clock" src="img/icon-timer.svg" width="238" height="276" alt="Эффект">
+    <!--<img class="effect__clock" src="img/icon-timer.svg" width="238" height="276" alt="Эффект">-->
     <div class="effect__text-wrapper">
       <p class="effect__caption">Эффект<br> на 24 часа!</p>
       <p class="effect__text">Британские ученые провели исследования и доказали,<br>
@@ -170,7 +168,7 @@
             <td class="tariff__table-column tariff__table-column--hidden-caption"></td>
           </tr>
           <tr class="tariff__table-row">
-            <td class="tariff__table-column tariff__table-column--hidden">
+            <td class="tariff__table-column tariff__table-column--hidden tariff__table-column--hidden-top-border">
               <p class="tariff__table-hidden-column-text">Розовый фильтр</p>
             </td>
           </tr>
@@ -179,7 +177,7 @@
               <p class="tariff__table-hidden-column-text">Смайлики</p>
           </tr>
           <tr class="tariff__table-row">
-            <td class="tariff__table-column tariff__table-column--hidden">
+            <td class="tariff__table-column tariff__table-column--hidden tariff__table-column--bottom-border">
               <p class="tariff__table-hidden-column-text">Комментарии</p>
             </td>
           </tr>
@@ -296,21 +294,12 @@
           <p class="contacts__caption">Пишите:</p>
           <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
-        <div class="contacts__wrapper contacts__wrapper--grow-changer contacts__wrapper--order2">
+        <div class="contacts__wrapper contacts__wrapper--grow-changer contacts__wrapper--order2 contacts__wrapper--tablet-bottom">
           <p class="contacts__caption">Приезжайте в гости:</p>
           <p class="contacts__info">ул. Большая<br> Конюшенная, 19/8</p>
         </div>
       </div>
-      <div class="contacts__lug">
-        <!--<svg class="svg__map-lug" width="320" height="34">-->
-          <!--<use xlink:href="#white-map-triangle"></use>-->
-        <!--</svg>-->
-        <picture>
-          <source media="(min-width: 960px)" srcset="img/bg-triangle-white-footer-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/bg-triangle-white-footer-tablet.svg">
-        <img class="contacts__lug-img" src="" srcset="img/bg-triangle-white-footer-mobile.svg" width="320" height="34" alt="">
-        </picture>
-      </div>
+
     </section>
     
     <section class="map">
@@ -322,6 +311,7 @@
         <img class="map__img" src="" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.jpg 2x" width="320" height="645" alt="Карта проезда">
       </picture>
     </section>
+    <img class="contacts-map-wrapper__marker" src="" srcset="img/icon-map-marker.svg" width="36" height="36" alt="ул. Большая Конюшенная, 19/8">
   </div>
 </main>
 <footer class="footer general-indent footer--mobile footer--index-top-padding">
@@ -345,7 +335,7 @@
   <div class="footer__dev-wrapper">
     <p class="footer__text">Разработано</p>
     <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
-      <img class="footer__academy-logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+      <img class="footer__academy-logo" src="img/htmlacademy1.svg" width="27" height="34" alt="HTML Academy">
     </a>
   </div>
 </footer>
