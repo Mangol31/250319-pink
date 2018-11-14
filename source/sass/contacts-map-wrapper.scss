@@ -15,11 +15,11 @@
     border-color: $white-in-various-elements transparent transparent transparent;
 
     @media (min-width: $tablet-width) {
-      top: 403px;
+      top: 399px;
       border-width: 67px 330px 0 330px;
     }
     @media (min-width: $desktop-width) {
-      top: 387px;
+      top: 383px;
       border-width: 82px 480px 0 480px;
     }
   }
