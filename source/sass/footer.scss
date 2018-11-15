@@ -60,6 +60,9 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  @media (min-width: $desktop-width) {
+    padding-top: 2px;
+  }
 }
 
 .footer__dev-wrapper--mobile {
@@ -73,23 +76,51 @@
   font-weight: 400;
   line-height: 18px;
   color: $dark-in-various-elements;
-  margin-right: 8px;
+  margin-right: 13px;
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
-.footer__pink-logo-tablet {
+.footer__pink-logo-tablet-mobile {
+  display: none;
   width: 147px;
   height: 40px;
-  outline: 1px solid red;
   align-self: flex-start;
   margin-right: 76px;
+  @media (max-width: $desktop-width - 1) {
+    display: inline;
+  }
+  @media (max-width: $tablet-width - 1) {
+    align-self: center;
+    margin-right: 0;
+    margin-bottom: 43px;
+  }
+}
+
+.footer__pink-logo-desktop {
+  display: none;
+  width: 147px;
+  height: 40px;
+  align-self: flex-start;
+  margin-right: 235px;
+  @media (min-width: $desktop-width) {
+    display: inline;
+
+  }
+}
+
+
+.footer__pink-logo-desktop-text-svg {
+  fill: orange;
 }
 
 .footer__academy-logo {
   margin: 0;
   padding: 0;
-    width: 39px;
-    height: 45px;
-    margin-top: 5px;
+    width: 27px;
+    height: 34px;
+    margin-top: 10px;
     fill: $color-for-attention;
 }
 

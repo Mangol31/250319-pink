@@ -8,10 +8,11 @@
   list-style: none;
   justify-content: space-between;
   @media(min-width: $tablet-width) {
-    margin-right: 88px;
+    margin-right: 94px;
   }
   @media(min-width: $desktop-width) {
-    margin-right: 227px;
+    padding-top: 6px;
+    margin-right: 231px;
   }
 }
 
