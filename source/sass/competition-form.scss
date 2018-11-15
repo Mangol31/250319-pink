@@ -63,6 +63,7 @@
     margin-bottom: 37px;
   }
 }
+
 .competition-form__user-label {
   font-size: 14px;
   font-weight: 400;
@@ -228,8 +229,53 @@
   }
 }
 
-.competition-form__contacts-user-tel {
-  @media (min-width: $tablet-width) {
+.competition-form__contacts-user-tel--pict {
+  position: relative;
+  &::after {
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      top: -70px;
+      left: 440px;
+      content: "";
+      width: 58px;
+      height: 58px;
+      background-color: $grey-in-various-elements;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 2;
+    }
+    @media (min-width: $desktop-width) {
+      top: -70px;
+      left: 313px;
+    }
+  }
+}
+
+.competition-form__contacts-user-email--pict {
+  position: relative;
+  &::after {
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      top: -70px;
+      left: 440px;
+      content: "";
+      width: 58px;
+      height: 58px;
+      background-color: $grey-in-various-elements;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 2;
+    }
+    @media (min-width: $desktop-width) {
+      top: -70px;
+      left: 313px;
+    }
   }
 }
 
@@ -355,6 +401,7 @@
     color: $color-for-attention;
   }
 }
+
 .competition-form__footnote-disappearing {
   display: none;
   @media(min-width: $desktop-width) {

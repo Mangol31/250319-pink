@@ -43,6 +43,9 @@
   line-height: 18px;
   border: 3px solid $color-for-attention;
   background-color: $background-dark;
+  @media(min-width: $tablet-width) {
+    padding-left: 0;
+  }
   @media(min-width: $desktop-width) {
     padding-left: 42px;
     padding-right: 42px;

@@ -48,7 +48,7 @@
     margin-right: 74px;
   }
   @media(min-width: $desktop-width) {
-    margin-right: 235px;
+    margin-right: 240px;
   }
 }
 
@@ -100,19 +100,22 @@
 
 .footer__pink-logo-desktop {
   display: none;
-  width: 147px;
-  height: 40px;
-  align-self: flex-start;
-  margin-right: 235px;
+
   @media (min-width: $desktop-width) {
     display: inline;
-
+    width: 147px;
+    height: 40px;
+    align-self: flex-start;
+    margin-right: 240px;
   }
 }
 
-
 .footer__pink-logo-desktop-text-svg {
-  fill: orange;
+  fill: blue;
+}
+
+.123:hover .footer__pink-logo-desktop-text-svg {
+  fill: red;
 }
 
 .footer__academy-logo {
