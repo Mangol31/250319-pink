@@ -82,41 +82,7 @@
   }
 }
 
-.footer__pink-logo-tablet-mobile {
-  display: none;
-  width: 147px;
-  height: 40px;
-  align-self: flex-start;
-  margin-right: 76px;
-  @media (max-width: $desktop-width - 1) {
-    display: inline;
-  }
-  @media (max-width: $tablet-width - 1) {
-    align-self: center;
-    margin-right: 0;
-    margin-bottom: 43px;
-  }
-}
 
-.footer__pink-logo-desktop {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: inline;
-    width: 147px;
-    height: 40px;
-    align-self: flex-start;
-    margin-right: 240px;
-  }
-}
-
-.footer__pink-logo-desktop-text-svg {
-  fill: blue;
-}
-
-.footer__pink-logo-desktop:hover .footer__pink-logo-desktop-text-svg {
-  fill: red;
-}
 
 .footer__academy-logo {
   margin: 0;
