@@ -315,7 +315,7 @@
         <ul class="photo-editor__list">
           <li class="photo-editor__item">
             <button class="photo-editor__button photo-editor__button--crop" type="button" aria-label="Кадрирование">
-              <svg class="photo-editor__svg-crop" viewBox="0 0 44 44" width="44" height="44">
+              <svg class="photo-editor__svg-crop photo-editor__svg-active" viewBox="0 0 44 44" width="44" height="44">
                 <use xlink:href="#photo-editor-button-crop"></use>
               </svg>
             </button>
@@ -330,7 +330,7 @@
           </li>
           <li class="photo-editor__item">
             <button class="photo-editor__button photo-editor__button--gamma" type="button" aria-label="Цветовая гамма">
-              <svg class="photo-editor__svg-gamma" viewBox="0 0 48 43" width="48" height="43">
+              <svg class="photo-editor__svg-gamma photo-editor__svg-gamma--status-toggle" viewBox="0 0 48 43" width="48" height="43">
                 <use xlink:href="#photo-editor-button-gamma"></use>
               </svg>
             </button>
@@ -345,7 +345,7 @@
           </li>
           <li class="photo-editor__item">
             <button class="photo-editor__button photo-editor__button--contrast" type="button" aria-label="Контраст">
-              <svg class="photo-editor__svg-contrast" viewBox="0 0 32 44" width="32px" height="44px">
+              <svg class="photo-editor__svg-contrast photo-editor__svg-contrast--status-toggle" viewBox="0 0 32 44" width="32px" height="44px">
                 <use xlink:href="#photo-editor-button-contrast"></use>
               </svg>
             </button>
@@ -373,8 +373,7 @@
         </fieldset>
         <div class="photo-editor__button-wrapper">
           <button class="button-oval button-oval--photo-editor" type="submit">Запостить</button>
-          <button class="button-oval button-oval--photo-editor button-oval--photo-editor-cancel button-oval--disabled"
-                  type="reset">Отмена
+          <button class="button-oval button-oval--photo-editor button-oval--photo-editor-cancel button-oval--disabled" type="reset">Отмена
           </button>
         </div>
       </div>

@@ -177,6 +177,7 @@
     margin-left: -4px;
   }
 }
+
 .photo-editor__button--contrast {
   background-color: inherit;
 }
@@ -192,7 +193,7 @@
     width: 44px;
     height: 44px;
     margin-top: -16px;
-    margin-left: -5 px;
+    margin-left: -5px;
   }
 }
 
@@ -283,8 +284,18 @@
 .photo-editor__svg-crop,
 .photo-editor__svg-gamma,
 .photo-editor__svg-contrast {
-  fill: $photo-editor-buttons-normal;
+  fill: $color-for-attention;
 }
+
+.photo-editor__svg-crop--status-toggle,
+.photo-editor__svg-gamma--status-toggle,
+.photo-editor__svg-contrast--status-toggle {
+  fill: $photo-editor-buttons-normal;
+  @media (min-width: $tablet-width) {
+    fill: $color-for-attention;
+  }
+}
+
 
 .photo-editor__svg-crop:hover,
 .photo-editor__svg-gamma:hover,
