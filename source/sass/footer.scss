@@ -15,14 +15,16 @@
     padding-top: 104px;
   }
 }
+
 .footer--form-top-padding {
   @media(min-width: $desktop-width) {
     padding-top: 17px;
   }
 }
+
 .footer--index-top-padding {
   @media(min-width: $tablet-width) {
-    padding-top: 32px;
+    padding-top: 37px;
   }
   @media(min-width: $desktop-width) {
     padding-top: 70px;
@@ -46,28 +48,55 @@
     margin-right: 74px;
   }
   @media(min-width: $desktop-width) {
-    margin-right: 235px;
+    margin-right: 240px;
   }
 }
 
 .footer__dev-wrapper {
+  align-self: flex-start;
   margin: 0;
   padding: 0;
-  //min-width: 60%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  @media (min-width: $desktop-width) {
+    padding-top: 2px;
+  }
+}
+
+.footer__dev-wrapper--mobile {
+  @media (max-width: $tablet-width - 1) {
+    align-self: center;
+  }
 }
 
 .footer__text {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: $dark-in-various-elements;
+  margin-right: 13px;
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
+
+
 .footer__academy-logo {
-  width: 27px;
-  height: 34px;
+  margin: 0;
+  padding: 0;
+    width: 27px;
+    height: 34px;
+    margin-top: 10px;
+    fill: $color-for-attention;
+}
+
+.footer__academy-logo:hover {
+    fill: $dark-in-various-elements;
+}
+
+.footer__academy-logo:active {
+    fill: $slider-swithes-light;
 }

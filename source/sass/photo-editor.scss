@@ -43,38 +43,18 @@
   }
 }
 
-//.photo-editor__image--mobile {
-//  display: block;
-//  @media(min-width: $tablet-width) {
-//    display: none;
-//  }
-//}
-//
-//.photo-editor__image--tablet {
-//  display: none;
-//  @media(min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-//    display: block;
-//  }
-//}
-//
-//.photo-editor__image--desktop {
-//  display: none;
-//  @media (min-width: $desktop-width) {
-//    display: block;
-//  }
-//}
-
 .photo-editor__list {
   display: flex;
   flex-direction: row;
   margin: 0;
   margin-bottom: 28px;
   padding: 0;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 39px;
+  padding-left: 28px;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
   @media(min-width: $tablet-width) {
     flex-direction: column;
     justify-content: space-between;
@@ -90,6 +70,7 @@
 }
 
 .photo-editor__item {
+
   @media(min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -123,7 +104,7 @@
   @media(min-width: $tablet-width) {
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 12px;
+    padding-left: 0;
     padding-right: 12px;
   }
 
@@ -145,54 +126,74 @@
   cursor: pointer;
   border: none;
   @media(min-width: $tablet-width) {
-
+    margin-top: -5px;
+    width: 24px;
+    height: 24px;
   }
 }
 
+.photo-editor__button:focus {
+  outline: none;
+}
+
 .photo-editor__button--crop {
-  position: relative;
   background-color: inherit;
-  &::after {
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    width: 22px;
-    height: 22px;
-    content: url('../img/icon-editor-crop.svg');
-    @media(min-width: $desktop-width) {
-      top: -22px;
-      left: -2px;
-    }
+  @media(min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.photo-editor__svg-crop {
+  @media(min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    margin-left: -54px;
+  }
+  @media(min-width: $desktop-width) {
+    margin-top: -17px;
+    margin-left: -8px;
+    width: 44px;
+    height: 44px;
   }
 }
 
 .photo-editor__button--gamma {
-  position: relative;
   background-color: inherit;
-  &::after {
-    position: absolute;
-    top: -1px;
-    left: -2px;
-    content: url('../img/icon-editor-fill.svg');
-    @media(min-width: $desktop-width) {
-      top: -20px;
-      left: 0;
-    }
+}
+
+.photo-editor__svg-gamma {
+  @media(min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+    margin-top: -6px;
+    margin-left: -54px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+    margin-top: -14px;
+    margin-left: -4px;
   }
 }
 
 .photo-editor__button--contrast {
-  position: relative;
   background-color: inherit;
-  &::after {
-    position: absolute;
-    top: 5px;
-    left: 6px;
-    content: url('../img/icon-editor-contrast.svg');
-    @media(min-width: $desktop-width) {
-      top: -17px;
-      left: 6px;
-    }
+}
+
+.photo-editor__svg-contrast {
+  @media(min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+    margin-top: -10px;
+    margin-left: -50px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+    margin-top: -16px;
+    margin-left: -5px;
   }
 }
 
@@ -279,3 +280,32 @@
 .photo-editor__toggle--position {
   left: 200px;
 }
+
+.photo-editor__svg-crop,
+.photo-editor__svg-gamma,
+.photo-editor__svg-contrast {
+  fill: $color-for-attention;
+}
+
+.photo-editor__svg-crop--status-toggle,
+.photo-editor__svg-gamma--status-toggle,
+.photo-editor__svg-contrast--status-toggle {
+  fill: $photo-editor-buttons-normal;
+  @media (min-width: $tablet-width) {
+    fill: $color-for-attention;
+  }
+}
+
+
+.photo-editor__svg-crop:hover,
+.photo-editor__svg-gamma:hover,
+.photo-editor__svg-contrast:hover {
+  fill: $photo-editor-buttons-hover;
+}
+
+.photo-editor__svg-crop:active,
+.photo-editor__svg-gamma:active,
+.photo-editor__svg-contrast:active {
+  fill: $color-for-attention;
+}
+
