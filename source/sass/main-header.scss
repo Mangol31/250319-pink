@@ -17,7 +17,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 22px;
-  padding-bottom: 9px;
+  padding-bottom: 26px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,19 +32,35 @@
   }
 }
 
+.main-header__logo-mobile {
+  display: inline;
+  fill: $white-in-various-elements;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
-.main-header__logo__tablet-mobile {
+.main-header__logo-mobile:hover {
+  fill: $color-for-attention;
+}
+
+.main-header__logo-mobile:active {
+  opacity: 0.3;
+}
+
+.main-header__logo-tablet {
   display: none;
   fill: $white-in-various-elements;
-  @media (max-width: $desktop-width - 1) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     display: inline;
   }
 }
-.main-header__logo__tablet-mobile:hover {
- fill: $color-for-attention;
+
+.main-header__logo-tablet:hover {
+  fill: $color-for-attention;
 }
 
-.main-header__logo__tablet-mobile:active {
+.main-header__logo-tablet:active {
   opacity: 0.3;
 }
 
