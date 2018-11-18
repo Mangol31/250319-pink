@@ -44,11 +44,15 @@
   border: 3px solid $color-for-attention;
   background-color: $background-dark;
   @media(min-width: $tablet-width) {
-    padding-left: 0;
+    padding-left: 1px;
+    padding-right: 10px;
+    min-width: 260px;
   }
   @media(min-width: $desktop-width) {
     padding-left: 42px;
     padding-right: 42px;
+    min-width: 180px;
+    margin-right: 45px;
   }
   &:hover {
     background-color: $color-for-attention;
@@ -84,5 +88,6 @@
   }
   @media(min-width: $desktop-width) {
     margin-top: 0;
+    margin-right: 0;
   }
 }
