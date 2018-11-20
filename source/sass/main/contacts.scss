@@ -1,22 +1,22 @@
 .contacts {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
   padding-top: 44px;
   padding-bottom: 11px;
-  position: absolute;
-  width: 100%;
-  //top: 0;
-  //left: 0;
   background-color: $white-in-various-elements;
   @media(min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    min-height: 348px;
     margin-bottom: -18px;
     padding-top: 41px;
     justify-content: center;
     flex-wrap: wrap;
   }
   @media(min-width: $desktop-width) {
-    padding-top: 64px;
     margin-bottom: -7px;
+    padding-top: 61px;
   }
 }
 
@@ -43,19 +43,18 @@
 
 .contacts__main-wrapper {
   @media(min-width: $tablet-width) {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
     display: flex;
     flex-direction: row;
+    padding-right: 20px;
+    padding-left: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
   }
   @media(min-width: $desktop-width) {
+    padding-right: 10px;
+    padding-left: 10px;
     justify-content: space-between;
     flex-wrap: nowrap;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 
@@ -82,14 +81,14 @@
     order: 3;
   }
 }
+
 .contacts__wrapper--grow-changer {
   @media(min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-    flex-grow: 3;
     margin-bottom: -25px;
   }
   @media(min-width: $desktop-width) {
-    flex-grow: 1;
     margin-bottom: -20px;
+    flex-grow: 1;
   }
 }
 
@@ -125,7 +124,6 @@
   padding: 0;
   text-align: center;
   text-decoration: none;
-
   color: $color-for-attention;
   @media(min-width: $tablet-width) {
     line-height: 31px;
@@ -145,20 +143,20 @@
 
 .contacts__lug-img {
   position: absolute;
-  width: 320px;
-  height: 34px;
   top: -1px;
   left: 0;
+  width: 320px;
+  height: 34px;
   @media (min-width: $tablet-width) {
-    width: 660px;
-    height: 67px;
     top: 239px;
     left: -660px;
+    width: 660px;
+    height: 67px;
   }
   @media (min-width: $desktop-width) {
-      width: 960px;
-      height: 102px;
-      top: 154px;
-      left: -960px;
+    top: 154px;
+    left: -960px;
+    width: 960px;
+    height: 102px;
   }
 }

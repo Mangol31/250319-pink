@@ -36,11 +36,11 @@
   @media(min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-left: 93px;
     max-height: 200px;
     margin-bottom: 3px;
+    padding-left: 93px;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -54,10 +54,10 @@
   }
   @media(min-width: $desktop-width) {
     display: block;
-    padding-left: 0;
-    width: 30%;
     box-sizing: border-box;
+    width: 30%;
     margin-right: 67px;
+    padding-left: 0;
   }
 }
 
@@ -70,7 +70,6 @@
     padding-left: 10px;
   }
 }
-
 
 .checkboxes__label {
   font-size: 18px;
@@ -111,7 +110,7 @@
   content: "";
   border: 2px solid $grey-in-various-elements;
   background-color: $white-in-various-elements;
-  background-image: url('../img/icon-yes-checkbox.svg');
+  background-image: url("../img/icon-yes-checkbox.svg");
   background-repeat: no-repeat;
   background-position: center center;
   @media(min-width: $tablet-width) {
@@ -126,4 +125,3 @@
 .checkboxes__checkbox:active:checked + .checkboxes__label::after {
   border: 2px solid $color-for-attention;
 }
-

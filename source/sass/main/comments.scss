@@ -1,74 +1,75 @@
 .comments {
-  padding-top: 28px;
-  margin-bottom: 39px;
   position: relative;
+  min-height: 287px;
+  margin-bottom: 39px;
+  padding-top: 28px;
   &:after {
     position: absolute;
+    z-index: 2;
     top: 354px;
     left: 0;
-    content: "";
     width: 0;
     height: 0;
+    content: "";
+    border-width: 25px 100vw 0 0;
     border-style: solid;
-    border-width: 25px 320px 0 0;
     border-color: $white-in-various-elements transparent transparent transparent;
-    z-index: 2;
     @media (min-width: $tablet-width) {
       top: 301px;
-      border-width: 50px 660px 0 0;
+      border-width: 50px 100vw 0 0;
     }
     @media (min-width: $desktop-width) {
       top: 422px;
-      border-width: 66px 960px 0 0;
+      border-width: 66px 100vw 0 0;
     }
   }
   @media (min-width: $tablet-width) {
+    min-height: 257px;
     margin-bottom: 17px;
   }
   @media (min-width: $desktop-width) {
-    padding-top: 168px;
-    //margin-bottom: 65px;
     margin-bottom: -2px;
+    padding-top: 168px;
     &:before {
-      width: 79px;
-      height: 63px;
+      position: absolute;
       top: 69px;
       left: 46%;
-      position: absolute;
-      content: url(../img/icon-quotes.svg);
+      width: 79px;
+      height: 63px;
+      content: url("../img/icon-quotes.svg");
     }
   }
 }
 
 .comments__list {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 11px;
-  list-style: none;
   position: relative;
+  margin: 0;
+  margin-bottom: 11px;
+  padding: 0;
+  list-style: none;
   @media (min-width: $desktop-width) {
     &:before {
+      position: absolute;
       top: 48px;
       left: 0;
-      position: absolute;
       width: 22px;
       height: 41px;
-      content: url(../img/icon-review-arrow-left.svg);
+      content: url("../img/icon-review-arrow-left.svg");
     }
   }
-    @media (min-width: $desktop-width) {
-      &:after {
-        top: 48px;
-        right: 0;
-        position: absolute;
-        width: 22px;
-        height: 41px;
-        content: url(../img/icon-review-arrow-right.svg);
-      }
-    }
   @media (min-width: $desktop-width) {
-    padding-left: 90px;
+    &:after {
+      position: absolute;
+      top: 48px;
+      right: 0;
+      width: 22px;
+      height: 41px;
+      content: url("../img/icon-review-arrow-right.svg");
+    }
+  }
+  @media (min-width: $desktop-width) {
     padding-right: 90px;
+    padding-left: 90px;
   }
 }
 
@@ -79,14 +80,14 @@
 }
 
 .comments__caption {
-  margin-bottom: 2px;
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 2px;
   text-align: center;
   @media(min-width: $tablet-width) {
-    order: 2;
     font-size: 20px;
     line-height: 20px;
+    order: 2;
   }
   @media(min-width: $desktop-width) {
     font-size: 24px;
@@ -95,32 +96,33 @@
 }
 
 .comments__text {
-  text-align: center;
-  color: $dark-on-white;
   line-height: 30px;
   position: relative;
+  text-align: center;
+  color: $dark-on-white;
   @media(min-width: $tablet-width) {
-    order: 1;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+    order: 1;
   }
 }
+
 .comments__job {
-  display: none;
-  color: $dark-in-various-elements;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  display: none;
   text-align: center;
+  color: $dark-in-various-elements;
   @media(min-width: $tablet-width) {
-    display: inline;
-    order: 3;
     line-height: 18px;
+    display: inline;
     margin-bottom: 21px;
+    order: 3;
   }
   @media(min-width: $desktop-width) {
     font-size: 18px;
     line-height: 18px;
-    }
+  }
 }

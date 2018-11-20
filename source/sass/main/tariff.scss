@@ -4,11 +4,11 @@
   padding-bottom: 43px;
   background-color: $background-dark;
   @media(min-width: $tablet-width) {
-    padding-top: 86px;
+    padding-top: 88px;
   }
   @media(min-width: $desktop-width) {
     padding-top: 139px;
-    padding-bottom: 62px;
+    padding-bottom: 68px;
   }
 }
 
@@ -45,8 +45,8 @@
   padding: 0;
   padding-right: 22px;
   padding-left: 22px;
-  background-color: $white-in-various-elements;
   border: 1px solid $grey-in-various-elements;
+  background-color: $white-in-various-elements;
   justify-content: space-between;
   align-items: center;
   @media(min-width: $tablet-width) {
@@ -67,6 +67,7 @@
     padding-left: 21px;
   }
 }
+
 .tariff__table-column--hidden-top-border {
   border-top-width: 2px;
 }
@@ -81,24 +82,23 @@
   padding-top: 16px;
   text-transform: uppercase;
   color: $grey-in-various-elements;
-  //border: 2px solid $dark-in-various-elements;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: $dark-in-various-elements;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: $grey-in-various-elements;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: $dark-in-various-elements;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: $grey-in-various-elements;
   background-color: $dark-in-various-elements;
   justify-content: flex-start;
-  border-top-color: $dark-in-various-elements;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-right-color: $grey-in-various-elements;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-bottom-color: $dark-in-various-elements;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-left-color: $grey-in-various-elements;
-  border-left-style: solid;
-  border-left-width: 1px;
   @media(min-width: $tablet-width) {
-    padding-top: 10px;
     min-height: 79px;
+    padding-top: 10px;
   }
   @media(min-width: $desktop-width) {
     font-size: 18px;
@@ -132,22 +132,22 @@
   position: relative;
   &:before {
     position: absolute;
+    z-index: 2;
     top: -12px;
     left: 17px;
     width: 73px;
     height: 73px;
     content: "ХИТ";
     transform: rotate(-45deg);
-    z-index: 2;
     @media(min-width: $tablet-width) {
       top: -19px;
       left: 16px;
     }
     @media(min-width: $desktop-width) {
-      top: -12px;
-      left: 18px;
       font-size: 14px;
       font-weight: 400;
+      top: -12px;
+      left: 18px;
     }
   }
   &::after {
@@ -157,18 +157,18 @@
     width: 73px;
     height: 73px;
     content: "";
-    background-image: url('../img/bg-hit.svg');
+    background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
     background-size: cover;
     @media(min-width: $tablet-width) {
       width: 62px;
       height: 62px;
-      background-image: url('../img/bg-hit-tablet.svg');
+      background-image: url("../img/bg-hit-tablet.svg");
     }
     @media(min-width: $desktop-width) {
       width: 74px;
       height: 73px;
-      background-image: url('../img/bg-hit.svg');
+      background-image: url("../img/bg-hit.svg");
     }
   }
 }
@@ -230,14 +230,14 @@
     left: -24px;
     width: 31px;
     height: 21px;
-    content: url(../img/icon-yes.svg);
+    content: url("../img/icon-yes.svg");
     @media(min-width: $tablet-width) {
-      left: 63px;
       top: -10px;
+      left: 63px;
     }
     @media(min-width: $desktop-width) {
-      left: 100px;
       top: -9px;
+      left: 100px;
     }
   }
 }
@@ -250,13 +250,14 @@
     left: -24px;
     width: 27px;
     height: 26px;
-    content: url(../img/icon-no1.svg);
+
+    content: url("../img/icon-no.svg");
     @media(min-width: $tablet-width) {
       left: 63px;
     }
     @media(min-width: $desktop-width) {
-      left: 102px;
       top: -15px;
+      left: 102px;
     }
   }
 }

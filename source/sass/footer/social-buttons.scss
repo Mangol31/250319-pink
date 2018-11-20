@@ -11,8 +11,8 @@
     margin-right: 94px;
   }
   @media(min-width: $desktop-width) {
-    padding-top: 6px;
     margin-right: 225px;
+    padding-top: 6px;
   }
 }
 
@@ -48,12 +48,12 @@
     position: absolute;
     top: 16px;
     left: 14px;
-    content: "";
-    background-image: url("../img/icon-twitter.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     width: 18px;
     height: 14px;
+    content: "";
+    background-image: url('../img/icon-twitter.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -63,12 +63,12 @@
     position: absolute;
     top: 10px;
     left: 17px;
-    content: "";
-    background-image: url("../img/icon-facebook.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     width: 9px;
     height: 18px;
+    content: "";
+    background-image: url('../img/icon-facebook.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -78,11 +78,11 @@
     position: absolute;
     top: 14px;
     left: 15px;
-    content: "";
-    background-image: url("../img/icon-youtube.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     width: 15px;
     height: 13px;
+    content: "";
+    background-image: url('../img/icon-youtube.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

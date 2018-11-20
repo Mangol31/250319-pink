@@ -17,9 +17,8 @@
     justify-content: flex-start;
   }
   @media(min-width: $desktop-width) {
-    //width: 100%;
-    min-width: 0;
     width: 300px;
+    min-width: 0;
     margin-bottom: 57px;
   }
 }
@@ -31,8 +30,8 @@
   }
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding-bottom: 13px;
     margin-bottom: 18px;
+    padding-bottom: 13px;
   }
   &::after {
     position: absolute;
@@ -42,7 +41,7 @@
     flex-direction: row;
     width: 140px;
     height: 36px;
-    content: 'ПАНОРАМА ДНЯ';
+    content: "ПАНОРАМА ДНЯ";
     color: $white-in-various-elements;
     background-color: $color-for-attention;
     justify-content: center;
@@ -51,8 +50,8 @@
       top: 57px;
     }
     @media (min-width: $desktop-width) {
-      top: 53px;
       font-size: 12px;
+      top: 53px;
     }
   }
 }
@@ -63,33 +62,35 @@
   margin-bottom: 12px;
   padding: 0;
   @media(min-width: $tablet-width) {
-    margin-bottom: 17px;
     width: 300px;
     height: 300px;
+    margin-bottom: 17px;
   }
   @media(min-width: $desktop-width) {
-    margin-bottom: 17px;
     width: 300px;
     height: 400px;
+    margin-bottom: 17px;
   }
 }
 
 .photo-card__photo--panorama {
   position: absolute;
-  min-width: 320px;
+  width: auto;
   height: auto;
   margin-right: -20px;
   margin-left: -20px;
   @media(min-width: $tablet-width) {
-    min-width: 700px;
+    width: auto;
     height: auto;
     margin-left: -40px;
   }
   @media(min-width: $desktop-width) {
-    margin-left: 0;
-    min-width: 1200px;
-    height: auto;
+    top: 0;
     left: -130px;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -110,18 +111,17 @@
 
 .photo-card__text-wrapper {
   @media(min-width: $tablet-width) {
-    width: 100%;
-    padding-left: 11px;
-    padding-right: 11px;
-    min-height: 110px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 110px;
+    margin-bottom: -24px;
+    padding-right: 40px;
+    padding-left: 11px;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    margin-bottom: -24px;
-    padding-right: 40px;
   }
   @media(min-width: $desktop-width) {
     padding-right: 21px;
@@ -185,14 +185,13 @@
   @media(min-width: $desktop-width) {
     margin-left: 28px;
   }
-
   &::before {
     position: absolute;
     top: 2px;
     left: -32px;
     width: 13px;
     height: 12px;
-    content: url('../img/icon-heart.svg');
+    content: url("../img/icon-heart.svg");
     @media(min-width: $tablet-width) {
       left: 230px;
     }

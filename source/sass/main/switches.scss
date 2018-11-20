@@ -1,14 +1,13 @@
 .switches {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   justify-content: center;
   align-items: center;
   align-content: center;
-  list-style: none;
 }
-
 @media(min-width: $tablet-width) {
   .switches--hide {
     display: none;
@@ -24,26 +23,28 @@
 }
 
 .switches__button {
-  padding: 0;
+  box-sizing: content-box;
   width: 6px;
   height: 6px;
-  border-radius: 50px;
-  background-color: $slider-swithes-light;
-  box-sizing: content-box;
+  padding: 0;
   border: 3px solid $white-in-various-elements;
+  border-radius: 50px;
   outline: none;
-  &:hover, &:focus {
+  background-color: $slider-swithes-light;
+  &:hover,
+  &:focus {
     background-color: $switches-hover;
   }
   &:active {
     background-color: $switches-active;
   }
 }
+
 .switches__button--grey-background {
   border: 3px solid $background-dark;
 }
+
 .switches__button--active {
   border: 3px solid $dark-in-various-elements;
   background-color: $grey-in-various-elements;
-
 }

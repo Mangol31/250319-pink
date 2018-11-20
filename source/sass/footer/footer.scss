@@ -1,18 +1,22 @@
 .footer {
-  padding-top: 39px;
-  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 39px;
+  padding-bottom: 50px;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
   @media(min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: flex-start;
+    width: 660px;
+    margin: 0 auto;
     padding-top: 36px;
+    justify-content: flex-start;
   }
   @media(min-width: $desktop-width) {
-    padding-top: 86px;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 96px;
   }
 }
 
@@ -34,16 +38,16 @@
 .footer--mobile {
   display: none;
   @media(min-width: $tablet-width) {
-    box-sizing: border-box;
     display: flex;
+    box-sizing: border-box;
   }
 }
 
 .footer__logo {
   font-weight: 300;
-  margin-bottom: 36px;
   width: 147px;
   height: 40px;
+  margin-bottom: 36px;
   @media(min-width: $tablet-width) {
     margin-right: 74px;
   }
@@ -53,11 +57,11 @@
 }
 
 .footer__dev-wrapper {
-  align-self: flex-start;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
   justify-content: flex-start;
   align-items: center;
   @media (min-width: $desktop-width) {
@@ -75,21 +79,19 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  color: $dark-in-various-elements;
   margin-right: 13px;
+  color: $dark-in-various-elements;
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }
 }
 
-
-
 .footer__academy-logo {
-  margin: 0;
-  padding: 0;
   width: 27px;
   height: 34px;
+  margin: 0;
   margin-top: 10px;
+  padding: 0;
   fill: $color-for-attention;
 }
 

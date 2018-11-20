@@ -86,9 +86,8 @@
   min-height: 62px;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
   padding-right: 20px;
-
+  padding-left: 20px;
   border: 2px solid $grey-in-various-elements;
   @media(min-width: $tablet-width) {
     width: 100%;
@@ -177,6 +176,7 @@
 .competition-form__contacts-phone-wrapper {
   display: flex;
   flex-direction: column;
+
   margin-bottom: 17px;
   @media (min-width: $tablet-width) {
     margin-bottom: 21px;
@@ -216,8 +216,8 @@
   min-height: 62px;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
   border: 2px solid $grey-in-various-elements;
   @media(min-width: $tablet-width) {
     margin-bottom: 10px;
@@ -225,7 +225,6 @@
   }
   @media(min-width: $desktop-width) {
     padding-right: 0;
-    //margin-bottom: 7px;
   }
 }
 
@@ -234,18 +233,18 @@
   &::after {
     display: none;
     @media (min-width: $tablet-width) {
-      display: block;
       position: absolute;
+      z-index: 2;
       top: -70px;
       left: 440px;
-      content: "";
+      display: block;
       width: 58px;
       height: 58px;
+      content: "";
       background-color: $grey-in-various-elements;
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-position: center;
-      z-index: 2;
     }
     @media (min-width: $desktop-width) {
       top: -70px;
@@ -259,18 +258,18 @@
   &::after {
     display: none;
     @media (min-width: $tablet-width) {
-      display: block;
       position: absolute;
+      z-index: 2;
       top: -70px;
       left: 440px;
-      content: "";
+      display: block;
       width: 58px;
       height: 58px;
+      content: "";
       background-color: $grey-in-various-elements;
       background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
       background-position: center;
-      z-index: 2;
     }
     @media (min-width: $desktop-width) {
       top: -70px;
@@ -298,10 +297,10 @@
     padding-left: 20px;
   }
   @media(min-width: $desktop-width) {
+    margin-bottom: 17px;
+    padding-top: 18px;
     padding-right: 10px;
     padding-left: 10px;
-    padding-top: 18px;
-    margin-bottom: 17px;
   }
 }
 
@@ -310,6 +309,7 @@
   flex-direction: column;
   box-sizing: border-box;
   margin-bottom: 48px;
+
   border: none;
   @media(min-width: $tablet-width) {
     padding-right: 57px;
@@ -353,13 +353,12 @@
     min-height: 193px;
   }
   @media(min-width: $desktop-width) {
-    padding-top: 12px;
     min-height: 124px;
+    padding-top: 12px;
   }
 }
 
 .competition-form__emotions-textarea::placeholder {
-  font-family: 'Open Sans';
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -377,9 +376,6 @@
     width: 100%;
     justify-content: space-between;
   }
-  //@media(min-width: $desktop-width) {
-  //  justify-content: flex-start;
-  //}
 }
 
 .competition-form__footnote {
@@ -395,11 +391,7 @@
 }
 
 .competition-form__footnote-star {
-  display: none;
-  @media(min-width: $tablet-width) {
-    display: inline;
-    color: $color-for-attention;
-  }
+  color: $color-for-attention;
 }
 
 .competition-form__footnote-disappearing {
@@ -427,10 +419,10 @@
   }
   @media(min-width: $desktop-width) {
     width: 100%;
-    order: 4;
+    margin-bottom: 20px;
     padding-right: 10px;
     padding-left: 10px;
-    margin-bottom: 20px;
+    order: 4;
   }
 }
 
@@ -441,7 +433,6 @@
   padding-right: 20px;
   padding-left: 20px;
   background-color: $background-dark;
-
   order: 4;
   @media(min-width: $tablet-width) {
     margin-bottom: 55px;

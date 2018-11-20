@@ -2,17 +2,18 @@
   display: none;
   width: 147px;
   height: 40px;
-  align-self: flex-start;
   margin-right: 76px;
+  align-self: flex-start;
   @media (max-width: $tablet-width - 1) {
-    align-self: center;
     margin-right: 0;
     margin-bottom: 43px;
+    align-self: center;
   }
   @media (max-width: $desktop-width - 1) {
     display: inline;
   }
 }
+
 .pink-logo__tablet-mobile {
   fill: $dark-in-various-elements;
 }
@@ -31,13 +32,13 @@
     display: inline;
     width: 147px;
     height: 40px;
-    align-self: flex-start;
     margin-right: 240px;
+    align-self: flex-start;
     fill: $dark-in-various-elements;
   }
 }
 
-.pink-logo__desktop:hover{
+.pink-logo__desktop:hover {
   fill: $color-for-attention;
 }
 

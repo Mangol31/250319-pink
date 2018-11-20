@@ -6,7 +6,7 @@
   <title>Pink</title>
   <link rel="stylesheet" href="css/style.min.css">
   <script>
-    document.createElement( "picture" );
+    document.createElement("picture");
   </script>
   <script src="js/picturefill.min.js" async></script>
 </head>
@@ -99,39 +99,38 @@
   <symbol id="academy-logo" viewBox="0 0 27 34">
     <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" preserveAspectRatio="xMinYMid"/>
   </symbol>
-</symbol>
+  </symbol>
 </svg>
 <header class="main-header">
-  <div class="main-header__logo-wrapper">
-    <!-- ЛОГО ДЛЯ МОБИЛЫ И ПЛАНШЕТА -->
-    <svg class="main-header__logo-mobile" viewBox="0 0 75 22" width="75" height="22">
-      <use xlink:href="#main-header-logo-mobile"></use>
-    </svg>
-    <svg class="main-header__logo-tablet" viewBox="0 0 147 40" width="147" height="40">
-      <use xlink:href="#main-header-logo-tablet"></use>
-    </svg>
-    <svg class="main-header__logo-desktop" viewBox="0 0 147 40" width="147" height="40">
-      <use xlink:href="#main-header-logo-desktop"></use>
-    </svg>
-    <button class="main-header__menu-button visually-hidden" type="button" aria-label="Главное меню"></button>
-    <button class="main-header__close-menu-button visually-hidden" type="button" aria-label="Закрыть меню"></button>
+  <div class="main-header__non-indexpage-wrapper viewport-width">
+    <div class="main-header__logo-wrapper">
+      <svg class="main-header__logo-mobile" viewBox="0 0 75 22" width="75" height="22">
+        <use xlink:href="#main-header-logo-mobile"></use>
+      </svg>
+      <svg class="main-header__logo-tablet" viewBox="0 0 147 40" width="147" height="40">
+        <use xlink:href="#main-header-logo-tablet"></use>
+      </svg>
+      <svg class="main-header__logo-desktop" viewBox="0 0 147 40" width="147" height="40">
+        <use xlink:href="#main-header-logo-desktop"></use>
+      </svg>
+      <button class="main-header__menu-button visually-hidden" type="button" aria-label="Главное меню"></button>
+      <button class="main-header__close-menu-button visually-hidden" type="button" aria-label="Закрыть меню"></button>
+    </div>
+    <ul class="main-header__list">
+      <li class="main-header__item">
+        <a href="index.html" class="main-header__link">Главная</a>
+      </li>
+      <li class="main-header__item">
+        <a href="photo.html" class="main-header__link">Фотографии</a>
+      </li>
+      <li class="main-header__item">
+        <a href="form.html" class="main-header__link  main-header__link--active">Конкурс</a>
+      </li>
+      <li class="main-header__item">
+        <a class="main-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </li>
+    </ul>
   </div>
-  <!--<nav class="main-header__nav">-->
-  <ul class="main-header__list">
-    <li class="main-header__item">
-      <a href="index.html" class="main-header__link">Главная</a>
-    </li>
-    <li class="main-header__item">
-      <a href="photo.html" class="main-header__link ">Фотографии</a>
-    </li>
-    <li class="main-header__item">
-      <a href="form.html" class="main-header__link main-header__link--active">Конкурс</a>
-    </li>
-    <li class="main-header__item">
-      <a class="main-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </li>
-  </ul>
-  <!--</nav>-->
 </header>
 <main>
   <section class="page-header page-header--form">
@@ -139,8 +138,7 @@
       <h2 class="page-header__caption">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </div>
     <div class="page-header__lower-part page-header__lower-part--form">
-      <p class="page-header__text">Поделитесь своей историей и получите шанс выиграть <br> ценный приз — 1000 миль на
-        вашу бонусную карту! <span class="page-header__text-disappearing">Пожалуйста, заполните форму ниже:</span>
+      <p class="page-header__text">Поделитесь своей историей и получите шанс выиграть <br> ценный приз — 1000 миль на вашу бонусную карту! <span class="page-header__text-disappearing">Пожалуйста, заполните форму ниже:</span>
       </p>
     </div>
   </section>
@@ -193,10 +191,9 @@
         </ul>
       </fieldset>
     </div>
-
-      <fieldset class="competition-form__contacts">
-        <legend class="competition-form__contacts-legend">Контактная информация</legend>
-        <div class="competition-form__contacts-wrapper">
+    <fieldset class="competition-form__contacts">
+      <legend class="competition-form__contacts-legend">Контактная информация</legend>
+      <div class="competition-form__contacts-wrapper">
         <div class="competition-form__contacts-phone-wrapper">
           <label class="competition-form__contacts-label competition-form__contacts-user-tel--pict" for="user-tel">Номер телефона</label>
           <input class="competition-form__contacts-user-tel competition-form__contacts-user-tel--pict" id="user-tel" name="user-tel" type="text" placeholder="Номер, пожалуйста">
@@ -206,9 +203,8 @@
           <input class="competition-form__contacts-user-email" id="user-email" name="user-email" type="email"
                  placeholder="Введите почту*" required>
         </div>
-        </div>
-      </fieldset>
-
+      </div>
+    </fieldset>
     <div class="competition-form__radiobuttons-wrapper">
       <fieldset class="radiobuttons">
         <legend class="radiobuttons__label">С каким приложением путешествовали?</legend>
@@ -232,27 +228,26 @@
       </fieldset>
     </div>
     <div class="competition-form__emotions-wrapper">
-    <fieldset class="competition-form__emotions general-indent">
-      <legend class="competition-form__emotions-legend">Опишите свои эмоции</legend>
-      <textarea class="competition-form__emotions-textarea" name="user__emotions" id="user__emotions"
-                placeholder="Можно прям в красках, не стесняясь в выражениях"
-                aria-label="Опишите ваши эмоции"></textarea>
-    </fieldset>
+      <fieldset class="competition-form__emotions general-indent">
+        <legend class="competition-form__emotions-legend">Опишите свои эмоции</legend>
+        <textarea class="competition-form__emotions-textarea" name="user__emotions" id="user__emotions"
+                  placeholder="Можно прям в красках, не стесняясь в выражениях"
+                  aria-label="Опишите ваши эмоции"></textarea>
+      </fieldset>
     </div>
     <div class="competition-form__button-wrapper general-indent">
       <button class="button-rectangle button-rectangle--green" type="submit">Отправить форму</button>
       <p class="competition-form__footnote">
-        <span class="competition-form__footnote-star">*</span>&nbsp;—&nbsp;обязательные <span class="competition-form__footnote-disappearing">для заполнения </span>поля
+        <span class="competition-form__footnote-star">*</span>&nbsp;—&nbsp;обязательные
+        <span class="competition-form__footnote-disappearing">для заполнения </span>поля
       </p>
     </div>
   </form>
 </main>
 <footer class="footer general-indent footer--form-top-padding">
-  <!-- ЛОГО ДЛЯ МОБИЛЫ И ПЛАНШЕТА -->
   <svg class="pink-logo__tablet-mobile" viewBox="0 0 147 40" width="147" height="40">
     <use xlink:href="#pink-logo-tablet-mobile"></use>
   </svg>
-  <!-- ЛОГО для десктопа -->
   <svg class="pink-logo__desktop" viewBox="0 0 147 40" width="147" height="40">
     <use xlink:href="#pink-logo-desktop"></use>
   </svg>
@@ -279,8 +274,7 @@
 <div class="modal-window visually-hidden">
   <div class="modal-window__text-wrapper">
     <h3 class="modal-window__caption">Ваша заявка отправлена</h3>
-    <p class="modal-window__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время&nbsp;мы
-      рассмотрим ее и оповестим&nbsp;вас.</p>
+    <p class="modal-window__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время&nbsp;мы рассмотрим ее и оповестим&nbsp;вас.</p>
   </div>
   <button class="button-rectangle button-rectangle--green button-rectangle--modal-window" type="submit">Закрыть окно
   </button>
