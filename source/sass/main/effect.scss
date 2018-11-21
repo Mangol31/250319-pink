@@ -2,57 +2,6 @@
   position: relative;
   display: none;
   order: 3;
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-outline: 1px solid red;
-  }
-  &:after {
-    position: absolute;
-    top: 58px;
-    left: 22px;
-    width: 238px;
-    height: 276px;
-    content: "";
-    opacity: 0.1;
-    background-image: url("../img/icon-timer.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 235px 277px;
-    @media (min-width: $desktop-width) {
-      top: 2px;
-      left: 12px;
-      width: 298px;
-      height: 345px;
-      background-size: 298px 345px;
-    }
-  }
-  &:before {
-    font-size: 96px;
-    font-weight: 700;
-    position: absolute;
-    top: 114px;
-    left: 40px;
-    box-sizing: border-box;
-    width: 202px;
-    height: 202px;
-    padding-top: 69px;
-    padding-left: 28px;
-    content: "24";
-    color: $color-for-attention;
-    border: 15px solid $color-for-attention;
-    border-radius: 50%;
-    @media (min-width: $desktop-width) {
-      font-size: 120px;
-      top: 73px;
-      left: 33px;
-      width: 253px;
-      height: 253px;
-      padding-top: 93px;
-      padding-left: 42px;
-    }
-  }
   @media(min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -66,15 +15,63 @@ outline: 1px solid red;
     margin-bottom: 0;
     padding-top: 4px;
     padding-bottom: 111px;
-    padding-left: 362px;
     background-color: $background-dark;
-    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
-.effect__wrapper {
-  display: block;
-  width: 800px;
 
+.effect__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  &:after {
+    position: absolute;
+    top: 0;
+    left: -290px;
+    width: 238px;
+    height: 276px;
+    content: "";
+    opacity: 0.1;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 235px 277px;
+    @media (min-width: $desktop-width) {
+      top: 2px;
+      left: -341px;
+      width: 298px;
+      height: 345px;
+      background-size: 298px 345px;
+    }
+  }
+  &:before {
+    font-size: 96px;
+    font-weight: 700;
+    position: absolute;
+    top: 58px;
+    left: -272px;
+    box-sizing: border-box;
+    width: 202px;
+    height: 202px;
+    padding-top: 69px;
+    padding-left: 28px;
+    content: "24";
+    color: $color-for-attention;
+    border: 15px solid $color-for-attention;
+    border-radius: 50%;
+    @media (min-width: $desktop-width) {
+      font-size: 120px;
+      top: 73px;
+      left: -319px;
+      width: 253px;
+      height: 253px;
+      padding-top: 93px;
+      padding-left: 42px;
+    }
+  }
 
 }
 
@@ -94,7 +91,7 @@ outline: 1px solid red;
   padding-left: 16px;
   @media(min-width: $desktop-width) {
     padding-top: 91px;
-    padding-left: 14px;
+    padding-left: 24px;
   }
 }
 

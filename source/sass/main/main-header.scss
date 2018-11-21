@@ -174,13 +174,13 @@
 }
 
 .main-header__item:last-child {
-  &::after {
+  &::before {
     position: absolute;
-    top: 0;
+    bottom: 0;
     width: 100vw;
     height: 1px;
     content: "";
-    box-shadow: inset 0 1px 0 rgba($dark-on-white, .15);
+    box-shadow: inset 0 2px 0 rgba($dark-on-white, 0.15);
     @media (min-width: $desktop-width) {
       display: none;
     }

@@ -30,6 +30,9 @@
   @media (min-width: $desktop-width) {
     margin-bottom: -2px;
     padding-top: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &:before {
       position: absolute;
       top: 69px;
@@ -48,6 +51,9 @@
   padding: 0;
   list-style: none;
   @media (min-width: $desktop-width) {
+    padding-right: 90px;
+    padding-left: 90px;
+    max-width: 960px;
     &:before {
       position: absolute;
       top: 48px;
@@ -57,7 +63,6 @@
       content: url("../img/icon-review-arrow-left.svg");
     }
   }
-  @media (min-width: $desktop-width) {
     &:after {
       position: absolute;
       top: 48px;
@@ -65,11 +70,6 @@
       width: 22px;
       height: 41px;
       content: url("../img/icon-review-arrow-right.svg");
-    }
-  }
-  @media (min-width: $desktop-width) {
-    padding-right: 90px;
-    padding-left: 90px;
   }
 }
 

@@ -29,8 +29,9 @@
 
   @media(min-width: $tablet-width) and (min-resolution: $retina-dpi), (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-tablet@2x.jpg");
-    background-position: top -256px center;
-    background-size: 100% auto;
+    background-position: top 258px center;
+    background-size: 1200px auto;
+    background-repeat: no-repeat;
   }
   @media(min-width: $desktop-width) {
     min-height: 744px;
@@ -39,8 +40,9 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top -1px center;
-    justify-content: flex-start;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   @media(min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
@@ -50,28 +52,45 @@
   }
 }
 
+.download__centering {
+  @media(min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+  @media(min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 960px;
+  }
+}
+
 .download__top-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   min-height: 314px;
   margin-bottom: 23px;
-  padding-top: 108px;
+  padding-top: 87px;
   justify-content: flex-end;
   @media(min-width: $tablet-width) {
     position: absolute;
     z-index: 1;
     bottom: -73px;
     left: -20px;
+    padding-left: 0;
+    padding-bottom: 43px;
     min-height: inherit;
     background-image: none;
     order: 2;
   }
   @media(min-width: $desktop-width) {
-    max-width: 960px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -103px;
-    left: 27px;
-    outline: 1px solid red;
+    padding-left: 140px;
+    padding-bottom: 72px;
+
   }
 }
 
@@ -99,7 +118,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    max-width: 51.4%;
+    max-width: 56%;
     padding-top: 91px;
     padding-left: 22px;
     order: 1;
@@ -111,7 +130,6 @@
     padding-right: 10px;
     padding-left: 10px;
     justify-content: flex-start;
-    outline: 1px solid green;
   }
 }
 

@@ -132,7 +132,8 @@
         </li>
       </ul>
     </header>
-    <div class="download__top-wrapper viewport-width">
+<div class="download__centering">
+    <div class="download__top-wrapper">
       <picture>
         <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
         <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
@@ -161,6 +162,7 @@
       </ul>
       <p class="download__text">Доступно для iPhone,&nbsp;iPad,&nbsp;Android, Windows Phone, OS X, Windows 8</p>
     </div>
+</div>
   </section>
   <section class="pink-info">
     <h2 class="visually-hidden">Возможности PINK</h2>
@@ -201,12 +203,14 @@
     </div>
   </section>
   <section class="effect general-indent">
+    <div class="effect__wrapper">
       <h2 class="visually-hidden">Эффекты от Pink</h2>
       <div class="effect__text-wrapper">
         <p class="effect__caption">Эффект<br> на 24 часа!</p>
         <p class="effect__text">Британские ученые провели исследования и доказали,<br> что положительный эффект от
           использования приложения<br> длится целые сутки!</p>
         <a class="effect__link" href="#">Узнать больше об исследовании</a>
+      </div>
     </div>
   </section>
   <section class="comments general-indent">
@@ -388,13 +392,15 @@
     </section>
     <section class="map viewport-width">
       <h2 class="visually-hidden">Карта проезда</h2>
-      <!--<iframe class="map__wrapper" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aafbe9a7eeae9532a2498c349bb8e0695b62dddb386ee174cde240409f81f612a&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>-->
-      <picture class="visually-hidden">
-        <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-        <img class="map__img" src="" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.jpg 2x" width="320" height="645" alt="Карта проезда">
-      </picture>
+      <div class="map__img">
+      <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aafbe9a7eeae9532a2498c349bb8e0695b62dddb386ee174cde240409f81f612a&amp;source=constructor" width="100%" height="645" frameborder="0"></iframe>
+      <!--<picture>-->
+        <!--<source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">-->
+        <!--<source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">-->
+        <!--<img class="map__img" src="" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.jpg 2x" width="320" height="645" alt="Карта проезда">-->
+      <!--</picture>-->
       <img class="map__marker" src="" srcset="img/icon-map-marker.svg" width="36" height="36" alt="ул. Большая Конюшенная, 19/8">
+      </div>
     </section>
   </div>
 </main>
