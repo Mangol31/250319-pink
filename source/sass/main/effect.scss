@@ -2,6 +2,12 @@
   position: relative;
   display: none;
   order: 3;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+outline: 1px solid red;
+  }
   &:after {
     position: absolute;
     top: 58px;
@@ -64,6 +70,12 @@
     background-color: $background-dark;
     justify-content: flex-start;
   }
+}
+.effect__wrapper {
+  display: block;
+  width: 800px;
+
+
 }
 
 .effect__clock {
