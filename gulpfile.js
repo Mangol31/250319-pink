@@ -12,7 +12,6 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var server = require("browser-sync").create();
 
-
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -72,7 +71,6 @@ gulp.task("server", function () {
     ui: false
   });
 
-
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
@@ -80,4 +78,3 @@ gulp.task("server", function () {
 gulp.task("build", gulp.series("css","images","svgsprite","fonts","html"));
 gulp.task("sstart", gulp.series("css", "server"));
 gulp.task("start", gulp.series("build", "server"));
-
