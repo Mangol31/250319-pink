@@ -2,7 +2,8 @@
   position: absolute;
   z-index: 100;
   top: 62.6%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -14,14 +15,45 @@
   background-color: $background-dark;
   box-shadow: 0 7px 15px rgba($modal-window-shadow, 0.15);
   align-content: center;
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    top: 49.3%;
+    min-height: 432px;
+    padding-bottom: 29px;
+  }
+  @media (min-width: $desktop-width) {
+    top: 61.6%;
+    width: 780px;
+    min-height: 377px;
+    padding-bottom: 33px;
+    padding-bottom: 0;
+  }
 }
 
+.modal-window__error-button-wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $background-dark;
+  }
+}
 .modal-window__text-wrapper {
   box-sizing: border-box;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
   padding-top: 43px;
   padding-right: 25px;
-  padding-bottom: 37px;
+  padding-bottom: 18px;
   padding-left: 25px;
   background-color: $white-in-various-elements;
 }
@@ -34,6 +66,16 @@
   padding: 0;
   text-align: center;
   color: $dark-on-white;
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 40px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 .modal-window__text {
@@ -42,19 +84,46 @@
   line-height: 24px;
   text-align: center;
   color: $dark-in-various-elements;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 164px;
+    margin-right: 164px;
+  }
 }
 
 .modal-window--error {
-  top: 47%;
+  top: 35%;
   padding-top: 42px;
   padding-bottom: 29px;
   background-color: $white-in-various-elements;
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    min-height: 363px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    min-height: 377px;
+    top: 39.5%;
+  }
 }
 
 .modal-window--error .modal-window__caption {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .modal-window--error .modal-window__text {
-  margin-bottom: 39px;
+  @media (min-width: $tablet-width) {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 35px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+    margin-left: 212px;
+    margin-right: 212px;
+  }
 }

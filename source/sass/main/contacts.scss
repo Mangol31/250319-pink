@@ -1,6 +1,6 @@
 .contacts {
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   width: 100%;
   padding-top: 44px;
   padding-bottom: 11px;
@@ -16,7 +16,7 @@
   }
   @media(min-width: $desktop-width) {
     margin-bottom: -7px;
-    padding-top: 61px;
+    padding-top: 28px;
   }
 }
 
@@ -37,7 +37,8 @@
   @media(min-width: $desktop-width) {
     font-size: 50px;
     line-height: 60px;
-    margin-bottom: 58px;
+    margin-bottom: 50px;
+    margin-top: 34px;
   }
 }
 
@@ -55,6 +56,7 @@
     padding-left: 10px;
     justify-content: space-between;
     flex-wrap: nowrap;
+    width: 960px;
   }
 }
 
@@ -158,6 +160,5 @@
     left: -960px;
     width: 960px;
     height: 102px;
-
   }
 }

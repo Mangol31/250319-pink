@@ -27,9 +27,11 @@
     background-color: $color-for-active-rectangle-button;
   }
   &:active {
-    color: rgba($white-in-various-elements, .3);
+    color: rgba($white-in-various-elements, 0.3);
   }
 }
+
+
 
 .button-rectangle--green:disabled {
   color: $white-in-various-elements;
@@ -40,4 +42,24 @@
 .button-rectangle--modal-window {
   margin-right: 22px;
   margin-left: 22px;
+  @media (min-width: $tablet-width) {
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+.button-rectangle--modal-window-sent {
+  @media (min-width: $tablet-width) {
+    padding: 15px 74px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 161px;
+    margin-right: 161px;
+  }
 }

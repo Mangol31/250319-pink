@@ -2,6 +2,7 @@
   position: relative;
   margin: 0;
   padding: 0;
+
   &:after {
     position: absolute;
     top: 413px;
@@ -12,12 +13,13 @@
     border-width: 34px 50vw 0 50vw;
     border-style: solid;
     border-color: $white-in-various-elements transparent transparent transparent;
+    z-index: 4;
     @media (min-width: $tablet-width) {
       top: 399px;
       border-width: 67px 50vw 0 50vw;
     }
     @media (min-width: $desktop-width) {
-      top: 419px;
+      top: 386px;
       border-width: 82px 50vw 0 50vw;
     }
   }
