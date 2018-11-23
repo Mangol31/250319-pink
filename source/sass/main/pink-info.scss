@@ -132,7 +132,7 @@
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       z-index: 2;
-      bottom: -5px;
+      bottom: -2px;
       left: 20px;
       display: block;
       width: 268px;
@@ -252,7 +252,7 @@
 
 .pink-info__item-text {
   @media (min-width: $tablet-width) {
-    line-height: 24px;
+    line-height: 24.7px;
     text-align: left;
   }
 
