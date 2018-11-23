@@ -5,8 +5,9 @@
   width: 320px;
   height: 34px;
   fill: #ffffff;
+
   @media (min-width: $tablet-width) {
-    preserveAspectRatio: xMinYMid;
+    preserveaspectratio: xminymid;
     width: 660px;
     fill: red;
   }

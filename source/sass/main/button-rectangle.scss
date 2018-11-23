@@ -5,9 +5,12 @@
   display: flex;
   flex-direction: row;
   margin: 0;
-  margin-bottom: 20px;
   padding: 0;
-  padding: 15px 45px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
   cursor: pointer;
   text-transform: uppercase;
   color: $white-in-various-elements;
@@ -19,19 +22,20 @@
 .button-rectangle--green {
   border: 2px solid $color-for-rectangle-button;
   background-color: $color-for-rectangle-button;
+
   @media (min-width: $tablet-width) {
     padding: 15px 55px;
   }
+
   &:hover {
     border: 2px solid $color-for-active-rectangle-button;
     background-color: $color-for-active-rectangle-button;
   }
+
   &:active {
     color: rgba($white-in-various-elements, 0.3);
   }
 }
-
-
 
 .button-rectangle--green:disabled {
   color: $white-in-various-elements;
@@ -42,10 +46,12 @@
 .button-rectangle--modal-window {
   margin-right: 22px;
   margin-left: 22px;
+
   @media (min-width: $tablet-width) {
     padding-left: 135px;
     padding-right: 135px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 150px;
     padding-right: 150px;
@@ -58,6 +64,7 @@
     margin-left: 80px;
     margin-right: 80px;
   }
+
   @media (min-width: $desktop-width) {
     margin-left: 161px;
     margin-right: 161px;

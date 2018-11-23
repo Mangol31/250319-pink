@@ -1,10 +1,12 @@
 .viewport-width {
   width: 320px;
   margin: 0 auto;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     width: 660px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     display: flex;
     width: 960px;
   }

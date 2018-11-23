@@ -9,14 +9,16 @@
   background-color: $background-dark;
   justify-content: space-between;
   flex-wrap: wrap;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     min-width: 300px;
     margin-right: 0;
     margin-left: 0;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     width: 300px;
     min-width: 0;
     margin-bottom: 57px;
@@ -25,14 +27,17 @@
 
 .photo-card--panorama {
   position: relative;
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+
   @media (min-width: $desktop-width) {
     width: 100%;
     margin-bottom: 18px;
     padding-bottom: 13px;
   }
+
   &::after {
     position: absolute;
     top: 0;
@@ -46,9 +51,11 @@
     background-color: $color-for-attention;
     justify-content: center;
     align-items: center;
+
     @media (min-width: $tablet-width) {
       top: 57px;
     }
+
     @media (min-width: $desktop-width) {
       font-size: 12px;
       top: 53px;
@@ -61,12 +68,14 @@
   margin: 0;
   margin-bottom: 12px;
   padding: 0;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     width: 300px;
     height: 300px;
     margin-bottom: 17px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     width: 300px;
     height: 400px;
     margin-bottom: 17px;
@@ -79,12 +88,14 @@
   height: auto;
   margin-right: -20px;
   margin-left: -20px;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     width: auto;
     height: auto;
     margin-left: -40px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     top: 0;
     left: -130px;
     width: auto;
@@ -96,21 +107,23 @@
 
 .photo-card__text-wrapper-panorama {
   margin-top: 155px;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     margin-top: 534px;
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     margin-top: 530px;
     justify-content: flex-start;
   }
 }
 
 .photo-card__text-wrapper {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -123,7 +136,8 @@
     align-items: flex-start;
     flex-wrap: wrap;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     padding-right: 21px;
   }
 }
@@ -137,12 +151,13 @@
 }
 
 .photo-card__user-name--panorana {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 241px;
     text-indent: 10px;
     order: 1;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     margin-right: 575px;
   }
 }
@@ -150,7 +165,8 @@
 .photo-card__comment-time {
   font-weight: 300;
   text-transform: uppercase;
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     font-size: 12px;
   }
 }
@@ -164,7 +180,7 @@
 }
 
 .photo-card__user-comment--panorama {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 28px;
     order: 3;
     flex-grow: 2;
@@ -179,12 +195,15 @@
   padding: 0;
   text-transform: uppercase;
   color: $color-for-attention;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     margin-left: 25px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     margin-left: 28px;
   }
+
   &::before {
     position: absolute;
     top: 2px;
@@ -192,10 +211,12 @@
     width: 13px;
     height: 12px;
     content: url("../img/icon-heart.svg");
-    @media(min-width: $tablet-width) {
+
+    @media (min-width: $tablet-width) {
       left: 230px;
     }
-    @media(min-width: $desktop-width) {
+
+    @media (min-width: $desktop-width) {
       top: 0;
       left: 228px;
     }
@@ -203,9 +224,10 @@
 }
 
 .photo-card__like-count--panorama {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-left: 30px;
     order: 2;
+
     &::before {
       left: 106px;
     }

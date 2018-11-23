@@ -3,10 +3,12 @@
   padding-top: 90px;
   padding-bottom: 43px;
   background-color: $background-dark;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     padding-top: 88px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     padding-top: 139px;
     padding-bottom: 68px;
   }
@@ -25,7 +27,8 @@
 
 .tariff__list-item--hidden {
   display: none;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     display: table;
   }
 }
@@ -49,13 +52,15 @@
   background-color: $white-in-various-elements;
   justify-content: space-between;
   align-items: center;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     width: 154px;
     min-height: 47px;
     padding-right: 0;
     padding-left: 0;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     width: 235px;
     min-height: 61px;
   }
@@ -63,7 +68,8 @@
 
 .tariff__table-column--hidden {
   padding-left: 14px;
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     padding-left: 21px;
   }
 }
@@ -96,11 +102,13 @@
   border-left-color: $grey-in-various-elements;
   background-color: $dark-in-various-elements;
   justify-content: flex-start;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     min-height: 79px;
     padding-top: 10px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     font-size: 18px;
     font-weight: 700;
     min-height: 98px;
@@ -113,7 +121,8 @@
   border: none;
   outline: none;
   background-color: $background-dark;
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     min-height: 98px;
   }
 }
@@ -123,14 +132,16 @@
   line-height: 16px;
   margin: 0;
   padding: 0;
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     font-size: 18px;
   }
 }
 
 .tariff__table-column--hit {
   position: relative;
-  &:before {
+
+  &::before {
     position: absolute;
     z-index: 2;
     top: -12px;
@@ -139,17 +150,20 @@
     height: 73px;
     content: "ХИТ";
     transform: rotate(-45deg);
-    @media(min-width: $tablet-width) {
+
+    @media (min-width: $tablet-width) {
       top: -19px;
       left: 16px;
     }
-    @media(min-width: $desktop-width) {
+
+    @media (min-width: $desktop-width) {
       font-size: 14px;
       font-weight: 400;
       top: -12px;
       left: 18px;
     }
   }
+
   &::after {
     position: absolute;
     top: -2px;
@@ -160,12 +174,14 @@
     background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    @media(min-width: $tablet-width) {
+
+    @media (min-width: $tablet-width) {
       width: 62px;
       height: 62px;
       background-image: url("../img/bg-hit-tablet.svg");
     }
-    @media(min-width: $desktop-width) {
+
+    @media (min-width: $desktop-width) {
       width: 74px;
       height: 73px;
       background-image: url("../img/bg-hit.svg");
@@ -179,10 +195,12 @@
   line-height: 30px;
   margin: 0;
   padding: 0;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     font-size: 16px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     padding-right: 70px;
     padding-left: 70px;
   }
@@ -196,10 +214,12 @@
   padding: 0;
   text-align: center;
   text-transform: none;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     font-size: 18px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     font-size: 24px;
   }
 }
@@ -210,7 +230,8 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $dark-in-various-elements;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -224,6 +245,7 @@
 
 .tariff__table-yes-symbol {
   position: relative;
+
   &::after {
     position: absolute;
     top: -10px;
@@ -231,11 +253,13 @@
     width: 31px;
     height: 21px;
     content: url("../img/icon-yes.svg");
-    @media(min-width: $tablet-width) {
+
+    @media (min-width: $tablet-width) {
       top: -10px;
       left: 63px;
     }
-    @media(min-width: $desktop-width) {
+
+    @media (min-width: $desktop-width) {
       top: -9px;
       left: 100px;
     }
@@ -244,18 +268,20 @@
 
 .tariff__table-no-symbol {
   position: relative;
+
   &::after {
     position: absolute;
     top: -16px;
     left: -24px;
     width: 27px;
     height: 26px;
-
     content: url("../img/icon-no.svg");
-    @media(min-width: $tablet-width) {
+
+    @media (min-width: $tablet-width) {
       left: 63px;
     }
-    @media(min-width: $desktop-width) {
+
+    @media (min-width: $desktop-width) {
       top: -15px;
       left: 102px;
     }

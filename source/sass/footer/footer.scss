@@ -6,14 +6,16 @@
   padding-bottom: 50px;
   align-items: center;
   justify-content: space-between;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     width: 660px;
     margin: 0 auto;
     padding-top: 36px;
     justify-content: flex-start;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     width: 960px;
     margin: 0 auto;
     padding-top: 96px;
@@ -21,23 +23,25 @@
 }
 
 .footer--form-top-padding {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 17px;
   }
 }
 
 .footer--index-top-padding {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 37px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     padding-top: 70px;
   }
 }
 
 .footer--mobile {
   display: none;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     display: flex;
     box-sizing: border-box;
   }
@@ -48,10 +52,12 @@
   width: 147px;
   height: 40px;
   margin-bottom: 36px;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     margin-right: 74px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     margin-right: 240px;
   }
 }
@@ -64,6 +70,7 @@
   align-self: flex-start;
   justify-content: flex-start;
   align-items: center;
+
   @media (min-width: $desktop-width) {
     padding-top: 2px;
   }
@@ -81,6 +88,7 @@
   line-height: 18px;
   margin-right: 13px;
   color: $dark-in-various-elements;
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }

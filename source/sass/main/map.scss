@@ -1,10 +1,12 @@
 .map {
   position: relative;
   overflow: hidden;
+
   @media (min-width: $tablet-width) {
     max-height: 719px;
     padding-top: 55px;
   }
+
   @media (min-width: $desktop-width) {
     max-height: 687px;
     padding-top: 88px;
@@ -20,10 +22,12 @@
   height: 36px;
   content: "";
   z-index: 2;
+
   @media (min-width: $tablet-width) {
     top: 595px;
     left: 312px;
   }
+
   @media (min-width: $desktop-width) {
     top: 629px;
     left: 462px;
@@ -37,6 +41,7 @@
   margin-top: -28px;
   padding: 0;
   background-size: 100% auto;
+
   @media (max-width: $tablet-width - 1) {
     width: 320px;
     height: 645px;
@@ -45,9 +50,11 @@
     background-repeat: no-repeat;
     background-position: center bottom;
   }
-  @media(max-width: $tablet-width - 1) and (min-resolution: $retina-dpi), (max-width: $tablet-width - 1) and (min-resolution: $retina-dppx) {
+
+  @media (max-width: $tablet-width - 1) and (min-resolution: $retina-dpi), (max-width: $tablet-width - 1) and (min-resolution: $retina-dppx) {
     background-image: url("../../img/bg-map-mobile@2x.jpg");
   }
+
   @media (min-width: $tablet-width) {
     width: 700px;
     height: 848px;
@@ -57,11 +64,12 @@
     background-position: center;
   }
 
-  @media(min-width: $tablet-width) and (min-resolution: $retina-dpi), (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+  @media (min-width: $tablet-width) and (min-resolution: $retina-dpi), (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
     background-image: url("../../img/bg-map-tablet@2x.jpg");
     background-position: top -3px left -20px;
     background-size: 700px auto;
   }
+
   @media (min-width: $desktop-width) {
     width: 960px;
     height: 976px;
@@ -69,7 +77,8 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  @media(min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+
+  @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
     background-position: top -3px left -120px;
     background-size: 1200px auto;
   }
@@ -84,11 +93,13 @@
   padding-top: 180px;
   position: relative;
   border: none;
+
   @media (min-width: $tablet-width) {
     height: 848px;
     margin-top: 0;
     padding-top: 77px;
   }
+
   @media (min-width: $desktop-width) {
     height: 976px;
   }

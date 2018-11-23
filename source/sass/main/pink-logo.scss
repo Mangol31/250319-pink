@@ -4,18 +4,17 @@
   height: 40px;
   margin-right: 76px;
   align-self: flex-start;
+  fill: $dark-in-various-elements;
+
   @media (max-width: $tablet-width - 1) {
     margin-right: 0;
     margin-bottom: 43px;
     align-self: center;
   }
+
   @media (max-width: $desktop-width - 1) {
     display: inline;
   }
-}
-
-.pink-logo__tablet-mobile {
-  fill: $dark-in-various-elements;
 }
 
 .pink-logo__tablet-mobile:hover {
@@ -28,6 +27,7 @@
 
 .pink-logo__desktop {
   display: none;
+
   @media (min-width: $desktop-width) {
     display: inline;
     width: 147px;

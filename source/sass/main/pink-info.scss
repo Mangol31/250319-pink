@@ -1,10 +1,12 @@
 .pink-info {
   width: 100%;
   padding-top: 40px;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     padding-top: 46px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     overflow: visible;
     box-sizing: border-box;
     padding-top: 66px;
@@ -16,7 +18,8 @@
   min-height: 150px;
   padding-right: 20px;
   padding-left: 20px;
-  &:after {
+
+  &::after {
     position: absolute;
     z-index: 2;
     top: 179px;
@@ -27,20 +30,24 @@
     border-width: 33px 100vw 0 0;
     border-style: solid;
     border-color: $white-in-various-elements transparent transparent transparent;
+
     @media (min-width: $tablet-width) {
       top: 196px;
       border-width: 50px 100vw 0 0;
     }
+
     @media (min-width: $desktop-width) {
       top: 270px;
       border-width: 72px 100vw 0 0;
     }
   }
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     padding-bottom: 50px;
     order: 2;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     padding-bottom: 90px;
   }
 }
@@ -53,13 +60,14 @@
   margin-bottom: 29px;
   padding: 0;
   text-align: center;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 49px;
     margin-bottom: 0;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 60px;
   }
@@ -67,7 +75,8 @@
 
 .pink-info__slogan br {
   display: none;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }
@@ -80,13 +89,15 @@
   padding-bottom: 286px;
   padding-left: 20px;
   background-color: $background-dark;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-right: 20px;
     padding-bottom: 8px;
     padding-left: 287px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     overflow: visible;
     box-sizing: border-box;
     padding-top: 72px;
@@ -97,6 +108,7 @@
     flex-direction: row;
     justify-content: center;
   }
+
   &::after {
     position: absolute;
     bottom: -42px;
@@ -109,9 +121,11 @@
     @media (max-width: $tablet-width - 1) {
       display: block;
     }
+
     @media (max-resolution: $retina-dpi - 1) and (max-resolution: $retina-dppx - 1) {
       background-image: url("../img/iphone-screen-mobile@1x.png");
     }
+
     @media (min-resolution: $retina-dpi) and (max-width: $tablet-width - 1), (min-resolution: $retina-dppx) and (max-width: $tablet-width - 1) {
       content: "";
       background-image: url("../img/iphone-screen-mobile@2x.png");
@@ -119,7 +133,7 @@
       background-size: 100%;
     }
 
-    @media(min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       z-index: 2;
       bottom: -5px;
       left: 20px;
@@ -131,12 +145,15 @@
       background-repeat: no-repeat;
       background-size: 268px 481px;
     }
+
     @media (min-resolution: $retina-dpi) and (min-width: $tablet-width) and (max-width: $desktop-width - 1), (min-resolution: $retina-dppx) and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       background-image: url("../img/iphone-screen-3-tablet@2x.png");
     }
-    @media(min-width: $desktop-width) {
+
+    @media (min-width: $desktop-width) {
       display: none;
     }
+
     @media (min-resolution: $retina-dpi) and (min-width: $desktop-width), (min-resolution: $retina-dppx) and (min-width: $desktop-width) {
       display: none;
     }
@@ -145,12 +162,13 @@
 
 .pink-info__mobile {
   display: none;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     display: block;
     order: 1;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -160,11 +178,13 @@
   padding: 0;
   list-style: none;
   text-align: center;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     padding-top: 51px;
     order: 2;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -177,11 +197,13 @@
 
 .pink-info__item {
   margin-bottom: 32px;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 35px;
     padding-left: 42px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -195,7 +217,8 @@
 
 .pink-info__screen {
   display: none;
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     display: flex;
     margin: 0;
     margin-bottom: 26px;
@@ -209,10 +232,12 @@
   line-height: 20px;
   margin-bottom: 10px;
   color: $dark-on-white;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     text-align: left;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 8px;
@@ -222,17 +247,19 @@
 
 .pink-info__item-header br {
   display: none;
+
   @media (min-width: $desktop-width) {
     display: inline;
   }
 }
 
 .pink-info__item-text {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     line-height: 24px;
     text-align: left;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
     text-align: center;
@@ -241,7 +268,8 @@
 
 .pink-info__item-text br {
   display: none;
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     display: inline;
   }
 }

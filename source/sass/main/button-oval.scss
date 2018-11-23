@@ -13,12 +13,14 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
   &:hover {
     color: $color-for-attention;
     background-color: $white-in-various-elements;
   }
+
   &:active {
-    color: rgba($color-for-attention, .3);
+    color: rgba($color-for-attention, 0.3);
   }
 }
 
@@ -30,13 +32,15 @@
   color: $white-in-various-elements;
   border: 3px solid $white-in-various-elements;
   background-color: transparent;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     max-width: 300px;
     margin-bottom: 46px;
     padding-right: 44px;
     padding-left: 44px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     font-size: 21px;
     margin-bottom: 67px;
     padding-right: 27px;
@@ -51,28 +55,32 @@
   color: $color-for-attention;
   border: 3px solid $color-for-attention;
   background-color: $background-dark;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     min-width: 260px;
     padding-right: 10px;
     padding-left: 1px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     min-width: 180px;
     margin-right: 45px;
     padding-right: 42px;
     padding-left: 42px;
   }
+
   &:hover {
     color: $white-in-various-elements;
     background-color: $color-for-attention;
   }
+
   &:active {
     color: rgba($white-in-various-elements, 0.3);
   }
 }
 
 .button-oval--photo-editor-cancel {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-right: 54px;
     padding-left: 54px;
   }
@@ -83,20 +91,24 @@
   color: rgba($dark-in-various-elements, 0.1);
   border: 3px solid rgba($dark-in-various-elements, 0.1);
   outline: none;
+
   &:hover {
     color: rgba($dark-in-various-elements, 0.3);
     border: 3px solid rgba($dark-in-various-elements, 0.3);
     background-color: transparent;
   }
+
   &:active {
     color: rgba($white-in-various-elements, 0.3);
     border: 3px solid rgba($dark-in-various-elements, 0);
     background-color: rgba($dark-in-various-elements, 0.3);
   }
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     margin-top: 24px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     margin-top: 0;
     margin-right: 0;
   }

@@ -3,18 +3,21 @@
   box-sizing: border-box;
   min-height: 667px;
   background-color: $menu-and-download-back;
+
   @media (max-width: $tablet-width - 1) {
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: top 260px center;
     background-size: 100% auto;
   }
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-position: top 256px center;
     background-size: 700px auto;
   }
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -27,13 +30,14 @@
     align-items: flex-start;
   }
 
-  @media(min-width: $tablet-width) and (min-resolution: $retina-dpi), (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+  @media (min-width: $tablet-width) and (min-resolution: $retina-dpi), (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-tablet@2x.jpg");
     background-position: top 258px center;
     background-size: 1200px auto;
     background-repeat: no-repeat;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     min-height: 744px;
     padding-top: 202px;
     padding-bottom: 104px;
@@ -45,7 +49,7 @@
     justify-content: center;
   }
 
-  @media(min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+  @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-desktop@2x.jpg");
     background-position: top 11px center;
     background-size: 2560px auto;
@@ -53,11 +57,12 @@
 }
 
 .download__centering {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -73,7 +78,8 @@
   margin-bottom: 23px;
   padding-top: 87px;
   justify-content: flex-end;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     position: absolute;
     z-index: 1;
     bottom: -73px;
@@ -84,23 +90,25 @@
     background-image: none;
     order: 2;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     left: 50%;
     transform: translateX(-50%);
     bottom: -103px;
     padding-left: 140px;
     padding-bottom: 72px;
-
   }
 }
 
 .download__intro {
   bottom: 0;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     width: 700px;
     height: 545px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     width: 1050px;
     height: 645px;
   }
@@ -113,7 +121,8 @@
   padding-bottom: 16px;
   padding-left: 20px;
   align-items: center;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -125,7 +134,8 @@
     justify-content: space-around;
     position: relative;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     max-width: 33.4%;
     padding-top: 16px;
     padding-right: 10px;
@@ -134,7 +144,8 @@
   }
 }
 
-@media(max-width: $tablet-width) and (min-width: $desktop-width) {
+
+@media (max-width: $tablet-width) and (min-width: $desktop-width) {
   .download__lower-wrapper br {
     display: none;
   }
@@ -151,12 +162,14 @@
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 29px;
     padding-right: 44px;
     padding-left: 46px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 49px;
   }
 }
@@ -171,9 +184,9 @@
 
 .download__text {
   text-align: center;
-
   color: $grey-in-various-elements;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     font-size: 17px;
     margin: 0;
     padding: 0;
@@ -182,14 +195,16 @@
 
 .download__text--caption {
   display: none;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     font-size: 40px;
     font-weight: 300;
     line-height: 48px;
     display: block;
     margin-bottom: 31px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 59px;
     margin-bottom: 53px;
