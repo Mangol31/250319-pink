@@ -22,7 +22,7 @@
   &::after {
     position: absolute;
     z-index: 2;
-    top: 179px;
+    top: 176px;
     left: 0;
     width: 0;
     height: 0;
@@ -120,9 +120,6 @@
 
     @media (max-width: $tablet-width - 1) {
       display: block;
-    }
-
-    @media (max-resolution: $retina-dpi - 1) and (max-resolution: $retina-dppx - 1) {
       background-image: url("../img/iphone-screen-mobile@1x.png");
     }
 

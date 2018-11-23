@@ -45,14 +45,14 @@
   @media (max-width: $tablet-width - 1) {
     width: 320px;
     height: 645px;
-    background-image: url("../../img/bg-map-mobile@1x.png");
+    background-image: url("../img/bg-map-mobile@1x.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center bottom;
   }
 
   @media (max-width: $tablet-width - 1) and (min-resolution: $retina-dpi), (max-width: $tablet-width - 1) and (min-resolution: $retina-dppx) {
-    background-image: url("../../img/bg-map-mobile@2x.jpg");
+    background-image: url("../img/bg-map-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
