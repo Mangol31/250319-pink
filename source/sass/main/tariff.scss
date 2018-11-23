@@ -160,7 +160,7 @@
       font-size: 14px;
       font-weight: 400;
       top: -12px;
-      left: 18px;
+      left: 21px;
     }
   }
 
@@ -184,6 +184,7 @@
     @media (min-width: $desktop-width) {
       width: 74px;
       height: 73px;
+      left: -1px;
       background-image: url("../img/bg-hit.svg");
     }
   }
@@ -203,6 +204,8 @@
   @media (min-width: $desktop-width) {
     padding-right: 70px;
     padding-left: 70px;
+    font-size: 18px;
+    line-height: 32px;
   }
 }
 
