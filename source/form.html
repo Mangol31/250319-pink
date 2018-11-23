@@ -6,6 +6,32 @@
   <title>Pink</title>
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.min.js" async></script>
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      background-image: url( "pp-img/pink-form-mobile.jpg" );
+    }
+    /* Tablet */
+    @media ( min-width: 660px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url( "pp-img/pink-form-tablet.jpg" );
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 960px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url( "pp-img/pink-form-desktop.jpg" );
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="css/pp-style.css">
+  <script src="js/pp-script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 <body class="page">
 <svg style="display: none">
@@ -99,7 +125,7 @@
 </svg>
 <header class="main-header">
   <div class="main-header__non-indexpage-wrapper viewport-width">
-    <div class="main-header__logo-wrapper">
+    <div class="main-header__logo-wrapper main-header__logo-wrapper--non-indexpage">
       <a class="main-header__home-link" href="index.html">
         <svg class="main-header__logo-mobile" viewBox="0 0 75 22" width="75" height="22">
           <use xlink:href="#main-header-logo-mobile"></use>
