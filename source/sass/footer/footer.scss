@@ -110,3 +110,51 @@
 .footer__academy-logo:active {
   fill: $slider-swithes-light;
 }
+
+.footer__logo-tablet-mobile {
+  display: none;
+  width: 147px;
+  height: 40px;
+  margin-right: 76px;
+  align-self: flex-start;
+  fill: $dark-in-various-elements;
+
+  @media (max-width: $tablet-width - 1) {
+    margin-right: 0;
+    margin-bottom: 43px;
+    align-self: center;
+  }
+
+  @media (max-width: $desktop-width - 1) {
+    display: inline;
+  }
+}
+
+.footer__logo-tablet-mobile:hover {
+  fill: $color-for-attention;
+}
+
+.footer__logo-tablet-mobile:active {
+  opacity: 0.3;
+}
+
+.footer__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    width: 147px;
+    height: 40px;
+    margin-right: 240px;
+    align-self: flex-start;
+    fill: $dark-in-various-elements;
+  }
+}
+
+.footer__logo-desktop:hover {
+  fill: $color-for-attention;
+}
+
+.footer__logo-desktop:active {
+  opacity: 0.3;
+}
