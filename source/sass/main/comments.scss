@@ -70,15 +70,15 @@
       height: 41px;
       content: url("../img/icon-review-arrow-left.svg");
     }
-  }
 
-  &::after {
-    position: absolute;
-    top: 48px;
-    right: 0;
-    width: 22px;
-    height: 41px;
-    content: url("../img/icon-review-arrow-right.svg");
+    &::after {
+      position: absolute;
+      top: 48px;
+      right: 0;
+      width: 22px;
+      height: 41px;
+      content: url("../img/icon-review-arrow-right.svg");
+    }
   }
 }
 
