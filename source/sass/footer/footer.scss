@@ -70,6 +70,7 @@
   align-self: flex-start;
   justify-content: flex-start;
   align-items: center;
+
   @media (min-width: $desktop-width) {
     padding-top: 2px;
   }
@@ -77,6 +78,7 @@
 
 .footer__dev-wrapper--mobile {
   padding-top: 4px;
+
   @media (max-width: $tablet-width - 1) {
     align-self: center;
   }
