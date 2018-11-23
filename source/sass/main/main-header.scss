@@ -64,7 +64,10 @@
 }
 
 .main-header__logo-wrapper--non-indexpage {
-  padding-bottom: 19px;
+  padding-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 37px;
+  }
 }
 
 .main-header__logo-mobile {

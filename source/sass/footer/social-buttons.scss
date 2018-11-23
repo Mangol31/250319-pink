@@ -10,10 +10,12 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 94px;
+    padding-top: 5px;
+
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 229px;
+    margin-right: 227px;
     padding-top: 6px;
   }
 }
