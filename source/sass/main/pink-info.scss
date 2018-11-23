@@ -16,6 +16,7 @@
 .pink-info__slogan-wrapper {
   position: relative;
   min-height: 150px;
+  margin-bottom: 29px;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -44,6 +45,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 50px;
+    margin-bottom: 0;
     order: 2;
   }
 
@@ -57,8 +59,8 @@
   font-weight: 300;
   line-height: 29px;
   margin: 0;
-  margin-bottom: 29px;
   padding: 0;
+  margin-bottom: 29px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
