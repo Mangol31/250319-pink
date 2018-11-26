@@ -16,9 +16,10 @@
     left: 50%;
     flex-direction: row;
     transform: translateX(-50%);
-    background-color: transparent;
+    background-color: rgba($dark-on-white, 0.3);
     flex-wrap: nowrap;
-    width: 960px;
+    width: 100%;
+    min-height: 108px;
   }
 }
 
@@ -37,7 +38,6 @@
     left: 50%;
     flex-direction: row;
     transform: translateX(-50%);
-    background-color: transparent;
     flex-wrap: nowrap;
   }
 }

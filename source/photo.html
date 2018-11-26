@@ -175,7 +175,7 @@
       <h2 class="page-header__caption">Фотографии<br> пользователей</h2>
     </div>
     <div class="page-header__lower-part">
-      <p class="page-header__text">Взгляните на фотографии, которые выкладывают<br> пользователи! Видите,&nbsp;как&nbsp;не хватает ваших?</p>
+      <p class="page-header__text">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите,&nbsp;как&nbsp;не хватает ваших?</p>
     </div>
   </section>
   <section class="photo viewport-width">
@@ -348,13 +348,16 @@
             </ul>
             <ul class="photo-editor__list-range">
               <li class="photo-editor__item-range photo-editor__item-range--mobile-active">
-                <input class="photo-editor__range photo-editor__range--crop" type="range" min="1" max="100" name="photo-editor-crop" id="crop-range">
+                <label class="visually-hidden" for="crop-range">Регулятор обрезки изображения</label>
+                <input class="photo-editor__range photo-editor__range--crop" type="range" min="1" max="100" name="photo-editor-crop" id="crop-range" aria-label="Регулятор обрезки изображения">
               </li>
               <li class="photo-editor__item-range">
-                <input class="photo-editor__range photo-editor__range--gamma" type="range" min="1" max="100" name="photo-editor-gamma" id="gamma-range">
+                <label class="visually-hidden" for="gamma-range">Регулятор цветовой гаммы</label>
+                <input class="photo-editor__range photo-editor__range--gamma" type="range" min="1" max="100" name="photo-editor-gamma" id="gamma-range" aria-label="Регулятор цветовой гаммы">
               </li>
               <li class="photo-editor__item-range">
-                <input class="photo-editor__range photo-editor__range--contrast" type="range" min="1" max="100" name="photo-editor-contrast" id="contrast-range">
+                <label class="visually-hidden" for="contrast-range">Регулятор контрастности</label>
+                <input class="photo-editor__range photo-editor__range--contrast" type="range" min="1" max="100" name="photo-editor-contrast" id="contrast-range" aria-label="Регулятор контрастности">
               </li>
             </ul>
           </div>
