@@ -5,7 +5,7 @@
 
   &::after {
     position: absolute;
-    top: 413px;
+    bottom: 171px;
     left: 0;
     width: 0;
     height: 0;
@@ -16,12 +16,12 @@
     z-index: 4;
 
     @media (min-width: $tablet-width) {
-      top: 399px;
+      bottom: 308px;
       border-width: 67px 50vw 0 50vw;
     }
 
     @media (min-width: $desktop-width) {
-      top: 386px;
+      bottom: 401px;
       border-width: 82px 50vw 0 50vw;
     }
   }

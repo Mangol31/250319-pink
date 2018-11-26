@@ -23,7 +23,7 @@
   &::after {
     position: absolute;
     z-index: 2;
-    top: 176px;
+    bottom: -62px;
     left: 0;
     width: 0;
     height: 0;
@@ -33,12 +33,12 @@
     border-color: $white-in-various-elements transparent transparent transparent;
 
     @media (min-width: $tablet-width) {
-      top: 196px;
+      bottom: -49px;
       border-width: 50px 100vw 0 0;
     }
 
     @media (min-width: $desktop-width) {
-      top: 270px;
+      bottom: -70px;
       border-width: 72px 100vw 0 0;
     }
   }
