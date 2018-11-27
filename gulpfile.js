@@ -10,7 +10,12 @@ var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
+var del = require("del");
 var server = require("browser-sync").create();
+
+gulp.task("clean", function () {
+  return del("build");
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -80,6 +85,6 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("css","images","svgsprite","fonts","js","html"));
+gulp.task("build", gulp.series("clean","css","images","webp","svgsprite","fonts","js","html"));
 gulp.task("sstart", gulp.series("css", "server"));
 gulp.task("start", gulp.series("build", "server"));
