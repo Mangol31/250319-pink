@@ -108,6 +108,7 @@
   background-color: $background-dark;
 
   @media (min-width: $tablet-width) {
+    min-height: 472px;
     padding-top: 0;
     padding-right: 20px;
     padding-bottom: 8px;
@@ -115,6 +116,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: auto;
     overflow: visible;
     box-sizing: border-box;
     padding-top: 72px;
