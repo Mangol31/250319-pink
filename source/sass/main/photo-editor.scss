@@ -326,6 +326,7 @@
 input[type="range"].photo-editor__range {
   margin: 4px 0;
   appearance: none;
+  max-height: 0;
 
   @media (max-width: $tablet-width - 1) {
     width: 85.8%;
