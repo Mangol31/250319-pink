@@ -17,6 +17,10 @@
 
 .switches__item {
   margin-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 2px;
+  }
 }
 
 .switches__item:last-child {
