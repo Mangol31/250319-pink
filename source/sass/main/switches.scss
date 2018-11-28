@@ -9,18 +9,20 @@
   align-content: center;
 }
 
-@media (min-width: $tablet-width) {
-  .switches--hide {
+.switches--hide-tablet {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.switches--hide-desktop {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
 .switches__item {
   margin-right: 13px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 2px;
-  }
 }
 
 .switches__item:last-child {
