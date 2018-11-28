@@ -6,14 +6,15 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
-    padding-top: 0;
+    //padding-top: 0;
+    padding-top: 31px;
     padding-bottom: 57px;
     padding-left: 68px;
     border: 2px solid $grey-in-various-elements;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-top: 31px;
+  @media (min-width: $desktop-width) {
+    margin-top: 9px;
   }
 }
 
